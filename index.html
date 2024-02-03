@@ -22,8 +22,14 @@
  
     <script src="https://cdn.tailwindcss.com/"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
 </head>
-<body class="bg-neutral-100 text-slate-800">
+<body class="bg-neutral-100 dark:bg-neutral-900 text-slate-800 dark:text-slate-200">
     
     <!-- Hero section -->
     <section id="Inicio" class="h-screen">
@@ -79,6 +85,21 @@
                       data-value="title-4"
                       >Proyectos</a
                     >
+                  
+                    <div class="flex flex-row items-center justify-center mx-auto h-10">
+                      <div class="flex flex-row justify-between toggle">
+                          <label for="dark-toggle" class="flex items-center cursor-pointer">
+                            <div class="relative">
+                              <input type="checkbox" name="dark-mode" id="dark-toggle" class="checkbox hidden">
+                              <div class="block bg-teal-800/50 dark:bg-zinc-400 rounded-full w-14 h-8"></div>
+                              <div class="top-1 left-1 absolute bg-teal-600/30 dark:bg-gray-500 rounded-full w-6 h-6 transition dot"></div>
+                            </div>
+                            <div class="ml-3 text-gray-500 hover:text-gray-200 dark:text-white ">
+                              Dark Mode
+                            </div>
+                          </label>
+                        </div>
+                    </div>
   
                   </div>
                 </nav>
@@ -168,7 +189,7 @@
         </div>
       </section>
 
-    <section id="about" class="bg-neutral-100 h-84 typo-quicksand">
+    <section id="about" class="bg-neutral-100 dark:bg-neutral-900 h-84 typo-quicksand">
       <h2 class="mx-auto pt-14 w-fit text-3xl text-center section-title typo-quicksand">
         Acerca de mi
       </h2>
