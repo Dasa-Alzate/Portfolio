@@ -32,155 +32,117 @@
 <body class="bg-neutral-100 dark:bg-neutral-900 text-slate-800 dark:text-slate-200">
     
     <!-- Hero section -->
-    <section id="Inicio" class="h-screen">
+    <section id="Inicio" class="xl:h-screen">
         <div class="mx-auto h-screen">
-          <div
-            class="relative z-10 bg-[url('assets/w3.jpg')] bg-cover bg-bottom pb-32 w-full brigth-50 h-screen"
-          >
+          <div class="relative z-10 bg-[url('assets/w3.jpg')] bg-cover bg-bottom pb-32 w-full h-screen">
             <!-- Navigation bar -->
-            <div>
-              <div class="relative ml-0 pt-6 pr-96 pl-0">
-                <nav class="relative flex items-center justify-start bg-black/75 backdrop-blur-sm py-2 pl-4" aria-label="Global">
-                  <div
-                    class="flex flex-grow-0 flex-shrink-0 items-center ml-2 duration-150"
-                  >
-                    <div
-                      class="flex items-center justify-between w-auto"
-                    >
-                      <a href="#">
-                        <span class="sr-only">David</span>
-                        <img alt="David" class="w-auto h-14" src="assets/logo4.png" />
-                      </a>
-                    </div>
+            <div class="relative ml-0 pt-6 pr-0 lg:pr-96 pl-0">
+              <nav class="relative flex items-center justify-start bg-black/75 backdrop-blur-sm px-4 py-2 w-full md:w-auto min-w-max" aria-label="Global">
+                <div class="flex flex-grow-0 flex-shrink-0 items-center ml-2">
+                  <div class="flex items-center justify-between w-auto">
+                    <a href="#">
+                      <span class="sr-only">David</span>
+                      <img alt="David" class="w-auto h-14" src="assets/logo4.png" />
+                    </a>
                   </div>
-                  <div class="flex w-screen font-bold text-base text-gray-500 uppercase row typo-advent">
-                    <a
-                      href="#Inicio"
-                      class="mx-12 hover:text-gray-200"
-                      data-section="navbar"
-                      data-value="title-1"
-                      >Inicio</a
-                    >
-  
-                    <a
-                      href="#about"
-                      class="mx-12 hover:text-gray-200"
-                      data-section="navbar"
-                      data-value="title-2"
-                      >Acerca de mi</a
-                    >
-  
-                    <a
-                      href="#experiencia"
-                      class="mx-12 hover:text-gray-200"
-                      data-section="navbar"
-                      data-value="title-3"
-                      >Experiencia</a
-                    >
-  
-                    <a
-                      href="#proyectos"
-                      class="mx-12 hover:text-gray-200"
-                      data-section="navbar"
-                      data-value="title-4"
-                      >Proyectos</a
-                    >
-                  
-                    <div class="flex flex-row items-center justify-center mx-auto h-10">
-                      <div class="flex flex-row justify-between toggle">
-                          <label for="dark-toggle" class="flex items-center cursor-pointer">
-                            <div class="relative">
-                              <input type="checkbox" name="dark-mode" id="dark-toggle" class="checkbox hidden">
-                              <div class="block bg-teal-800/50 dark:bg-zinc-400 rounded-full w-14 h-8"></div>
-                              <div class="top-1 left-1 absolute bg-teal-600/30 dark:bg-gray-500 rounded-full w-6 h-6 transition dot"></div>
-                            </div>
-                            <div class="ml-3 text-gray-500 hover:text-gray-200 dark:text-white ">
-                              Dark Mode
-                            </div>
-                          </label>
-                        </div>
-                    </div>
-  
+                </div>
+                <div class="flex w-full text-base text-gray-500 uppercase typo-advent">
+                  <a href="#Inicio"
+                    class="sm:block mx-auto lg:mx-12 sm:px-4 md:px-8 lg:px-0 hover:text-gray-200 hidden"
+                    data-section="navbar"
+                    data-value="title-1">Inicio</a>
+
+                  <a href="#about"
+                    class="sm:block mx-auto lg:mx-12 sm:px-4 md:px-8 lg:px-0 hover:text-gray-200 hidden"
+                    data-section="navbar"
+                    data-value="title-2">Acerca de mi</a>
+
+                  <a href="#experiencia"
+                    class="sm:block mx-auto lg:mx-12 sm:px-4 md:px-8 lg:px-0 hover:text-gray-200 hidden"
+                    data-section="navbar"
+                    data-value="title-3">Experiencia</a>
+
+                  <a href="#proyectos"
+                    class="sm:block mx-auto lg:mx-12 sm:px-4 md:px-8 lg:px-0 hover:text-gray-200 hidden"
+                    data-section="navbar"
+                    data-value="title-4">Proyectos</a>
+                
+                  <div class="flex w-full">
+                    <div class="ml-auto">
+                        <label for="dark-toggle" class="flex items-center cursor-pointer">
+                          <div class="relative">
+                            <input type="checkbox" name="dark-mode" id="dark-toggle" class="checkbox hidden">
+                            <div class="block bg-teal-800/50 dark:bg-zinc-400 rounded-full w-14 h-8"></div>
+                            <div class="top-1 left-1 absolute bg-teal-600/30 dark:bg-gray-500 rounded-full w-6 h-6 transition dot"></div>
+                          </div>
+                          <p class="ml-3 text-gray-500 hover:text-gray-200 dark:text-white ">Dark Mode</p>
+                        </label>
+                      </div>
                   </div>
-                </nav>
-              </div>
+                </div>
+              </nav>
             </div>
   
             <!-- Main title -->
-            <main class="pr-[56%] w-full">
-              <div
-                class="relative bg-black/75 backdrop-blur-sm mx-auto mt-28 px-8 pt-10 h-96 text-left"
-              >
-                <h1
-                  class="font-bold text-6xl text-slate-800 tracking-tight"
-                >
-                  <span class="block text-white inline" data-section="profile" data-value="title-1">¡Hola! Soy </span>
-                  <span class="block text-teal-800 inline typo-advent"
-                    >David</span
-                  >
+            <main class="w-full lg:w-3/5">
+              <div class="relative bg-black/75 backdrop-blur-sm mx-auto mt-10 sm:mt-12 md:mt-16 xl:mt-20 xl:mt-28 px-4 sm:px-6 xl:px-8 pt-10 h-96 text-center lg:text-left">
+                <h1 class="font-bold text-4xl text-slate-800 sm:text-5xl md:text-6xl tracking-tight">
+                  <span class="block text-white xl:inline" data-section="profile" data-value="title-1">¡Hola! Soy </span>
+                  <span class="block text-teal-800 xl:inline typo-advent">David</span>
                 </h1>
-                <p
-                  class="mx-0 mt-5 max-w-xl text-gray-300 text-xl" data-section="profile" data-value="title-2"
-                >
+                <p class="sm:mx-auto lg:mx-0 mt-3 sm:mt-5 md:mt-5 sm:max-w-xl text-base text-gray-300 sm:text-lg md:text-xl" data-section="profile" data-value="title-2">
                   Y este es mi portafolio.
                 </p>
-                <div
-                  class="bottom-0 absolute inset-x-0 flex flex-row justify-end mt-8"
-                >
-                  <div class="mt-0 ml-3 basis-1/5">
-                    <a
-                      href="https://github.com/Deimaxs"
+                <div class="bottom-0 absolute inset-x-0 flex flex-row sm:justify-center xl:justify-end mt-5 sm:mt-8">
+                  <div class="mt-3 sm:mt-0 sm:ml-3 basis-1/5">
+                    <a href="https://github.com/Whitefox-SA"
                       target="_blank"
                       title="Visita mi GitHub"
-                      class="flex items-center justify-center px-4 py-4 w-full text-lg text-white"
+                      class="flex items-center justify-center xl:px-4 py-3 md:py-4 w-full text-base text-white md:text-lg"
                       data-section="contact"
-                      data-value="github"
-                      ><i class="text-2xl text-white bi bi-github"></i
-                    ></a>
+                      data-value="github">
+                      <i class="text-2xl text-white bi bi-github"></i>
+                    </a>
                   </div>
-                  <div class="mt-0 ml-3 basis-1/5">
-                    <a
-                      href="https://www.linkedin.com/in/David-sanchez-ds/"
+                  <div class="mt-3 sm:mt-0 sm:ml-3 basis-1/5">
+                    <a href="https://www.linkedin.com/in/david-sanchez-wf/"
                       target="_blank"
                       title="Echa un vistazo a mi LinkedIn"
-                      class="flex items-center justify-center px-4 py-4 w-full text-lg text-white"
+                      class="flex items-center justify-center xl:px-4 py-3 md:py-4 w-full text-base text-white md:text-lg"
                       data-section="contact"
-                      data-value="linkedin"
-                      ><i class="text-2xl text-white bi bi-linkedin"></i
-                    ></a>
+                      data-value="linkedin">
+                      <i class="text-2xl text-white bi bi-linkedin"></i>
+                    </a>
                   </div>
-                  <div class="mt-0 ml-3 basis-1/5">
-                    <a
-                      href="mailto:dasa.alzate@gmail.com"
+                  <div class="mt-3 sm:mt-0 sm:ml-3 basis-1/5">
+                    <a href="mailto:dasa.alzate@gmail.com"
                       target="_blank"
                       title="Escríbeme por correo"
-                      class="flex items-center justify-center px-4 py-4 w-full text-lg text-white"
+                      class="flex items-center justify-center xl:px-4 py-3 md:py-4 w-full text-base text-white md:text-lg"
                       data-section="contact"
-                      data-value="email"
-                      ><i class="text-2xl text-white bi bi-envelope"></i
-                    ></a>
+                      data-value="email">
+                      <i class="text-2xl text-white bi bi-envelope"></i>
+                    </a>
                   </div>
-                  <div class="mt-0 ml-3 basis-1/5">
-                    <a
-                      href="https://wa.me/34604461105"
+                  <div class="mt-3 sm:mt-0 sm:ml-3 basis-1/5">
+                    <a href="https://wa.me/34604461105"
                       target="_blank"
                       title="Hablemos por Whatsapp"
-                      class="flex items-center justify-center px-4 py-4 w-full text-lg text-white"
+                      class="flex items-center justify-center xl:px-4 py-3 md:py-4 w-full text-base text-white md:text-lg"
                       data-section="contact"
-                      data-value="whatsapp"
-                      ><i class="text-2xl text-white bi bi-whatsapp"></i
-                    ></a>
+                      data-value="whatsapp">
+                      <i class="text-2xl text-white bi bi-whatsapp"></i>
+                    </a>
                   </div>
-                  <div class="mt-0 ml-3 basis-1/5">
-                    <a
-                      href="CV.pdf"
+                  <div class="mt-3 sm:mt-0 sm:ml-3 basis-1/5">
+                    <a href="CV.pdf"
                       target="_blank"
                       title="Descarga mi CV"
-                      class="flex items-center justify-center px-4 py-4 pr-6 w-full text-lg text-white"
+                      class="flex items-center justify-center xl:px-4 py-3 md:py-4 pr-6 w-full text-base text-white md:text-lg"
                       data-section="contact"
-                      data-value="file"
-                      ><i class="text-2xl text-white bi bi-file-earmark"></i
-                    ></a>
+                      data-value="file">
+                      <i class="text-2xl text-white bi bi-file-earmark"></i>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -193,7 +155,7 @@
       <h2 class="mx-auto pt-14 w-fit text-3xl text-center section-title typo-quicksand">
         Acerca de mi
       </h2>
-      <br/>
+      <br>
       <figure class="bg-neutral-100 dark:bg-neutral-900 p-8">
         <img
           class="mx-auto rounded-full w-32 h-32"
@@ -203,10 +165,8 @@
           height="384"
         />
         <div class="pt-6 text-center space-y-4">
-          <blockquote>
-            <p class="text-lg " data-section="profile" data-value="about-me">
+          <blockquote class="text-lg " data-section="profile" data-value="about-me">
               “Soy un geek del software y la tecnología con aproximadamente 2 años y medio de experiencia como Desarrollador web. He liderado las areas de arquitectura de bases de datos y UI/UX en diferentes proyectos que han resultado en productos comerciales completamente funcionales. Mi paso por la Escuela de Ingenieria Electrica junto con mi experiencia profesional de diferentes escalas me dan un amplio rango de herramientas para resolver cualquier desafio con facilidad, sin importar qué tan particular pueda llegar a ser.”
-            </p>
           </blockquote>
           <figcaption class="font-semibold">
             <div class="text-teal-500">David Sánchez</div>
@@ -222,11 +182,11 @@
       <h2 class="mx-auto pt-14 w-fit text-3xl text-center section-title typo-quicksand">
         Educación &amp; Experiencia
       </h2>
-      <br/>
+      <br>
       <div class="work-eduction-wrapper">
         <div class="mx-auto w-full h-full container">
-          <div class="flex flex-row px-4 p-6 pt-5 pb-4">
-            <div class="relative w-1/2 self-auto">
+          <div class="flex flex-col lg:flex-row px-4 sm:p-6 pt-5 pb-4 sm:pb-4">
+            <div class="relative w-3/4 lg:w-1/2 self-auto">
               <div class="flex items-center p-4">
                 <img
                   src="assets/exp.png"
@@ -237,15 +197,15 @@
                   <div>Experiencia</div>
                 </div>
               </div>
-              <br/>
-              <br/>
-              <br/>
+              <br>
+              <br>
+              <br>
 
               <div class="flex-auto ml-4" >
                 <div data-section="experience" data-value="role">Desarrollador Full-Stack  /  Dev Lead</div>
                 <div class="mt-1 pl-3 text-slate-500" >
                   <p class="pl-1 border-teal-500 border-l-4 dark:border-slate-400" data-section="experience" data-value="stack">
-                    <ul class="flex flex-nowrap gap-2 mt-2 pb-2 pl-1 border-teal-500 border-l-4 dark:border-slate-400">
+                    <ul class="flex flex-wrap lg:flex-nowrap gap-2 mt-2 pb-2 pl-1 border-teal-500 border-l-4 dark:border-slate-400">
                       <li class="bg-teal-800/20 mx-1 px-3 p-1 rounded-full h-min text-sm text-teal-500">Laravel</li>
                       <li class="bg-teal-800/20 mx-1 px-3 p-1 rounded-full h-min text-sm text-teal-500">Angular</li>
                     </ul>
@@ -256,7 +216,7 @@
               </div>
 
             </div>
-            <div class="relative mt-6 w-1/2 self-auto">
+            <div class="relative mt-6 w-3/4 lg:w-1/2 self-auto">
               <div class="flex items-center p-4">
                 <img
                   src="assets/gra.png"
@@ -267,7 +227,7 @@
                   <div>Educación</div>
                 </div>
               </div>
-              <br/>
+              <br>
               <div class="flex-auto ml-4">
                 <div data-section="studies" data-value="title">Ingenieria Eléctrica (Incompleta)</div>
                 <div class="mt-1 pl-3 text-slate-500">
@@ -275,7 +235,7 @@
                   <p class="pl-3 border-teal-500 border-l-4 dark:border-slate-400" data-section="studies" data-value="time">2015 - 2020</p>
                 </div>
               </div>
-              <br/><br/>
+              <br><br>
               <div class="flex-auto ml-4">
                 <div data-section="studies" data-value="title">FP Superior en Desarrollo de Aplicaciones Moviles</div>
                 <div class="mt-1 pl-3 text-slate-500">
