@@ -1,1 +1,5 @@
-// I'll obviously need it later, therefore here we are.
+function darkModeListener() {
+  document.querySelector("html").classList.toggle("dark");
+}
+
+document.querySelector("input[type='checkbox']#dark-toggle").addEventListener("click", darkModeListener);

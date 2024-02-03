@@ -80,3 +80,7 @@ html.dark body section:hover .section-title:after {
 .image-overlay-text {
     padding: 16px 32px;
 }
+
+input:checked ~ .dot {
+    transform: translateX(100%);
+}
