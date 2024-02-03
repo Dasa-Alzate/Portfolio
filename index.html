@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;400&family=Quicksand:wght@300&family=Roboto&family=Wire+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>David Sanchez - portafolio</title>
+ 
+    <script src="https://cdn.tailwindcss.com/"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+</head>
+<body class="bg-neutral-100 text-slate-800">
+    
+    <!-- Hero section -->
+    <section id="Inicio" class="h-screen">
+        <div class="mx-auto h-screen">
+          <div
+            class="relative z-10 bg-[url('assets/w3.jpg')] bg-cover bg-bottom pb-32 w-full brigth-50 h-screen"
+          >
+            <!-- Navigation bar -->
+            <div>
+              <div class="relative ml-0 pt-6 pr-96 pl-0">
+                <nav class="relative flex items-center justify-start bg-black/75 backdrop-blur-sm py-2 pl-4" aria-label="Global">
+                  <div
+                    class="flex flex-grow-0 flex-shrink-0 items-center ml-2 duration-150"
+                  >
+                    <div
+                      class="flex items-center justify-between w-auto"
+                    >
+                      <a href="#">
+                        <span class="sr-only">David</span>
+                        <img alt="David" class="w-auto h-14" src="assets/logo4.png" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="flex w-screen font-bold text-base text-gray-500 uppercase row typo-advent">
+                    <a
+                      href="#Inicio"
+                      class="mx-12 hover:text-gray-200"
+                      data-section="navbar"
+                      data-value="title-1"
+                      >Inicio</a
+                    >
+  
+                    <a
+                      href="#about"
+                      class="mx-12 hover:text-gray-200"
+                      data-section="navbar"
+                      data-value="title-2"
+                      >Acerca de mi</a
+                    >
+  
+                    <a
+                      href="#experiencia"
+                      class="mx-12 hover:text-gray-200"
+                      data-section="navbar"
+                      data-value="title-3"
+                      >Experiencia</a
+                    >
+  
+                    <a
+                      href="#proyectos"
+                      class="mx-12 hover:text-gray-200"
+                      data-section="navbar"
+                      data-value="title-4"
+                      >Proyectos</a
+                    >
+  
+                  </div>
+                </nav>
+              </div>
+            </div>
+  
+            <!-- Main title -->
+            <main class="pr-[56%] w-full">
+              <div
+                class="relative bg-black/75 backdrop-blur-sm mx-auto mt-28 px-8 pt-10 h-96 text-left"
+              >
+                <h1
+                  class="font-bold text-6xl text-slate-800 tracking-tight"
+                >
+                  <span class="block text-white inline" data-section="profile" data-value="title-1">¡Hola! Soy </span>
+                  <span class="block text-teal-800 inline typo-advent"
+                    >David</span
+                  >
+                </h1>
+                <p
+                  class="mx-0 mt-5 max-w-xl text-gray-300 text-xl" data-section="profile" data-value="title-2"
+                >
+                  Y este es mi portafolio.
+                </p>
+                <div
+                  class="bottom-0 absolute inset-x-0 flex flex-row justify-end mt-8"
+                >
+                  <div class="mt-0 ml-3 basis-1/5">
+                    <a
+                      href="https://github.com/Deimaxs"
+                      target="_blank"
+                      title="Visita mi GitHub"
+                      class="flex items-center justify-center px-4 py-4 w-full text-lg text-white"
+                      data-section="contact"
+                      data-value="github"
+                      ><i class="text-2xl text-white bi bi-github"></i
+                    ></a>
+                  </div>
+                  <div class="mt-0 ml-3 basis-1/5">
+                    <a
+                      href="https://www.linkedin.com/in/David-sanchez-ds/"
+                      target="_blank"
+                      title="Echa un vistazo a mi LinkedIn"
+                      class="flex items-center justify-center px-4 py-4 w-full text-lg text-white"
+                      data-section="contact"
+                      data-value="linkedin"
+                      ><i class="text-2xl text-white bi bi-linkedin"></i
+                    ></a>
+                  </div>
+                  <div class="mt-0 ml-3 basis-1/5">
+                    <a
+                      href="mailto:dasa.alzate@gmail.com"
+                      target="_blank"
+                      title="Escríbeme por correo"
+                      class="flex items-center justify-center px-4 py-4 w-full text-lg text-white"
+                      data-section="contact"
+                      data-value="email"
+                      ><i class="text-2xl text-white bi bi-envelope"></i
+                    ></a>
+                  </div>
+                  <div class="mt-0 ml-3 basis-1/5">
+                    <a
+                      href="https://wa.me/34604461105"
+                      target="_blank"
+                      title="Hablemos por Whatsapp"
+                      class="flex items-center justify-center px-4 py-4 w-full text-lg text-white"
+                      data-section="contact"
+                      data-value="whatsapp"
+                      ><i class="text-2xl text-white bi bi-whatsapp"></i
+                    ></a>
+                  </div>
+                  <div class="mt-0 ml-3 basis-1/5">
+                    <a
+                      href="CV.pdf"
+                      target="_blank"
+                      title="Descarga mi CV"
+                      class="flex items-center justify-center px-4 py-4 pr-6 w-full text-lg text-white"
+                      data-section="contact"
+                      data-value="file"
+                      ><i class="text-2xl text-white bi bi-file-earmark"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </section>
+
+    <section id="about" class="bg-neutral-100 h-84 typo-quicksand">
+      <h2 class="mx-auto pt-14 w-fit text-3xl text-center section-title typo-quicksand">
+        Acerca de mi
+      </h2>
+      <br/>
+      <figure class="bg-neutral-100 dark:bg-neutral-900 p-8">
+        <img
+          class="mx-auto rounded-full w-32 h-32"
+          src="assets/avatar1.jpg"
+          alt=""
+          width="512"
+          height="384"
+        />
+        <div class="pt-6 text-center space-y-4">
+          <blockquote>
+            <p class="text-lg " data-section="profile" data-value="about-me">
+              “Soy un geek del software y la tecnología con aproximadamente 2 años y medio de experiencia como Desarrollador web. He liderado las areas de arquitectura de bases de datos y UI/UX en diferentes proyectos que han resultado en productos comerciales completamente funcionales. Mi paso por la Escuela de Ingenieria Electrica junto con mi experiencia profesional de diferentes escalas me dan un amplio rango de herramientas para resolver cualquier desafio con facilidad, sin importar qué tan particular pueda llegar a ser.”
+            </p>
+          </blockquote>
+          <figcaption class="font-semibold">
+            <div class="text-teal-500">David Sánchez</div>
+            <div class="text-slate-500" data-section="profile" data-value="role">
+              Desarrollador Full-Stack.
+            </div>
+          </figcaption>
+        </div>
+      </figure>
+    </section>
+
+    <section id="experiencia" class="bg-neutral-100 dark:bg-neutral-900">
+      <h2 class="mx-auto pt-14 w-fit text-3xl text-center section-title typo-quicksand">
+        Educación &amp; Experiencia
+      </h2>
+      <br/>
+      <div class="work-eduction-wrapper">
+        <div class="mx-auto w-full h-full container">
+          <div class="flex flex-row px-4 p-6 pt-5 pb-4">
+            <div class="relative w-1/2 self-auto">
+              <div class="flex items-center p-4">
+                <img
+                  src="assets/exp.png"
+                  alt=""
+                  class="flex-none w-10 h-10 invert-0 dark:invert"
+                />
+                <div class="flex-auto ml-4">
+                  <div>Experiencia</div>
+                </div>
+              </div>
+              <br/>
+              <br/>
+              <br/>
+
+              <div class="flex-auto ml-4" >
+                <div data-section="experience" data-value="role">Desarrollador Full-Stack  /  Dev Lead</div>
+                <div class="mt-1 pl-3 text-slate-500" >
+                  <p class="pl-1 border-teal-500 border-l-4 dark:border-slate-400" data-section="experience" data-value="stack">
+                    <ul class="flex flex-nowrap gap-2 mt-2 pb-2 pl-1 border-teal-500 border-l-4 dark:border-slate-400">
+                      <li class="bg-teal-800/20 mx-1 px-3 p-1 rounded-full h-min text-sm text-teal-500">Laravel</li>
+                      <li class="bg-teal-800/20 mx-1 px-3 p-1 rounded-full h-min text-sm text-teal-500">Angular</li>
+                    </ul>
+                  </p>
+                  <p class="pl-3 border-teal-500 border-l-4 dark:border-slate-400" data-section="experience" data-value="company">Projects Triple A  </p>
+                  <p class="pl-3 border-teal-500 border-l-4 dark:border-slate-400" data-section="experience" data-value="time">Apr. 2021 - Jul. 2023  ·  2Y 4M  </p>
+                </div>
+              </div>
+
+            </div>
+            <div class="relative mt-6 w-1/2 self-auto">
+              <div class="flex items-center p-4">
+                <img
+                  src="assets/gra.png"
+                  alt=""
+                  class="flex-none w-10 h-10 invert-0 dark:invert"
+                />
+                <div class="flex-auto ml-4">
+                  <div>Educación</div>
+                </div>
+              </div>
+              <br/>
+              <div class="flex-auto ml-4">
+                <div data-section="studies" data-value="title">Ingenieria Eléctrica (Incompleta)</div>
+                <div class="mt-1 pl-3 text-slate-500">
+                  <p class="pl-3 border-teal-500 border-l-4 dark:border-slate-400" data-section="studies" data-value="college">Universidad Tecnológica de Pereira</p>
+                  <p class="pl-3 border-teal-500 border-l-4 dark:border-slate-400" data-section="studies" data-value="time">2015 - 2020</p>
+                </div>
+              </div>
+              <br/><br/>
+              <div class="flex-auto ml-4">
+                <div data-section="studies" data-value="title">FP Superior en Desarrollo de Aplicaciones Moviles</div>
+                <div class="mt-1 pl-3 text-slate-500">
+                  <p class="pl-3 border-teal-500 border-l-4 dark:border-slate-400" data-section="studies" data-value="college">CESUR</p>
+                  <p class="pl-3 border-teal-500 border-l-4 dark:border-slate-400" data-section="studies" data-value="time">2023 - 2025</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="bg-neutral-100 dark:bg-neutral-900">
+      <h2 class="mx-auto pt-14 w-fit text-3xl text-center section-title typo-quicksand">
+        Mis proyectos recientes
+      </h2>
+      <p class="py-4"></p>
+    </section>
+
+    <footer class="grid grid-cols-2 bg-neutral-200 dark:bg-neutral-950">
+      <p class="p-20 text-left">This site was styled with Tailwind CSS. It's my honest pleasure to have you here ^^. <br>Stay as long as you please, 
+      <br>by yours truly.
+      </p>
+    </footer>
+    
+    <script src="main.js"></script>
+</body>
+</html>
