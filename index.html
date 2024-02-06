@@ -273,15 +273,87 @@
       </div>
     </section>
 
-    <section id="proyectos" class="bg-neutral-100 dark:bg-neutral-900">
+    <section id="proyectos" class="bg-neutral-100 dark:bg-neutral-900 transition duration-200">
       <h2 class="mx-auto pt-14 w-fit text-3xl text-center section-title typo-quicksand">
         Mis proyectos recientes
       </h2>
-      <p class="py-4"></p>
+      
+      <ul class="flex flex-wrap justify-center mx-auto mt-10 px-4 w-full h-full group">
+        <ol class="flex flex-wrap justify-center mx-auto px-4 pt-10 w-full lg:w-1/2 h-full">
+          
+          <li class="mx-auto mb-12">
+            <div class="relative group-hover:opacity-100 hover:!opacity-75 transition-all ">
+              <div class="dark:group-hover:bg-teal-700/75 group-hover:bg-teal-700/50 lg:block z-0 absolute -inset-x-2 -inset-y-2 lg:-inset-x-4 bg-teal-800/50 dark:bg-teal-800/75 group-hover:drop-shadow-lg rounded-full transition motion-reduce:transition-none cursor-pointer hidden"></div>
+              <div class="z-10 sm:col-span-6">
+                <div class="dark:text-white" aria-hidden="true">AWS</div>
+              </div>
+            </div>
+          </li>
+
+          <li class="mx-auto mb-12">
+            <div class="relative group-hover:opacity-100 hover:!opacity-75 transition-all ">
+              <div class="dark:group-hover:bg-teal-700/75 group-hover:bg-teal-700/50 lg:block z-0 absolute -inset-x-2 -inset-y-2 lg:-inset-x-4 bg-teal-800/50 dark:bg-teal-800/75 group-hover:drop-shadow-lg rounded-full transition motion-reduce:transition-none cursor-pointer hidden"></div>
+              <div class="z-10 sm:col-span-6">
+                <div class="dark:text-white" aria-hidden="true">API</div>
+              </div>
+            </div>
+          </li>
+
+          <li class="mx-auto mb-12">
+            <div class="relative dark:group-hover:opacity-50 group-hover:opacity-75 hover:!opacity-100 transition-all">
+              <div class="group-hover:bg-slate-400/75 dark:group-hover:bg-slate-800/75 lg:block z-0 absolute -inset-x-2 -inset-y-2 lg:-inset-x-4 group-hover:drop-shadow-lg rounded-full transition motion-reduce:transition-none cursor-pointer hidden"></div>
+              <div class="z-10 sm:col-span-6">
+                <div class="group-hover:text-gray-800 dark:group-hover:text-teal-100" aria-hidden="true">SQL</div>
+              </div>
+            </div>
+          </li>
+
+          <li class="mx-auto mb-12">
+            <div class="relative dark:group-hover:opacity-50 group-hover:opacity-75 hover:!opacity-100 transition-all">
+              <div class="group-hover:bg-slate-400/75 dark:group-hover:bg-slate-800/75 lg:block z-0 absolute -inset-x-2 -inset-y-2 lg:-inset-x-4 group-hover:drop-shadow-lg rounded-full transition motion-reduce:transition-none cursor-pointer hidden"></div>
+              <div class="z-10 sm:col-span-6">
+                <div class="group-hover:text-gray-800 dark:group-hover:text-teal-100" aria-hidden="true">React</div>
+              </div>
+            </div>
+          </li>
+
+          <li class="mx-auto mb-12">
+            <div class="relative dark:group-hover:opacity-50 group-hover:opacity-75 hover:!opacity-100 transition-all">
+              <div class="group-hover:bg-slate-400/75 dark:group-hover:bg-slate-800/75 lg:block z-0 absolute -inset-x-2 -inset-y-2 lg:-inset-x-4 group-hover:drop-shadow-lg rounded-full transition motion-reduce:transition-none cursor-pointer hidden"></div>
+              <div class="z-10 sm:col-span-6">
+                <div class="group-hover:text-gray-800 dark:group-hover:text-teal-100" aria-hidden="true">Angular</div>
+              </div>
+            </div>
+          </li>
+
+        </ol>
+      </ul>
+
+      <div class="mx-auto px-8 sm:px-16 md:px-20 xl:px-24 pb-10">
+        <ul role="list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center gap-4 xl:gap-8">
+          <li class="col-span-1 flex flex-col bg-slate-100 dark:bg-stone-950 shadow-md hover:shadow-lg border border-slate-300 dark:border-slate-600 rounded-md max-w-80 text-center transition duration-300 hover:scale-105" onclick="toggleModal('modal_1')">
+            <img src="/assets/avatar1.jpg" alt="" class="rounded-t-md w-full max-w-80" loading="lazy" />
+              <h1 class="pt-2 font-semibold text-lg text-slate-900 dark:text-slate-100">
+                Titulo proyecto
+              </h1>
+              <div class="mx-6 mt-4 mb-6 pb-6 border-b border-slate-300 dark:border-slate-600 text-wrap wx-auto">
+                <ul class="flex flex-wrap pl-1 border-teal-500 border-l-4 dark:border-slate-400">
+                  <li class="bg-teal-800/20 mx-1 mb-2 px-3 p-1 rounded-full h-min text-sm text-teal-500 dark:text-teal-600 cursor-default">spec1</li>
+                  <li class="bg-teal-800/20 mx-1 mb-2 px-3 p-1 rounded-full h-min text-sm text-teal-500 dark:text-teal-600 cursor-default">spec2</li>
+                  <li class="bg-teal-800/20 mx-1 mb-2 px-3 p-1 rounded-full h-min text-sm text-teal-500 dark:text-teal-600 cursor-default">spec3</li>
+                </ul>
+              </div>
+              <p class="mx-auto px-4 pb-2 text-left text-slate-700 text-sm dark:text-slate-500">
+                Descripcion de proyecto.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              </p>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <footer class="grid grid-cols-2 bg-neutral-200 dark:bg-neutral-950">
-      <p class="p-20 text-left">This site was styled with Tailwind CSS. It's my honest pleasure to have you here ^^. <br>Stay as long as you please, 
+    <footer class="grid grid-cols-1 xl:grid-cols-2 bg-neutral-200 dark:bg-neutral-950">
+      <p class="p-8 md:p-20 text-center lg:text-left">This site was styled with Tailwind CSS. It's my honest pleasure to have you here ^^. <br>Stay as long as you please, 
       <br>by yours truly.
       </p>
     </footer>
