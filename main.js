@@ -15,3 +15,41 @@ function toggleModal(modal_id) {
   section.classList.toggle("blur-md");
   });
 }
+
+// Swiper
+
+var mySwiper = new Swiper('#carousel', {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  centeredSlides: true,
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+});
+
+
+function openLightbox(imageSrc) {
+  document.getElementById('lightbox-image').src = imageSrc;
+  document.getElementById('lightbox').style.display = 'flex';
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+}
+
+document.getElementById('lightbox-image').addEventListener('click', function () {
+  closeLightbox();
+});
+
+document.addEventListener('keydown', function (event) {
+  if (event.key === 'Escape') {
+    closeLightbox();
+  }
+});
