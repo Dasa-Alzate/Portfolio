@@ -85,6 +85,11 @@ input:checked ~ .dot {
     transform: translateX(100%);
 }
 
+/* Estilos para el boton de scroll-to-top */
+#btn-scroll-to-top {
+    position: fixed;
+    display: none;
+}
 
 /* Estilos para el lightbox */
 #lightbox {

@@ -16,6 +16,29 @@ function toggleModal(modal_id) {
   });
 }
 
+// funcion scroll to top
+var mybutton = document.getElementById("btn-scroll-to-top");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+mybutton.addEventListener("click", scrollToTop);
+
+function scrollToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
 // Swiper
 
 var mySwiper = new Swiper('#carousel', {
