@@ -53,3 +53,41 @@ document.addEventListener('keydown', function (event) {
     closeLightbox();
   }
 });
+
+// Swipper
+var mySwiper = new Swiper('#carousel', {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  centeredSlides: true,
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+});
+
+// lightbox
+function openLightbox(imageSrc) {
+  document.getElementById('lightbox-image').src = imageSrc;
+  document.getElementById('lightbox').style.display = 'flex'; // Cambia 'hidden' por 'flex' para mostrar el lightbox
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').style.display = 'none'; // Oculta el lightbox al cerrar
+}
+
+// Cierra el lightbox al hacer clic en la imagen
+document.getElementById('lightbox-image').addEventListener('click', function () {
+  closeLightbox();
+});
+
+document.addEventListener('keydown', function (event) {
+  if (event.key === 'Escape') {
+    closeLightbox();
+  }
+});
