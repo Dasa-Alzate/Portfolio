@@ -16,6 +16,7 @@ function toggleModal(modal_id) {
   });
 }
 
+
 // funcion scroll to top
 var mybutton = document.getElementById("btn-scroll-to-top");
 
@@ -38,26 +39,6 @@ function scrollToTop() {
   document.documentElement.scrollTop = 0;
 }
 
-
-// Swiper
-
-var mySwiper = new Swiper('#carousel', {
-  slidesPerView: 1,
-  spaceBetween: 10,
-  centeredSlides: true,
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
-  loop: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    dynamicBullets: true,
-  },
-});
-
-
 function openLightbox(imageSrc) {
   document.getElementById('lightbox-image').src = imageSrc;
   document.getElementById('lightbox').style.display = 'flex';
@@ -77,40 +58,22 @@ document.addEventListener('keydown', function (event) {
   }
 });
 
+
 // Swipper
-var mySwiper = new Swiper('#carousel', {
-  slidesPerView: 1,
-  spaceBetween: 10,
-  centeredSlides: true,
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
-  loop: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    dynamicBullets: true,
-  },
-});
-
-// lightbox
-function openLightbox(imageSrc) {
-  document.getElementById('lightbox-image').src = imageSrc;
-  document.getElementById('lightbox').style.display = 'flex'; // Cambia 'hidden' por 'flex' para mostrar el lightbox
-}
-
-function closeLightbox() {
-  document.getElementById('lightbox').style.display = 'none'; // Oculta el lightbox al cerrar
-}
-
-// Cierra el lightbox al hacer clic en la imagen
-document.getElementById('lightbox-image').addEventListener('click', function () {
-  closeLightbox();
-});
-
-document.addEventListener('keydown', function (event) {
-  if (event.key === 'Escape') {
-    closeLightbox();
-  }
+document.querySelectorAll('.carousel').forEach(carousel => {
+  var mySwiper = new Swiper(carousel, {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    centeredSlides: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: true,
+    },
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true,
+    },
+  });
 });
