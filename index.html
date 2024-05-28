@@ -332,12 +332,12 @@
 
       <div class="mx-auto px-32 pb-10">
         <ul role="list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-8">
-          <li class="col-span-1 flex flex-col bg-slate-100 dark:bg-stone-950 shadow-md hover:shadow-lg border border-slate-300 dark:border-slate-600 rounded-md text-center transition duration-300 hover:scale-105" onclick="toggleModal('modal_ruby')">
-            <div class="relative overflow-hidden aspect-video">
+          <li class="col-span-1 flex flex-col bg-slate-100 dark:bg-stone-950 shadow-md hover:shadow-lg border border-slate-300 dark:border-slate-600 rounded-md text-center cursor-pointer transition duration-300 hover:scale-105" onclick="toggleModal('modal_ruby')">
+            <div class="relative overflow-hidden aspect-square">
               <img class="
-              max-h-32 max-w-32 place-self-center
+              max-h-48 max-w-48 place-self-center
               absolute inset-0 w-full h-full object-cover object-center
-              " src="/assets/projects/ruby erp/logo-ruby.png" alt="" class="rounded-t-md w-full" loading="lazy" />
+              " src="/assets/projects/ruby erp/logo-ruby.png" alt="" loading="lazy" />
               <h1 class="pt-2 font-semibold text-lg text-slate-900 dark:text-slate-100">
             </div>
             <h1 class="pt-2 font-semibold text-lg text-slate-900 dark:text-slate-100">
@@ -355,12 +355,12 @@
               Software empresarial para una compañia productora de carne de cerdo, con funcionalidades como gestion de inventario (IMS), pedidos automáticos de insumos escasos, seguimiento y gestion de lotes de ganado, recepcion y seguimiento de facturación electrónica, pago de nominas, etc.
             </p>
           </li>
-          <li class="col-span-1 flex flex-col bg-slate-100 dark:bg-stone-950 shadow-md hover:shadow-lg border border-slate-300 dark:border-slate-600 rounded-md text-center transition duration-300 hover:scale-105" onclick="toggleModal('modal_codepen')">
-            <div class="relative overflow-hidden aspect-video">
+          <li class="col-span-1 flex flex-col bg-slate-100 dark:bg-stone-950 shadow-md hover:shadow-lg border border-slate-300 dark:border-slate-600 rounded-md text-center cursor-pointer transition duration-300 hover:scale-105" onclick="toggleModal('modal_codepen')">
+            <div class="relative overflow-hidden aspect-square">
               <img class="
-              max-h-32 max-w-32 place-self-center
+              max-h-48 max-w-48 place-self-center
               absolute inset-0 w-full h-full object-cover object-center
-              " src="/assets/projects/codepen/codepen1.png" alt="" class="rounded-t-md w-full" loading="lazy" />
+              " src="/assets/projects/codepen/codepen1.png" alt="" loading="lazy" />
             </div>
             <h1 class="pt-2 font-semibold text-lg text-slate-900 dark:text-slate-100">
               Portafolio de Codepen
@@ -374,7 +374,28 @@
               </ul>
             </div>
             <p class="mx-auto px-4 pb-2 text-left text-slate-700 text-sm dark:text-slate-500">
-              Un portafolio en linea donde publico diferentes diseños web. Puedes verlo dando <a class="text-teal-700 hover:text-teal-500 cursor-pointer" href="https://codepen.io/wvoiqkus-the-scripter" target="_blank">click aquí.</a>
+              Un portafolio en linea donde publico diferentes diseños web. Puedes verlo dando <a class="text-teal-700 hover:text-teal-500 font-bold cursor-pointer" href="https://codepen.io/wvoiqkus-the-scripter" target="_blank">click aquí.</a>
+            </p>
+          </li>
+          <li class="col-span-1 flex flex-col bg-slate-100 dark:bg-stone-950 shadow-md hover:shadow-lg border border-slate-300 dark:border-slate-600 rounded-md text-center cursor-pointer transition duration-300 hover:scale-105" onclick="toggleModal('modal_react_chess_clock')">
+            <div class="relative overflow-hidden aspect-square">
+              <img class="
+              max-h-48 max-w-48 place-self-center
+              absolute inset-0 w-full h-full object-cover object-center
+              " src="/assets/projects/react chess clock/chessClock.png" alt="" loading="lazy" />
+            </div>
+            <h1 class="pt-2 font-semibold text-lg text-slate-900 dark:text-slate-100">
+              Reloj de Ajedrez
+            </h1>
+            <div class="mx-6 mt-4 mb-6 pb-6 border-b border-slate-300 dark:border-slate-600 text-wrap wx-auto">
+              <ul class="flex flex-wrap pl-1 border-teal-500 border-l-4 dark:border-slate-400">
+                <li class="bg-teal-800/20 mx-1 mb-2 px-3 p-1 rounded-full h-min text-sm text-teal-500 dark:text-teal-600 cursor-default">Vite</li>
+                <li class="bg-teal-800/20 mx-1 mb-2 px-3 p-1 rounded-full h-min text-sm text-teal-500 dark:text-teal-600 cursor-default">React</li>
+                <li class="bg-teal-800/20 mx-1 mb-2 px-3 p-1 rounded-full h-min text-sm text-teal-500 dark:text-teal-600 cursor-default">Tailwind</li>
+              </ul>
+            </div>
+            <p class="mx-auto px-4 pb-2 text-left text-slate-700 text-sm dark:text-slate-500">
+              Un proyecto hecho en React, que funciona como un reloj de competencias de ajedrez, con funcionalidades personalizables.
             </p>
           </li>
         </ul>
@@ -389,54 +410,44 @@
     
     <!-- Lightbox -->
     <div id="lightbox" class="top-0 left-0 z-50 fixed flex items-center justify-center bg-black bg-opacity-75 w-full h-full hidden">
-      <img id="lightbox-image" class="max-w-full max-h-full" />
+      <img id="lightbox-image" class="max-w-full max-h-full cursor-pointer" />
     </div>
 
     <!-- Modals -->
-    <div class="top-0 left-0 z-10 fixed w-full overflow-y-auto hidden modal" id="modal_ruby">
+    <div class="top-0 left-0 z-10 fixed w-full h-full lg:h-auto overflow-y-scroll hidden modal" id="modal_ruby">
       <div class="flex items-center justify-center px-4 sm:p-0 pt-4 pb-20 text-center" >
         <span class="sm:inline-block sm:h-screen hidden sm:align-middle">​</span>
         <div
-          class="inline-block bg-white/50 dark:bg-gray-900/50 shadow-xl backdrop-blur-sm sm:my-8 rounded-lg sm:w-full max-w-6xl text-left transform transition-all overflow-hidden align-justify sm:align-middle"
+          class="inline-block bg-white/75 dark:bg-gray-900/75 shadow-xl backdrop-blur-sm sm:my-8 rounded-lg sm:w-full max-w-6xl text-left transform transition-all overflow-hidden align-justify sm:align-middle"
           role="dialog"
           aria-modal="true"
           aria-labelledby="modal-headline"
         >
           <div class="lg:flex px-4 sm:p-6 pt-5 pb-4 sm:pb-4">
             <div class="relative self-center lg:w-1/2 h-80 self-auto slide">
-                <div id="lightbox" class="top-0 left-0 fixed flex items-center justify-center bg-black bg-opacity-75 w-full h-full hidden">
-                  <img id="lightbox-image" class="max-w-full max-h-full" />
-                </div>
-                <div id="carousel" class="relative overflow-hidden self-auto swiper-container">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img src="/assets/projects/ruby erp/ruby1.png" alt="" onclick="openLightbox('/assets/projects/ruby erp/ruby1.png')" loading="lazy" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="/assets/projects/ruby erp/ruby3.png" alt="" onclick="openLightbox('/assets/projects/ruby erp/ruby3.png')" loading="lazy" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="/assets/projects/ruby erp/ruby4.png" alt="" onclick="openLightbox('/assets/projects/ruby erp/ruby4.png')" loading="lazy" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="/assets/projects/ruby erp/ruby5.png" alt="" onclick="openLightbox('/assets/projects/ruby erp/ruby5.png')" loading="lazy" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="/assets/projects/ruby erp/ruby6.png" alt="" onclick="openLightbox('/assets/projects/ruby erp/ruby6.png')" loading="lazy" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="/assets/projects/ruby erp/ruby7.png" alt="" onclick="openLightbox('/assets/projects/ruby erp/ruby7.png')" loading="lazy" />
-                    </div>
+              <div class="carousel h-full overflow-hidden self-auto swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide flex">
+                    <img class="cursor-pointer" src="/assets/projects/ruby erp/ruby1.png" alt="" onclick="openLightbox('/assets/projects/ruby erp/ruby1.png')" loading="lazy" />
                   </div>
-                  <div class="swiper-pagination"></div>
+                  <div class="swiper-slide flex">
+                    <img class="cursor-pointer" src="/assets/projects/ruby erp/ruby3.png" alt="" onclick="openLightbox('/assets/projects/ruby erp/ruby3.png')" loading="lazy" />
+                  </div>
+                  <div class="swiper-slide flex">
+                    <img class="cursor-pointer" src="/assets/projects/ruby erp/ruby4.png" alt="" onclick="openLightbox('/assets/projects/ruby erp/ruby4.png')" loading="lazy" />
+                  </div>
+                  <div class="swiper-slide flex">
+                    <img class="cursor-pointer" src="/assets/projects/ruby erp/ruby5.png" alt="" onclick="openLightbox('/assets/projects/ruby erp/ruby5.png')" loading="lazy" />
+                  </div>
+                  <div class="swiper-slide flex">
+                    <img class="cursor-pointer" src="/assets/projects/ruby erp/ruby6.png" alt="" onclick="openLightbox('/assets/projects/ruby erp/ruby6.png')" loading="lazy" />
+                  </div>
+                  <div class="swiper-slide flex">
+                    <img class="cursor-pointer" src="/assets/projects/ruby erp/ruby7.png" alt="" onclick="openLightbox('/assets/projects/ruby erp/ruby7.png')" loading="lazy" />
+                  </div>
                 </div>
-              <!-- <img src="/assets/projects/ruby erp/rubySS1.png" alt="" class="w-full" loading="lazy" /> -->
-              <!-- <iframe
-                src="https://datastudio.google.com/embed/reporting/fff0a143-74bf-4f87-b4f8-487b0cc0aaec/page/00v9C"
-                height="100%"
-                width="100%"
-                class="relative w-full h-full overflow-hidden"
-              ></iframe> -->
+                <div class="swiper-pagination"></div>
+              </div>
             </div>
             <div class="pl-16 lg:w-1/2 text-gray-800 text-justify dark:text-gray-200">
               <p class="font-bold text-center text-gray-500 text-xl">
@@ -455,7 +466,7 @@
                 <li>Calculo estimado del alimento necesario para la semana siguiente, y pedido automatico al proveedor.</li>
                 <li>Calculo de nomina y notificacion automatica a los trabajadores.</li>
               </ul>
-              <p class="text-slate-800 font-bold mt-2 text-lg">
+              <p class="text-slate-800 dark:text-slate-300 font-bold mt-2 text-lg">
                 Parametros tecnicos:
               </p>
               <ul class="list-disc">
@@ -479,63 +490,43 @@
       </div>
     </div>
 
-    <div class="top-0 left-0 z-10 fixed w-full overflow-y-auto hidden modal" id="modal_codepen">
+    <div class="top-0 left-0 z-10 fixed w-full h-full lg:h-auto overflow-y-scroll hidden modal" id="modal_codepen">
       <div class="flex items-center justify-center px-4 sm:p-0 pt-4 pb-20 text-center" >
         <span class="sm:inline-block sm:h-screen hidden sm:align-middle">​</span>
         <div
-          class="inline-block bg-white/50 dark:bg-gray-900/50 shadow-xl backdrop-blur-sm sm:my-8 rounded-lg sm:w-full max-w-6xl text-left transform transition-all overflow-hidden align-justify sm:align-middle"
+          class="inline-block bg-white/75 dark:bg-gray-900/75 shadow-xl backdrop-blur-sm sm:my-8 rounded-lg sm:w-full max-w-6xl text-left transform transition-all overflow-hidden align-justify sm:align-middle"
           role="dialog"
           aria-modal="true"
           aria-labelledby="modal-headline"
         >
           <div class="lg:flex px-4 sm:p-6 pt-5 pb-4 sm:pb-4">
             <div class="relative self-center lg:w-1/2 h-80 self-auto slide">
-                <div id="lightbox" class="top-0 left-0 fixed flex items-center justify-center bg-black bg-opacity-75 w-full h-full hidden">
-                  <img id="lightbox-image" class="max-w-full max-h-full" />
-                </div>
-                <div id="carousel" class="relative overflow-hidden self-auto swiper-container">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img src="/assets/projects/codepen/codepen1.png" alt="" onclick="openLightbox('/assets/projects/codepen/codepen1.png')" loading="lazy" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="/assets/projects/codepen/codepen2.png" alt="" onclick="openLightbox('/assets/projects/codepen/codepen2.png')" loading="lazy" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="/assets/projects/codepen/codepen3.png" alt="" onclick="openLightbox('/assets/projects/codepen/codepen3.png')" loading="lazy" />
-                    </div>
+              <div class="carousel relative h-full overflow-hidden self-auto swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide flex">
+                    <img class="cursor-pointer" src="/assets/projects/codepen/codepen1.png" alt="" onclick="openLightbox('/assets/projects/codepen/codepen1.png')" loading="lazy" />
                   </div>
-                  <div class="swiper-pagination"></div>
-                  <div class="swiper-pagination"></div>
+                  <div class="swiper-slide flex">
+                    <img class="cursor-pointer" src="/assets/projects/codepen/codepen2.png" alt="" onclick="openLightbox('/assets/projects/codepen/codepen2.png')" loading="lazy" />
+                  </div>
+                  <div class="swiper-slide flex">
+                    <img class="cursor-pointer" src="/assets/projects/codepen/codepen3.png" alt="" onclick="openLightbox('/assets/projects/codepen/codepen3.png')" loading="lazy" />
+                  </div>
                 </div>
-              <!-- <img src="/assets/projects/ruby erp/rubySS1.png" alt="" class="w-full" loading="lazy" /> -->
-              <!-- <iframe
-                src="https://datastudio.google.com/embed/reporting/fff0a143-74bf-4f87-b4f8-487b0cc0aaec/page/00v9C"
-                height="100%"
-                width="100%"
-                class="relative w-full h-full overflow-hidden"
-              ></iframe> -->
-              <!-- <img src="/assets/projects/ruby erp/rubySS1.png" alt="" class="w-full" loading="lazy" /> -->
-              <!-- <iframe
-                src="https://datastudio.google.com/embed/reporting/fff0a143-74bf-4f87-b4f8-487b0cc0aaec/page/00v9C"
-                height="100%"
-                width="100%"
-                class="relative w-full h-full overflow-hidden"
-              ></iframe> -->
+                <div class="swiper-pagination"></div>
+              </div>
             </div>
             <div class="pl-16 lg:w-1/2 text-gray-800 text-justify dark:text-gray-200">
               <p class="font-bold text-center text-gray-500 text-xl">
                 Portafolio de codepen
-                Portafolio de codepen
               </p>
               <br/>
-              <hr />
               <hr />
               <br/>
               <p>
-                Un portafolio en linea donde publico diferentes diseños web. Puedes verlo dando <a class="text-teal-700 hover:text-teal-500 cursor-pointer" href="https://codepen.io/wvoiqkus-the-scripter" target="_blank">click aquí.</a>
+                Un portafolio en linea donde publico diferentes diseños web. Puedes verlo dando <a class="text-teal-700 hover:text-teal-500 font-bold cursor-pointer" href="https://dasa-alzate.github.io/codigos-codepen/" target="_blank">click aquí.</a> También te puedes ver el <a class="text-teal-700 hover:text-teal-500 font-bold cursor-pointer" href="https://codepen.io/wvoiqkus-the-scripter" target="_blank">perfil de codepen.</a>
               </p>
-              <p class="text-slate-800 font-bold mt-2 text-lg">
+              <p class="text-slate-800 dark:text-slate-300 font-bold mt-2 text-lg">
                 Tecnologías:
               </p>
               <ul class="list-disc">
@@ -554,6 +545,74 @@
               type="button"
               class="bg-gray-500/50 dark:hover:bg-gray-300/50 hover:bg-gray-700/50 backdrop-blur-sm mr-2 px-4 py-2 text-white dark:text-gray-900 rounded"
               onclick="toggleModal('modal_codepen')"
+            >
+              <i class="fa-times fas"></i> Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-0 left-0 z-10 fixed w-full h-full lg:h-auto overflow-y-scroll hidden modal" id="modal_react_chess_clock">
+      <div class="flex items-center justify-center px-4 sm:p-0 pt-4 pb-20 text-center" >
+        <span class="sm:inline-block sm:h-screen hidden sm:align-middle">​</span>
+        <div
+          class="inline-block bg-white/75 dark:bg-gray-900/75 shadow-xl backdrop-blur-sm sm:my-8 rounded-lg sm:w-full max-w-6xl text-left transform transition-all overflow-hidden align-justify sm:align-middle"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-headline"
+        >
+          <div class="lg:flex px-4 sm:p-6 pt-5 pb-4 sm:pb-4">
+            <div class="relative self-center lg:w-1/2 h-80 self-auto slide">
+              <div class="carousel relative h-full overflow-hidden self-auto swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide flex">
+                    <img class="cursor-pointer place-self-center h-full object-cover object-center" src="/assets/projects/react chess clock/chessClock0.png" alt="" onclick="openLightbox('/assets/projects/react chess clock/chessClock0.png')" loading="lazy" />
+                  </div>
+                  <div class="swiper-slide flex">
+                    <img class="cursor-pointer place-self-center h-full object-cover object-center" src="/assets/projects/react chess clock/chessClock1.png" alt="" onclick="openLightbox('/assets/projects/react chess clock/chessClock1.png')" loading="lazy" />
+                  </div>
+                  <div class="swiper-slide flex">
+                    <img class="cursor-pointer place-self-center h-full object-cover object-center" src="/assets/projects/react chess clock/chessClock2.png" alt="" onclick="openLightbox('/assets/projects/react chess clock/chessClock2.png')" loading="lazy" />
+                  </div>
+                  <div class="swiper-slide flex">
+                    <img class="cursor-pointer place-self-center h-full object-cover object-center" src="/assets/projects/react chess clock/chessClock3.png" alt="" onclick="openLightbox('/assets/projects/react chess clock/chessClock3.png')" loading="lazy" />
+                  </div>
+                  <div class="swiper-slide flex">
+                    <img class="cursor-pointer place-self-center h-full object-cover object-center" src="/assets/projects/react chess clock/chessClock4.png" alt="" onclick="openLightbox('/assets/projects/react chess clock/chessClock4.png')" loading="lazy" />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="pl-16 lg:w-1/2 text-gray-800 text-justify dark:text-gray-200">
+              <p class="font-bold text-center text-gray-500 text-xl">
+                React chessClock
+              </p>
+              <br/>
+              <hr />
+              <br/>
+              <p>
+                Este es un proyecto construido en React usando Vite y estilizado con Tailwind, que funciona como un reloj de ajedrez profesional. Su diseño es responsivo y se adapta a todos los dispositivos. 
+                <br>Es altamente personalizable. Se puede adaptar el tiempo total, el tiempo de reposición y el tiempo desde el cual la reposición es aplicada. También se puede personalizar el número de jugadores en caso que se quiera usar en un juego diferente al ajedrez y cuente con más jugadores. 
+                <br>Puedes verlo dando <a class="text-teal-700 hover:text-teal-500 font-bold cursor-pointer" href="https://whitefox-sa.github.io/react-chessclock/" target="_blank">click aquí.</a> O puedes <a class="text-teal-700 hover:text-teal-500 font-bold cursor-pointer" href="https://github.com/Whitefox-SA/react-chessclock" target="_blank">visitar el repositorio.</a>
+              </p>
+              <p class="text-slate-800 dark:text-slate-300 font-bold mt-2 text-lg">
+                Tecnologías:
+              </p>
+              <ul class="list-disc">
+                <li>React</li>
+                <li>Vite</li>
+                <li>Tailwind</li>
+              </ul>
+              <br/>
+            </div>
+          </div>
+          <div class="text-right bg-gray-200/50 dark:bg-gray-800/50 backdrop-blur-sm px-4 py-3">
+            <button
+              type="button"
+              class="bg-gray-500/50 dark:hover:bg-gray-300/50 hover:bg-gray-700/50 backdrop-blur-sm mr-2 px-4 py-2 text-white dark:text-gray-900 rounded"
+              onclick="toggleModal('modal_react_chess_clock')"
             >
               <i class="fa-times fas"></i> Close
             </button>
