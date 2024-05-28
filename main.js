@@ -61,7 +61,7 @@ document.addEventListener('keydown', function (event) {
 
 // Swipper
 document.querySelectorAll('.carousel').forEach(carousel => {
-  var mySwiper = new Swiper(carousel, {
+  new Swiper(carousel, {
     slidesPerView: 1,
     spaceBetween: 10,
     centeredSlides: true,
