@@ -77,3 +77,84 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     },
   });
 });
+
+
+// GSAP
+document.addEventListener("DOMContentLoaded", function() {
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from("#about", {
+    scrollTrigger: {
+      trigger: "#about",
+      start: "top 50%",
+      end: "top 5%",
+      scrub: 2,
+    },
+    x: -100,
+    opacity: 0,
+    duration: 1.5,
+    ease: "power2.out"
+  });
+
+  gsap.from("#work", {
+    scrollTrigger: {
+      trigger: "#work",
+      start: "top 60%",
+      end: "top 30%",
+      scrub: 2,
+    },
+    x: 200,
+    opacity: 0,
+    duration: 1.5,
+    ease: "power2.out"
+  });
+
+  gsap.from("#education", {
+    scrollTrigger: {
+      trigger: "#education",
+      start: "top 40%",
+      end: "top 10%",
+      scrub: 2,
+    },
+    x: 200,
+    opacity: 0,
+    duration: 1.5,
+    ease: "power2.out"
+  });
+
+  const stackLogos = document.querySelectorAll('#stack div .container img');
+  const startLogoAnimation = 70;
+  const endLogoAnimation = 10;
+  let diffLogoAnimation = startLogoAnimation - endLogoAnimation;
+
+  stackLogos.forEach((logo, index) => {
+    const xOffset = 100 * index;
+    const offset = Math.ceil(70 - (diffLogoAnimation / (stackLogos.length * 1.5)) * index);
+    gsap.from(logo, {
+      scrollTrigger: {
+        trigger: "#stack",
+        start: `top ${offset}%`,
+        end: `top ${offset-20}%`,
+        scrub: true,
+      },
+      x: -100,
+      rotation: 210,
+      opacity: 0,
+      duration: 2,
+      ease: "power2.out"
+    });
+  });
+
+  gsap.from("#proyectos", {
+    scrollTrigger: {
+      trigger: "#proyectos",
+      start: "top 40%",
+      end: "top 10%",
+      scrub: 2,
+    },
+    x: -100,
+    opacity: 0,
+    duration: 1.5,
+    ease: "power2.out"
+  });
+});
