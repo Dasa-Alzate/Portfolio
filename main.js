@@ -186,9 +186,9 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
-  gsap.from("#proyectos", {
+  gsap.from("#projects", {
     scrollTrigger: {
-      trigger: "#proyectos",
+      trigger: "#projects",
       start: "top 40%",
       end: "top 10%",
       scrub: 2,
@@ -217,3 +217,52 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   })
 });
+
+// i18next
+i18next.use(i18nextHttpBackend).init({
+  lng: 'es',
+  fallbackLng: 'es',
+  backend: {
+      loadPath: '/locales/{{lng}}/translation.json'
+  }
+}, function(err, t) {
+  if (err) return console.error('Error initializing i18next:', err);
+  console.log('i18next initialized successfully with language:', i18next.language);
+  updateContent();
+});
+
+function updateContent() {
+  document.querySelectorAll('[data-i18n]').forEach(function(element) {
+    const key = element.getAttribute('data-i18n');
+    const translation = i18next.t(key);
+    if (element.hasAttribute('data-i18n-title')) {
+      element.setAttribute('title', translation);
+    } else {
+      element.innerHTML = translation;
+    }
+  });
+}
+
+// Language switcher
+async function changeLang(e, lang) {
+  var container = document.querySelector('.chooseLang').classList;
+  elementClasses = e.classList;
+  
+  if (container.contains('open')) {
+    container.remove('open');
+    if (!elementClasses.contains('chosen')) {
+      
+      document.querySelector('.chooseLang .chosen').classList.remove('chosen');
+      elementClasses.add('chosen');
+      
+      console.log(lang + ' chosen')
+      i18next.changeLanguage(lang, function(err, t) {
+          updateContent();
+      });
+    }
+    return;
+  }
+  
+  container.add('open');
+  
+}
