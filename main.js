@@ -91,7 +91,7 @@ function switchActive(e) {
 
 function filterCards() {
   const categoryList = document.querySelectorAll('#project-category-list li');
-  const cardItems = Array.from(document.querySelectorAll('#cards-container li'));
+  const cardItems = Array.from(document.querySelectorAll('#cards-container > li'));
   
   const activeCategories = Array.from(categoryList)
     .filter(li => li.dataset.active === "true")
@@ -110,6 +110,7 @@ function filterCards() {
     filteredItems.forEach(cardItem => {
       cardItem.classList.remove("hidden");
     });
+
   } else {
     cardItems.forEach(cardItem => {
       cardItem.classList.remove("hidden");
