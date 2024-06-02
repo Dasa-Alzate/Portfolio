@@ -81,8 +81,42 @@ document.querySelectorAll('.carousel').forEach(carousel => {
   });
 });
 
+// project cards switch
 
-// GSAP
+function switchActive(e) {
+  e.dataset.active = e.dataset.active == "false" ? "true" : "false";
+
+  filterCards();
+}
+
+function filterCards() {
+  const categoryList = document.querySelectorAll('#project-category-list li');
+  const cardItems = Array.from(document.querySelectorAll('#cards-container li'));
+  
+  const activeCategories = Array.from(categoryList)
+    .filter(li => li.dataset.active === "true")
+    .map(li => li.textContent);
+
+  const filteredItems = cardItems.filter(cardItem => {
+    const innerListItems = cardItem.querySelectorAll('div ul li');
+    return Array.from(innerListItems).some(innerListItem => activeCategories.includes(innerListItem.textContent));
+  });
+  
+  if (activeCategories.length >= 1) {
+    cardItems.forEach(cardItem => {
+      cardItem.classList.add("hidden");
+    });
+  
+    filteredItems.forEach(cardItem => {
+      cardItem.classList.remove("hidden");
+    });
+  } else {
+    cardItems.forEach(cardItem => {
+      cardItem.classList.remove("hidden");
+    });
+  }
+}
+
 document.addEventListener("DOMContentLoaded", function() {
   const stackLogos = document.querySelectorAll('#stack div .container img');
   const startLogoAnimation = 70;
@@ -90,6 +124,8 @@ document.addEventListener("DOMContentLoaded", function() {
   let diffLogoAnimation = startLogoAnimation - endLogoAnimation;
   const cardsDescription = document.querySelectorAll("#cards-container li p");
   const bgLogoLayer = document.querySelector("#bg-logo-layer");
+    
+  // GSAP
   gsap.registerPlugin(ScrollTrigger);
 
   gsap.from("#about", {
