@@ -1,0 +1,67 @@
+{
+    "navbar": {
+        "title-1": "Inicio",
+        "title-2": "Acerca de mi",
+        "title-3": "Experiencia",
+        "title-4": "Proyectos",
+        "dark-mode": "Modo Oscuro"
+    },
+    "profile": {
+        "title-1": "¡Hola! Soy",
+        "title-2": "Y este es mi portafolio." 
+    },
+    "contact-links": {
+        "github": "Visita mi GitHub",
+        "linkedin": "Echa un vistazo a mi LinkedIn",
+        "email": "Escríbeme por correo",
+        "whatsapp": "Hablemos por Whatsapp",
+        "file": "Descarga mi CV"
+    },
+    "about": {
+        "title": "Acerca de mi",
+        "resume": "“Soy un geek del software y la tecnología con aproximadamente 2 años y medio de experiencia como Desarrollador web. He liderado las areas de arquitectura de bases de datos y UI/UX en diferentes proyectos que han resultado en productos comerciales completamente funcionales. Mi paso por la Escuela de Ingenieria Electrica junto con mi experiencia profesional de diferentes escalas me dan un amplio rango de herramientas para resolver cualquier desafio con facilidad, sin importar qué tan particular pueda llegar a ser.”",
+        "role": "Desarrollador Full-Stack."
+    },
+    "work-education": {
+        "title": "Educación &amp; Experiencia",
+        "work": {
+            "title": "Experiencia",
+            "role": "Desarrollador Full-Stack  /  Lider de Desarrollo",
+            "company": "Proyectos Triple A",
+            "time": "Abr. 2021 - Jul. 2023  ·  2A 4M"
+        },
+        "education": {
+            "title": "Educación",
+            "title-1": "Ingenieria Eléctrica (Incompleta)",
+            "college-1": "Universidad Tecnológica de Pereira",
+            "time-1": "2015 - 2020",
+            "title-2": "FP Superior en Desarrollo de Aplicaciones Web",
+            "college-2": "CESUR Audiovisual - España",
+            "time-2": "2023 - 2025"
+        }
+    },
+    "stack": {
+        "title": "Mi Stack"
+    },
+    "projects": {
+        "title": "Mis proyectos recientes",
+        "projects-list": {
+            "project-1": {
+                "title": "Ruby ERP",
+                "resume": "Software empresarial para una compañia productora de carne de cerdo, con funcionalidades como gestion de inventario (IMS), pedidos automáticos de insumos escasos, seguimiento y gestion de lotes de ganado, recepcion y seguimiento de facturación electrónica, pago de nominas, etc.",
+                "modal-content": "<p class=\"font-bold text-center text-gray-500 text-xl\">Ruby ERP</p><hr/><br/><p>Software empresarial para una empresa productora de carne de cerdo. El programa incluye las siguientes funcionalidades:</p><ul class=\"list-disc\"><li>Seguimiento de los lotes de ganado en las distintas etapas de crecimiento (peso, consumo de alimento, mortalidad, costo, ganancia, etc).</li><li>Control de entradas y salidas de inventario (alimentos, medicinas, insumos).</li><li>Recepción de facturas electronicas de clientes y proveedores.</li><li>Calculo estimado del alimento necesario para la semana siguiente, y pedido automatico al proveedor.</li><li>Calculo de nomina y notificacion automatica a los trabajadores.</li></ul><p class=\"text-slate-800 dark:text-slate-300 font-bold mt-2 text-lg\">Parametros tecnicos:</p><ul class=\"list-disc\"><li>Integracion del <strong>Google Workspace</strong> para recibir y procesar informacion de correos electronicos</li><li>Integracion de <strong>API</strong> para envio de SMS</li><li><strong>Service worker</strong> para acceso a la aplicacion sin internet</li></ul><br/>"
+            },
+            "project-2": {
+                "title": "Portafolio de Codepen",
+                "resume": "Un portafolio en linea donde publico diferentes diseños web.",
+                "modal-content": "<p class=\"font-bold text-center text-gray-500 text-xl\">Portafolio de codepen</p><hr/><br/><p>Un portafolio en linea donde publico diferentes diseños web. Puedes verlo dando <a class=\"text-teal-700 hover:text-teal-500 font-bold cursor-pointer\" href=\"https://dasa-alzate.github.io/codigos-codepen/\" target=\"_blank\">click aquí.</a> También puedes visitar el <a class=\"text-teal-700 hover:text-teal-500 font-bold cursor-pointer\" href=\"https://codepen.io/wvoiqkus-the-scripter\" target=\"_blank\">perfil de codepen.</a></p><p class=\"text-slate-800 dark:text-slate-300 font-bold mt-2 text-lg\">Tecnologías:</p><ul class=\"list-disc\"><li>Tailwind</li><li>Bootstrap</li><li>CSS Puro</li><li>Javascript</li><li>Typescript</li><li>etc...</li></ul><br/>"
+            },
+            "project-3": {
+                "title": "Reloj de Ajedrez",
+                "resume": "Un proyecto hecho en React, que funciona como un reloj de competencias de ajedrez, con funcionalidades personalizables.",
+                "modal-content": "<p class=\"font-bold text-center text-gray-500 text-xl\">React chessClock</p><hr/><br/><p>Este es un proyecto construido en React usando Vite y estilizado con Tailwind, que funciona como un reloj de ajedrez profesional. Su diseño es responsivo y se adapta a todos los dispositivos. <br>Es altamente personalizable. Se puede adaptar el tiempo total, el tiempo de reposición y el tiempo desde el cual la reposición es aplicada. También se puede personalizar el número de jugadores en caso que se quiera usar en un juego diferente al ajedrez y cuente con más jugadores. <br>Puedes verlo dando <a class=\"text-teal-700 hover:text-teal-500 font-bold cursor-pointer\" href=\"https://whitefox-sa.github.io/react-chessclock/\" target=\"_blank\">click aquí.</a> O puedes <a class=\"text-teal-700 hover:text-teal-500 font-bold cursor-pointer\" href=\"https://github.com/Whitefox-SA/react-chessclock\" target=\"_blank\">visitar el repositorio.</a></p><p class=\"text-slate-800 dark:text-slate-300 font-bold mt-2 text-lg\">Tecnologías:</p><ul class=\"list-disc\"><li>React</li><li>Vite</li><li>Tailwind</li></ul><br/>"
+            }
+        }
+    },
+    "footer": "Este sitio ha sido estilizado con Tailwind CSS. Es un honor tenerte aquí. \n Quédate tanto como quieras."
+}

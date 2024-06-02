@@ -17,6 +17,7 @@
 
     <title>David Sanchez - portafolio</title>
  
+    <link rel="icon" type="image/png" href="assets/logo4.png">
     <script src="https://cdn.tailwindcss.com/"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 
@@ -49,26 +50,31 @@
                   </a>
                 </div>
               </div>
-              <div class="flex w-full text-base text-gray-500 uppercase typo-advent">
+              <div id="navbar" class="flex w-full text-base text-gray-500 uppercase typo-advent">
                 <a href="#Inicio"
-                  class="sm:block mx-auto lg:mx-12 sm:px-4 md:px-8 lg:px-0 hover:text-gray-200 hidden"
-                  data-section="navbar"
-                  data-value="title-1">Inicio</a>
+                  class="sm:block mx-auto lg:mx-12 sm:px-4 md:px-8 lg:px-0 hover:text-gray-200"
+                  data-i18n="navbar.title-1">Inicio</a>
 
                 <a href="#about"
-                  class="sm:block mx-auto lg:mx-12 sm:px-4 md:px-8 lg:px-0 hover:text-gray-200 hidden"
-                  data-section="navbar"
-                  data-value="title-2">Acerca de mi</a>
+                  class="sm:block mx-auto lg:mx-12 sm:px-4 md:px-8 lg:px-0 hover:text-gray-200"
+                  data-i18n="navbar.title-2">Acerca de mi</a>
 
-                <a href="#experiencia"
-                  class="sm:block mx-auto lg:mx-12 sm:px-4 md:px-8 lg:px-0 hover:text-gray-200 hidden"
-                  data-section="navbar"
-                  data-value="title-3">Experiencia</a>
+                <a href="#work-education"
+                  class="sm:block mx-auto lg:mx-12 sm:px-4 md:px-8 lg:px-0 hover:text-gray-200"
+                  data-i18n="navbar.title-3">Experiencia</a>
 
-                <a href="#proyectos"
-                  class="sm:block mx-auto lg:mx-12 sm:px-4 md:px-8 lg:px-0 hover:text-gray-200 hidden"
-                  data-section="navbar"
-                  data-value="title-4">Proyectos</a>
+                <a href="#projects"
+                  class="sm:block mx-auto lg:mx-12 sm:px-4 md:px-8 lg:px-0 hover:text-gray-200"
+                  data-i18n="navbar.title-4">Proyectos</a>
+
+                <a href="#" class="mx-auto h-10">
+                  <div class="m-0 h-full chooseLang">
+                    <div>
+                      <span id="es-lang" class="chosen es-lang lang" onclick="changeLang(this, 'es')"></span>
+                      <span id="en-lang" class="en-lang lang" onclick="changeLang(this, 'en')"></span>
+                    </div>
+                  </div>
+                </a>
               
                 <div class="flex w-full">
                   <div class="ml-auto">
@@ -78,7 +84,7 @@
                           <div class="block bg-teal-800/50 dark:bg-zinc-400 rounded-full w-14 h-8"></div>
                           <div class="top-1 left-1 absolute bg-teal-600/30 dark:bg-gray-500 rounded-full w-6 h-6 transition dot"></div>
                         </div>
-                        <p class="ml-3 text-gray-500 hover:text-gray-200 dark:text-white ">Dark Mode</p>
+                        <p class="ml-3 text-gray-500 hover:text-gray-200 dark:text-white" data-i18n="navbar.dark-mode">Modo Oscuro</p>
                       </label>
                     </div>
                 </div>
@@ -88,32 +94,30 @@
 
           <!-- Main title -->
           <main class="w-full lg:w-3/5 h-full relative">
-            <div class="absolute backdrop-blur-sm bg-black/75 bottom-0 md:bottom-3 lg:top-24 lg:bottom-auto h-72 lg:h-96 lg:text-left min-h-72 mx-auto pt-10 px-4 sm:px-6 text-center w-full xl:px-8">
+            <div id="profile" class="absolute backdrop-blur-sm bg-black/75 bottom-0 md:bottom-3 lg:top-24 lg:bottom-auto h-72 lg:h-96 lg:text-left min-h-72 mx-auto pt-10 px-4 sm:px-6 text-center w-full xl:px-8">
               <h1 class="font-bold text-4xl text-slate-800 sm:text-5xl md:text-6xl tracking-tight">
-                <span class="block text-white xl:inline" data-section="profile" data-value="title-1">¡Hola! Soy </span>
+                <span class="block text-white xl:inline transition-all duration-300" data-i18n="profile.title-1">¡Hola! Soy </span>
                 <span class="block text-teal-800 xl:inline typo-advent">David</span>
               </h1>
-              <p class="sm:mx-auto lg:mx-0 mt-3 sm:mt-5 md:mt-5 sm:max-w-xl text-base text-gray-300 sm:text-lg md:text-xl" data-section="profile" data-value="title-2">
+              <p class="sm:mx-auto lg:mx-0 mt-3 sm:mt-5 md:mt-5 sm:max-w-xl text-base text-gray-300 sm:text-lg md:text-xl transition-all duration-300" data-i18n="profile.title-2">
                 Y este es mi portafolio.
               </p>
-              <div class="bottom-0 absolute inset-x-0 flex sm:justify-center xl:justify-end mt-5 sm:mt-8 mb-3">
+              <div id="contact-links" class="bottom-0 absolute inset-x-0 flex sm:justify-center xl:justify-end mt-5 sm:mt-8 mb-3">
                 <div class="mx-auto mt-3 sm:mt-0">
                   <a href="https://github.com/Whitefox-SA"
                     target="_blank"
                     title="Visita mi GitHub"
-                    class=""
-                    data-section="contact"
-                    data-value="github">
+                    data-i18n-title="Visita mi GitHub"
+                    data-i18n="contact-links.github">
                     <i class="bg-clip-text bg-gradient-to-r from-sky-600 to-teal-300 mx-auto mt-auto mb-4 text-2xl text-white hover:text-4xl hover:text-transparent duration-300 bi bi-github"></i>
                   </a>
                 </div>
                 <div class="mx-auto mt-3 sm:mt-0">
-                  <a href="https://www.linkedin.com/in/david-sanchez-wf/"
+                  <a href="https://www.linkedin.com/in/Dasa-Alzate"
                     target="_blank"
                     title="Echa un vistazo a mi LinkedIn"
-                    class=""
-                    data-section="contact"
-                    data-value="linkedin">
+                    data-i18n-title="Echa un vistazo a mi LinkedIn"
+                    data-i18n="contact-links.linkedin">
                     <i class="bg-clip-text bg-gradient-to-r from-sky-600 to-teal-300 mx-auto mt-auto mb-4 text-2xl text-white hover:text-4xl hover:text-transparent duration-300 bi bi-linkedin"></i>
                   </a>
                 </div>
@@ -121,9 +125,8 @@
                   <a href="mailto:dasa.alzate@gmail.com"
                     target="_blank"
                     title="Escríbeme por correo"
-                    class=""
-                    data-section="contact"
-                    data-value="email">
+                    data-i18n-title="Escríbeme por correo"
+                    data-i18n="contact-links.email">
                     <i class="bg-clip-text bg-gradient-to-r from-sky-600 to-teal-300 mx-auto mt-auto mb-4 text-2xl text-white hover:text-4xl hover:text-transparent duration-300 bi bi-envelope"></i>
                   </a>
                 </div>
@@ -131,9 +134,8 @@
                   <a href="https://wa.me/34604461105"
                     target="_blank"
                     title="Hablemos por Whatsapp"
-                    class=""
-                    data-section="contact"
-                    data-value="whatsapp">
+                    data-i18n-title="Hablemos por Whatsapp"
+                    data-i18n="contact-links.whatsapp">
                     <i class="bg-clip-text bg-gradient-to-r from-sky-600 to-teal-300 mx-auto mt-auto mb-4 text-2xl text-white hover:text-4xl hover:text-transparent duration-300 bi bi-whatsapp"></i>
                   </a>
                 </div>
@@ -141,9 +143,8 @@
                   <a href="CV - David Sánchez.pdf"
                     target="_blank"
                     title="Descarga mi CV"
-                    class=""
-                    data-section="contact"
-                    data-value="file">
+                    data-i18n-title="Descarga mi CV"
+                    data-i18n="contact-links.file">
                     <i class="bg-clip-text bg-gradient-to-r from-sky-600 to-teal-300 mx-auto mt-auto mb-4 text-2xl text-white hover:text-4xl hover:text-transparent duration-300 bi bi-file-earmark-text"></i>
                   </a>
                 </div>
@@ -155,7 +156,7 @@
     </section>
 
     <section id="about" class="bg-neutral-100 dark:bg-neutral-900 h-84 typo-quicksand">
-      <h2 class="mx-auto pt-14 w-fit text-3xl text-center section-title typo-quicksand">
+      <h2 data-i18n="about.title" class="mx-auto pt-14 w-fit text-3xl text-center section-title typo-quicksand">
         Acerca de mi
       </h2>
       <br>
@@ -167,13 +168,13 @@
           width="512"
           height="384"
         />
-        <div class="pt-6 text-center space-y-4">
-          <blockquote class="text-lg " data-section="profile" data-value="about-me">
+        <div class="pt-6 grid grid-cols-1 justify-items-center justify-center text-center space-y-4">
+          <blockquote class="text-lg max-w-3xl md:max-w-3xl lg:max-w-5xl" data-i18n="about.resume">
               “Soy un geek del software y la tecnología con aproximadamente 2 años y medio de experiencia como Desarrollador web. He liderado las areas de arquitectura de bases de datos y UI/UX en diferentes proyectos que han resultado en productos comerciales completamente funcionales. Mi paso por la Escuela de Ingenieria Electrica junto con mi experiencia profesional de diferentes escalas me dan un amplio rango de herramientas para resolver cualquier desafio con facilidad, sin importar qué tan particular pueda llegar a ser.”
           </blockquote>
           <figcaption class="font-semibold">
             <div class="text-teal-500">David Sánchez</div>
-            <div class="text-slate-500" data-section="profile" data-value="role">
+            <div class="text-slate-500" data-i18n="about.role">
               Desarrollador Full-Stack.
             </div>
           </figcaption>
@@ -181,12 +182,12 @@
       </figure>
     </section>
 
-    <section id="experiencia" class="bg-neutral-100 dark:bg-neutral-900">
-      <h2 class="mx-auto pt-14 w-fit text-3xl text-center section-title typo-quicksand">
+    <section id="work-education" class="bg-neutral-100 dark:bg-neutral-900">
+      <h2 class="mx-auto pt-14 w-fit text-3xl text-center section-title typo-quicksand" data-i18n="work-education.title">
         Educación &amp; Experiencia
       </h2>
       <br>
-      <div class="work-eduction-wrapper">
+      <div class="work-education-wrapper">
         <div class="mx-auto w-full h-full container">
           <div class="flex flex-col lg:flex-row px-4 sm:p-6 pt-5 pb-4 sm:pb-4">
             <div id="work" class="relative w-3/4 lg:w-1/2 self-auto">
@@ -197,23 +198,23 @@
                   class="flex-none w-10 h-10 invert-0 dark:invert"
                 />
                 <div class="flex-auto ml-4">
-                  <div>Experiencia</div>
+                  <div data-i18n="work-education.work.title">Experiencia</div>
                 </div>
               </div>
               <br>
 
               <div class="flex-auto ml-4" >
-                <div data-section="experience" data-value="role">Desarrollador Full-Stack  /  Dev Lead</div>
+                <div data-i18n="work-education.work.role">Desarrollador Full-Stack  /  Dev Lead</div>
                 <div class="mt-1 pl-3 text-slate-500" >
-                  <p class="pl-1 border-teal-500 border-l-4 dark:border-slate-400" data-section="experience" data-value="stack">
+                  <p class="pl-1 border-teal-500 border-l-4 dark:border-slate-400">
                     <ul class="flex flex-wrap lg:flex-nowrap gap-2 mt-2 pb-2 pl-1 border-teal-500 border-l-4 dark:border-slate-400">
                       <li class="bg-teal-800/20 mx-1 px-3 p-1 rounded-full h-min text-sm text-teal-500">Laravel</li>
                       <li class="bg-teal-800/20 mx-1 px-3 p-1 rounded-full h-min text-sm text-teal-500">Angular</li>
                       <li class="bg-teal-800/20 mx-1 px-3 p-1 rounded-full h-min text-sm text-teal-500">AWS</li>
                     </ul>
                   </p>
-                  <p class="pl-3 border-teal-500 border-l-4 dark:border-slate-400" data-section="experience" data-value="company">Projects Triple A  </p>
-                  <p class="pl-3 border-teal-500 border-l-4 dark:border-slate-400" data-section="experience" data-value="time">Apr. 2021 - Jul. 2023  ·  2Y 4M  </p>
+                  <p class="pl-3 border-teal-500 border-l-4 dark:border-slate-400" data-i18n="work-education.work.company">Projects Triple A  </p>
+                  <p class="pl-3 border-teal-500 border-l-4 dark:border-slate-400" data-i18n="work-education.work.time">Apr. 2021 - Jul. 2023  ·  2Y 4M  </p>
                 </div>
               </div>
 
@@ -226,23 +227,23 @@
                   class="flex-none w-10 h-10 invert-0 dark:invert"
                 />
                 <div class="flex-auto ml-4">
-                  <div>Educación</div>
+                  <div data-i18n="work-education.education.title">Educación</div>
                 </div>
               </div>
               <br>
               <div class="flex-auto ml-4">
-                <div data-section="studies" data-value="title">Ingenieria Eléctrica (Incompleta)</div>
+                <div data-i18n="work-education.education.title-1">Ingenieria Eléctrica (Incompleta)</div>
                 <div class="mt-1 pl-3 text-slate-500">
-                  <p class="pl-3 border-teal-500 border-l-4 dark:border-slate-400" data-section="studies" data-value="college">Universidad Tecnológica de Pereira</p>
-                  <p class="pl-3 border-teal-500 border-l-4 dark:border-slate-400" data-section="studies" data-value="time">2015 - 2020</p>
+                  <p class="pl-3 border-teal-500 border-l-4 dark:border-slate-400" data-i18n="work-education.education.college-1">Universidad Tecnológica de Pereira</p>
+                  <p class="pl-3 border-teal-500 border-l-4 dark:border-slate-400" data-i18n="work-education.education.time-1">2015 - 2020</p>
                 </div>
               </div>
               <br><br>
               <div class="flex-auto ml-4">
-                <div data-section="studies" data-value="title">FP Superior en Desarrollo de Aplicaciones Web</div>
+                <div data-i18n="work-education.education.title-2">FP Superior en Desarrollo de Aplicaciones Web</div>
                 <div class="mt-1 pl-3 text-slate-500">
-                  <p class="pl-3 border-teal-500 border-l-4 dark:border-slate-400" data-section="studies" data-value="college">CESUR</p>
-                  <p class="pl-3 border-teal-500 border-l-4 dark:border-slate-400" data-section="studies" data-value="time">2023 - 2025</p>
+                  <p class="pl-3 border-teal-500 border-l-4 dark:border-slate-400" data-i18n="work-education.education.college-2">CESUR</p>
+                  <p class="pl-3 border-teal-500 border-l-4 dark:border-slate-400" data-i18n="work-education.education.time-2">2023 - 2025</p>
                 </div>
               </div>
             </div>
@@ -252,7 +253,7 @@
       
       <div id="stack" class="relative z-10 bg-gradient-to-r from-10% from-slate-400 via-teal-400 to-sky-500 overflow-hidden">
         <div class="bg-neutral-100 hover:bg-transparent dark:hover:bg-transparent dark:bg-neutral-900 py-10 hover:text-white transition duration-800 group">
-          <h2 class="mx-auto pt-4 w-fit text-2xl text-center section-title typo-quicksand">
+          <h2 class="mx-auto pt-4 w-fit text-2xl text-center section-title typo-quicksand" data-i18n="stack.title">
             Mi Stack
           </h2>
           <br/>
@@ -277,8 +278,8 @@
       </div>
     </section>
 
-    <section id="proyectos" class="bg-neutral-100 dark:bg-neutral-900 transition duration-200">
-      <h2 class="mx-auto pt-14 w-fit text-3xl text-center section-title typo-quicksand">
+    <section id="projects" class="bg-neutral-100 dark:bg-neutral-900 transition duration-200">
+      <h2 class="mx-auto pt-14 w-fit text-3xl text-center section-title typo-quicksand" data-i18n="projects.title">
         Mis proyectos recientes
       </h2>
       
@@ -305,11 +306,11 @@
 
       <div class="mx-auto mt-10 px-4 sm:px-6 md:px-12 lg:px-32 pb-10">
         <ul id="cards-container" role="list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-8">
-          <li class="col-span-1 flex flex-col bg-slate-100 dark:bg-stone-950 shadow-md hover:shadow-lg border border-slate-300 dark:border-slate-600 rounded-md text-center cursor-pointer transition duration-300 hover:scale-105" onclick="toggleModal('modal_ruby')">
+          <li id="project-1" class="col-span-1 flex flex-col bg-slate-100 dark:bg-stone-950 shadow-md hover:shadow-lg border border-slate-300 dark:border-slate-600 rounded-md text-center cursor-pointer transition duration-300 hover:scale-105" onclick="toggleModal('modal_ruby')">
             <div class="aspect-video flex overflow-hidden px-3 pt-2 relative justify-center">
               <img class="object-cover place-self-center rounded-lg max-h-full" src="/assets/projects/ruby erp/logo-ruby.png" alt="" loading="lazy" />
             </div>
-            <h1 class="pt-1 font-semibold text-lg text-slate-900 dark:text-slate-100">
+            <h1 class="pt-1 font-semibold text-lg text-slate-900 dark:text-slate-100" data-i18n="projects.projects-list.project-1.title">
               Ruby ERP
             </h1>
             <div class="mx-6 mt-2 mb-4 pb-4 border-b border-slate-300 dark:border-slate-600 text-wrap wx-auto">
@@ -320,13 +321,13 @@
                 <li class="bg-teal-800/20 px-3 p-1 rounded-full h-min text-sm text-teal-500 dark:text-teal-600 cursor-default">Tailwind</li>
               </ul>
             </div>
-            <p class="mx-auto px-4 pb-2 text-left text-slate-700 text-sm dark:text-slate-500">Software empresarial para una compañia productora de carne de cerdo, con funcionalidades como gestion de inventario (IMS), pedidos automáticos de insumos escasos, seguimiento y gestion de lotes de ganado, recepcion y seguimiento de facturación electrónica, pago de nominas, etc.</p>
+            <p class="mx-auto px-4 pb-2 text-left text-slate-700 text-sm dark:text-slate-500" data-i18n="projects.projects-list.project-1.resume">Software empresarial para una compañia productora de carne de cerdo, con funcionalidades como gestion de inventario (IMS), pedidos automáticos de insumos escasos, seguimiento y gestion de lotes de ganado, recepcion y seguimiento de facturación electrónica, pago de nominas, etc.</p>
           </li>
-          <li class="col-span-1 flex flex-col bg-slate-100 dark:bg-stone-950 shadow-md hover:shadow-lg border border-slate-300 dark:border-slate-600 rounded-md text-center cursor-pointer transition duration-300 hover:scale-105" onclick="toggleModal('modal_codepen')">
+          <li id="project-2" class="col-span-1 flex flex-col bg-slate-100 dark:bg-stone-950 shadow-md hover:shadow-lg border border-slate-300 dark:border-slate-600 rounded-md text-center cursor-pointer transition duration-300 hover:scale-105" onclick="toggleModal('modal_codepen')">
             <div class="aspect-video flex overflow-hidden px-3 pt-2 relative justify-center">
               <img class="object-cover place-self-center rounded-lg max-h-full" src="/assets/projects/codepen/codepen1.png" alt="" loading="lazy" />
             </div>
-            <h1 class="pt-1 font-semibold text-lg text-slate-900 dark:text-slate-100">
+            <h1 class="pt-1 font-semibold text-lg text-slate-900 dark:text-slate-100" data-i18n="projects.projects-list.project-2.title">
               Portafolio de Codepen
             </h1>
             <div class="mx-6 mt-2 mb-4 pb-4 border-b border-slate-300 dark:border-slate-600 text-wrap wx-auto">
@@ -335,13 +336,13 @@
                 <li class="bg-teal-800/20 px-3 p-1 rounded-full h-min text-sm text-teal-500 dark:text-teal-600 cursor-default">CSS</li>
               </ul>
             </div>
-            <p class="mx-auto px-4 pb-2 text-left text-slate-700 text-sm dark:text-slate-500">Un portafolio en linea donde publico diferentes diseños web.</p>
+            <p class="mx-auto px-4 pb-2 text-left text-slate-700 text-sm dark:text-slate-500" data-i18n="projects.projects-list.project-2.resume">Un portafolio en linea donde publico diferentes diseños web.</p>
           </li>
-          <li class="col-span-1 flex flex-col bg-slate-100 dark:bg-stone-950 shadow-md hover:shadow-lg border border-slate-300 dark:border-slate-600 rounded-md text-center cursor-pointer transition duration-300 hover:scale-105" onclick="toggleModal('modal_react_chess_clock')">
+          <li id="project-3" class="col-span-1 flex flex-col bg-slate-100 dark:bg-stone-950 shadow-md hover:shadow-lg border border-slate-300 dark:border-slate-600 rounded-md text-center cursor-pointer transition duration-300 hover:scale-105" onclick="toggleModal('modal_react_chess_clock')">
             <div class="aspect-video flex overflow-hidden px-3 pt-2 relative justify-center">
               <img class="object-cover place-self-center rounded-lg max-h-full" src="/assets/projects/react chess clock/chessClock.png" alt="" loading="lazy" />
             </div>
-            <h1 class="pt-1 font-semibold text-lg text-slate-900 dark:text-slate-100">
+            <h1 class="pt-1 font-semibold text-lg text-slate-900 dark:text-slate-100" data-i18n="projects.projects-list.project-3.title">
               Reloj de Ajedrez
             </h1>
             <div class="mx-6 mt-2 mb-4 pb-4 border-b border-slate-300 dark:border-slate-600 text-wrap wx-auto">
@@ -350,14 +351,14 @@
                 <li class="bg-teal-800/20 px-3 p-1 rounded-full h-min text-sm text-teal-500 dark:text-teal-600 cursor-default">Tailwind</li>
               </ul>
             </div>
-            <p class="mx-auto px-4 pb-2 text-left text-slate-700 text-sm dark:text-slate-500">Un proyecto hecho en React, que funciona como un reloj de competencias de ajedrez, con funcionalidades personalizables.</p>
+            <p class="mx-auto px-4 pb-2 text-left text-slate-700 text-sm dark:text-slate-500" data-i18n="projects.projects-list.project-3.resume">Un proyecto hecho en React, que funciona como un reloj de competencias de ajedrez, con funcionalidades personalizables.</p>
           </li>
         </ul>
       </div>
     </section>
 
     <footer class="grid grid-cols-1 xl:grid-cols-2 bg-neutral-200 dark:bg-neutral-950">
-      <p class="p-8 md:p-20 text-center lg:text-left">This site was styled with Tailwind CSS. It's my honest pleasure to have you here ^^. <br>Stay as long as you please, 
+      <p class="p-8 md:p-20 text-center lg:text-left" data-i18n="footer">This site was styled with Tailwind CSS. It's my honest pleasure to have you here ^^. <br>Stay as long as you please, 
       <br>by yours truly.
       </p>
     </footer>
@@ -368,7 +369,7 @@
     </div>
 
     <!-- Modals -->
-    <div class="bg-slate-950/50 top-0 left-0 z-10 fixed w-full h-full lg:h-auto overflow-y-scroll hidden modal" id="modal_ruby">
+    <div class="bg-slate-950/50 top-0 left-0 z-10 fixed w-full h-full lg:h-auto overflow-y-auto hidden modal" id="modal_ruby">
       <div class="flex items-center justify-center px-4 sm:p-0 pt-4 pb-20 text-center" >
         <span class="sm:inline-block sm:h-screen hidden sm:align-middle">​</span>
         <div
@@ -403,7 +404,7 @@
                 <div class="swiper-pagination"></div>
               </div>
             </div>
-            <div class="dark:text-gray-200 h-96 lg:w-1/2 overflow-hidden pl-16 text-ellipsis text-gray-800 text-justify">
+            <div class="dark:text-gray-200 lg:w-1/2 overflow-y-auto pl-16 text-ellipsis text-gray-800 text-justify" data-i18n="projects.projects-list.project-1.modal-content">
               <p class="font-bold text-center text-gray-500 text-xl">
                 Ruby ERP
               </p>
@@ -443,7 +444,7 @@
       </div>
     </div>
 
-    <div class="bg-slate-950/50 top-0 left-0 z-10 fixed w-full h-full lg:h-auto overflow-y-scroll hidden modal" id="modal_codepen">
+    <div class="bg-slate-950/50 top-0 left-0 z-10 fixed w-full h-full lg:h-auto overflow-y-auto hidden modal" id="modal_codepen">
       <div class="flex items-center justify-center px-4 sm:p-0 pt-4 pb-20 text-center" >
         <span class="sm:inline-block sm:h-screen hidden sm:align-middle">​</span>
         <div
@@ -472,7 +473,7 @@
                 <div class="swiper-pagination"></div>
               </div>
             </div>
-            <div class="dark:text-gray-200 h-96 lg:w-1/2 overflow-hidden pl-16 text-ellipsis text-gray-800 text-justify">
+            <div class="dark:text-gray-200 lg:w-1/2 overflow-y-auto pl-16 text-ellipsis text-gray-800 text-justify" data-i18n="projects.projects-list.project-2.modal-content">
               <p class="font-bold text-center text-gray-500 text-xl">
                 Portafolio de codepen
               </p>
@@ -508,7 +509,7 @@
       </div>
     </div>
 
-    <div class="bg-slate-950/50 top-0 left-0 z-10 fixed w-full h-full lg:h-auto overflow-y-scroll hidden modal" id="modal_react_chess_clock">
+    <div class="bg-slate-950/50 top-0 left-0 z-10 fixed w-full h-full lg:h-auto overflow-y-auto hidden modal" id="modal_react_chess_clock">
       <div class="flex items-center justify-center px-4 sm:p-0 pt-4 pb-20 text-center" >
         <span class="sm:inline-block sm:h-screen hidden sm:align-middle">​</span>
         <div
@@ -540,7 +541,7 @@
                 <div class="swiper-pagination"></div>
               </div>
             </div>
-            <div class="dark:text-gray-200 h-96 lg:w-1/2 overflow-hidden pl-16 text-ellipsis text-gray-800 text-justify">
+            <div class="dark:text-gray-200 lg:w-1/2 overflow-y-auto pl-16 text-ellipsis text-gray-800 text-justify" data-i18n="projects.projects-list.project-3.modal-content">
               <p class="font-bold text-center text-gray-500 text-xl">
                 React chessClock
               </p>
@@ -599,6 +600,8 @@
       </svg>
     </button>
     
+    <script src="https://unpkg.com/i18next@20.6.1/dist/umd/i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@1.3.1/i18nextHttpBackend.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>

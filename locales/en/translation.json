@@ -1,0 +1,67 @@
+{
+    "navbar": {
+        "title-1": "Home",
+        "title-2": "About Me",
+        "title-3": "Experience",
+        "title-4": "Projects",
+        "dark-mode": "Dark Mode"
+    },
+    "profile": {
+        "title-1": "Hello! I'm",
+        "title-2": "And this is my portfolio." 
+    },
+    "contact-links": {
+        "github": "Visit my GitHub",
+        "linkedin": "Check out my LinkedIn",
+        "email": "Email me",
+        "whatsapp": "Let's chat on Whatsapp",
+        "file": "Download my CV"
+    },
+    "about": {
+        "title": "About Me",
+        "resume": "“I am a software and technology geek with approximately 2 and a half years of experience as a web developer. I have led the areas of database architecture and UI/UX in different projects that have resulted in fully functional commercial products. My time at the School of Electrical Engineering along with my professional experience of different scales give me a wide range of tools to solve any challenge with ease, no matter how unique it may be.”",
+        "role": "Full-Stack Developer."
+    },
+    "work-education": {
+        "title": "Education &amp; Experience",
+        "work": {
+            "title": "Experience",
+            "role": "Full-Stack Developer / Dev Lead",
+            "company": "Triple A Projects",
+            "time": "Apr. 2021 - Jul. 2023  ·  2Y 4M"
+        },
+        "education": {
+            "title": "Education",
+            "title-1": "Electrical Engineering (Incomplete)",
+            "college-1": "Technological University of Pereira",
+            "time-1": "2015 - 2020",
+            "title-2": "Higher Vocational Training in Web Application Development",
+            "college-2": "CESUR Audiovisual - Spain",
+            "time-2": "2023 - 2025"
+        }
+    },
+    "stack": {
+        "title": "My Stack"
+    },
+    "projects": {
+        "title": "My Recent Projects",
+        "projects-list": {
+            "project-1": {
+                "title": "Ruby ERP",
+                "resume": "Enterprise software for a pork production company, with functionalities such as inventory management (IMS), automatic ordering of scarce supplies, tracking and management of livestock batches, receipt and tracking of electronic invoicing, payroll payment, etc.",
+                "modal-content": "<p class=\"font-bold text-center text-gray-500 text-xl\">Ruby ERP</p><hr/><br/><p>Enterprise software for a pork production company. The program includes the following functionalities:</p><ul class=\"list-disc\"><li>Tracking of livestock batches at different stages of growth (weight, feed consumption, mortality, cost, profit, etc.).</li><li>Control of inventory entries and exits (feed, medicines, supplies).</li><li>Receipt of electronic invoices from customers and suppliers.</li><li>Estimated calculation of feed needed for the following week, and automatic ordering from the supplier.</li><li>Payroll calculation and automatic notification to workers.</li></ul><p class=\"text-slate-800 dark:text-slate-300 font-bold mt-2 text-lg\">Technical parameters:</p><ul class=\"list-disc\"><li>Integration of <strong>Google Workspace</strong> to receive and process email information</li><li>Integration of <strong>API</strong> for SMS sending</li><li><strong>Service worker</strong> for offline application access</li></ul><br/>"
+            },
+            "project-2": {
+                "title": "Codepen Portfolio",
+                "resume": "An online portfolio where I publish different web designs.",
+                "modal-content": "<p class=\"font-bold text-center text-gray-500 text-xl\">Codepen Portfolio</p><hr/><br/><p>An online portfolio where I publish different web designs. You can see it by <a class=\"text-teal-700 hover:text-teal-500 font-bold cursor-pointer\" href=\"https://dasa-alzate.github.io/codigos-codepen/\" target=\"_blank\">clicking here.</a> You can also visit the <a class=\"text-teal-700 hover:text-teal-500 font-bold cursor-pointer\" href=\"https://codepen.io/wvoiqkus-the-scripter\" target=\"_blank\">Codepen profile.</a></p><p class=\"text-slate-800 dark:text-slate-300 font-bold mt-2 text-lg\">Technologies:</p><ul class=\"list-disc\"><li>Tailwind</li><li>Bootstrap</li><li>Pure CSS</li><li>Javascript</li><li>Typescript</li><li>etc...</li></ul><br/>"
+            },
+            "project-3": {
+                "title": "Chess Clock",
+                "resume": "A project made in React that works as a chess competition clock, with customizable features.",
+                "modal-content": "<p class=\"font-bold text-center text-gray-500 text-xl\">React Chess Clock</p><hr/><br/><p>This is a project built in React using Vite and styled with Tailwind, functioning as a professional chess clock. Its design is responsive and adapts to all devices. <br>It is highly customizable. The total time, increment time, and time from which the increment is applied can be adjusted. The number of players can also be customized if it is to be used in a game other than chess with more players. <br>You can see it by <a class=\"text-teal-700 hover:text-teal-500 font-bold cursor-pointer\" href=\"https://whitefox-sa.github.io/react-chessclock/\" target=\"_blank\">clicking here.</a> Or you can <a class=\"text-teal-700 hover:text-teal-500 font-bold cursor-pointer\" href=\"https://github.com/Whitefox-SA/react-chessclock\" target=\"_blank\">visit the repository.</a></p><p class=\"text-slate-800 dark:text-slate-300 font-bold mt-2 text-lg\">Technologies:</p><ul class=\"list-disc\"><li>React</li><li>Vite</li><li>Tailwind</li></ul><br/>"
+            }
+        }
+    },
+    "footer": "This site has been styled with Tailwind CSS. It's my pleasure to have you here. \nStay as long as you please. \nBy yours truly."
+}
