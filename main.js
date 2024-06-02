@@ -4,6 +4,9 @@ function darkModeListener() {
 
 document.querySelector("input[type='checkbox']#dark-toggle").addEventListener("click", darkModeListener);
 
+function stringContinuity(string, length) {
+  return string.length > length ? string.slice(0, length) + "..." : string
+}
 
 // Modal
 function toggleModal(modal_id) {
@@ -81,6 +84,12 @@ document.querySelectorAll('.carousel').forEach(carousel => {
 
 // GSAP
 document.addEventListener("DOMContentLoaded", function() {
+  const stackLogos = document.querySelectorAll('#stack div .container img');
+  const startLogoAnimation = 70;
+  const endLogoAnimation = 10;
+  let diffLogoAnimation = startLogoAnimation - endLogoAnimation;
+  const cardsDescription = document.querySelectorAll("#cards-container li p");
+  const bgLogoLayer = document.querySelector("#bg-logo-layer");
   gsap.registerPlugin(ScrollTrigger);
 
   gsap.from("#about", {
@@ -122,11 +131,6 @@ document.addEventListener("DOMContentLoaded", function() {
     ease: "power2.out"
   });
 
-  const stackLogos = document.querySelectorAll('#stack div .container img');
-  const startLogoAnimation = 70;
-  const endLogoAnimation = 10;
-  let diffLogoAnimation = startLogoAnimation - endLogoAnimation;
-
   stackLogos.forEach((logo, index) => {
     const xOffset = 100 * index;
     const offset = Math.ceil(70 - (diffLogoAnimation / (stackLogos.length * 1.5)) * index);
@@ -157,4 +161,22 @@ document.addEventListener("DOMContentLoaded", function() {
     duration: 1.5,
     ease: "power2.out"
   });
+
+  // text-overflow
+  cardsDescription.forEach(cardText => {
+    cardText.innerHTML = stringContinuity(cardText.innerHTML, 130);
+  })
+
+  stackLogos.forEach(logo => {
+    logo.addEventListener('mouseenter', () => {
+      bgLogoLayer.src = logo.src;
+      bgLogoLayer.classList.remove("opacity-0");
+      bgLogoLayer.classList.add("opacity-50");
+    });
+
+    logo.addEventListener('mouseleave', () => {
+      bgLogoLayer.classList.remove("opacity-50");
+      bgLogoLayer.classList.add("opacity-0");
+    });
+  })
 });
