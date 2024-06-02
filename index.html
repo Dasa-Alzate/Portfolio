@@ -282,58 +282,28 @@
         Mis proyectos recientes
       </h2>
       
-      <ul class="flex flex-wrap justify-center mx-auto mt-10 px-4 w-full h-full group">
-        <ol class="flex flex-wrap justify-center mx-auto px-4 pt-10 w-full lg:w-1/2 h-full">
-          
-          <li class="mx-auto mb-12">
-            <div class="relative group-hover:opacity-100 hover:!opacity-75 transition-all ">
-              <div class="dark:group-hover:bg-teal-700/75 group-hover:bg-teal-700/50 lg:block z-0 absolute -inset-x-2 -inset-y-2 lg:-inset-x-4 bg-teal-800/50 dark:bg-teal-800/75 group-hover:drop-shadow-lg rounded-full transition motion-reduce:transition-none cursor-pointer hidden"></div>
-              <div class="z-10 sm:col-span-6">
-                <div class="dark:text-white" aria-hidden="true">AWS</div>
-              </div>
-            </div>
-          </li>
+      <!-- en la transpilaciona react, aplicar la configuracion de shortcuts for common data attribute selectors en para el data-active tailwind.config.js -->
+      <ul id="project-category-list" class="flex flex-wrap gap-x-4 gap-y-2 justify-center mx-auto px-4 md:px-32 lg:px-48 mt-10 w-full h-full group">
+        
+        <li class="px-4 py-1 transition duration-300 group-hover:opacity-100 hover:!opacity-75 data-[active=true]:!bg-teal-800/50 dark:data-[active=true]:!bg-teal-800/75 group-hover:bg-slate-800/50 dark:group-hover:bg-slate-300/50 group-hover:drop-shadow-lg rounded-full cursor-pointer dark:text-white" data-active="false" onclick="switchActive(this)">AWS</li>
+        
+        <li class="px-4 py-1 transition duration-300 group-hover:opacity-100 hover:!opacity-75 data-[active=true]:!bg-teal-800/50 dark:data-[active=true]:!bg-teal-800/75 group-hover:bg-slate-800/50 dark:group-hover:bg-slate-300/50 group-hover:drop-shadow-lg rounded-full cursor-pointer dark:text-white" data-active="false" onclick="switchActive(this)">Laravel</li>
+        
+        <li class="px-4 py-1 transition duration-300 group-hover:opacity-100 hover:!opacity-75 data-[active=true]:!bg-teal-800/50 dark:data-[active=true]:!bg-teal-800/75 group-hover:bg-slate-800/50 dark:group-hover:bg-slate-300/50 group-hover:drop-shadow-lg rounded-full cursor-pointer dark:text-white" data-active="false" onclick="switchActive(this)">Node</li>
+        
+        <li class="px-4 py-1 transition duration-300 group-hover:opacity-100 hover:!opacity-75 data-[active=true]:!bg-teal-800/50 dark:data-[active=true]:!bg-teal-800/75 group-hover:bg-slate-800/50 dark:group-hover:bg-slate-300/50 group-hover:drop-shadow-lg rounded-full cursor-pointer dark:text-white" data-active="false" onclick="switchActive(this)">React</li>
+        
+        <li class="px-4 py-1 transition duration-300 group-hover:opacity-100 hover:!opacity-75 data-[active=true]:!bg-teal-800/50 dark:data-[active=true]:!bg-teal-800/75 group-hover:bg-slate-800/50 dark:group-hover:bg-slate-300/50 group-hover:drop-shadow-lg rounded-full cursor-pointer dark:text-white" data-active="false" onclick="switchActive(this)">Angular</li>
+        
+        <li class="px-4 py-1 transition duration-300 group-hover:opacity-100 hover:!opacity-75 data-[active=true]:!bg-teal-800/50 dark:data-[active=true]:!bg-teal-800/75 group-hover:bg-slate-800/50 dark:group-hover:bg-slate-300/50 group-hover:drop-shadow-lg rounded-full cursor-pointer dark:text-white" data-active="false" onclick="switchActive(this)">Tailwind</li>
+        
+        <li class="px-4 py-1 transition duration-300 group-hover:opacity-100 hover:!opacity-75 data-[active=true]:!bg-teal-800/50 dark:data-[active=true]:!bg-teal-800/75 group-hover:bg-slate-800/50 dark:group-hover:bg-slate-300/50 group-hover:drop-shadow-lg rounded-full cursor-pointer dark:text-white" data-active="false" onclick="switchActive(this)">CSS</li>
+        
+        <li class="px-4 py-1 transition duration-300 group-hover:opacity-100 hover:!opacity-75 data-[active=true]:!bg-teal-800/50 dark:data-[active=true]:!bg-teal-800/75 group-hover:bg-slate-800/50 dark:group-hover:bg-slate-300/50 group-hover:drop-shadow-lg rounded-full cursor-pointer dark:text-white" data-active="false" onclick="switchActive(this)">Python</li>
 
-          <li class="mx-auto mb-12">
-            <div class="relative group-hover:opacity-100 hover:!opacity-75 transition-all ">
-              <div class="dark:group-hover:bg-teal-700/75 group-hover:bg-teal-700/50 lg:block z-0 absolute -inset-x-2 -inset-y-2 lg:-inset-x-4 bg-teal-800/50 dark:bg-teal-800/75 group-hover:drop-shadow-lg rounded-full transition motion-reduce:transition-none cursor-pointer hidden"></div>
-              <div class="z-10 sm:col-span-6">
-                <div class="dark:text-white" aria-hidden="true">API</div>
-              </div>
-            </div>
-          </li>
-
-          <li class="mx-auto mb-12">
-            <div class="relative dark:group-hover:opacity-50 group-hover:opacity-75 hover:!opacity-100 transition-all">
-              <div class="group-hover:bg-slate-400/75 dark:group-hover:bg-slate-800/75 lg:block z-0 absolute -inset-x-2 -inset-y-2 lg:-inset-x-4 group-hover:drop-shadow-lg rounded-full transition motion-reduce:transition-none cursor-pointer hidden"></div>
-              <div class="z-10 sm:col-span-6">
-                <div class="group-hover:text-gray-800 dark:group-hover:text-teal-100" aria-hidden="true">SQL</div>
-              </div>
-            </div>
-          </li>
-
-          <li class="mx-auto mb-12">
-            <div class="relative dark:group-hover:opacity-50 group-hover:opacity-75 hover:!opacity-100 transition-all">
-              <div class="group-hover:bg-slate-400/75 dark:group-hover:bg-slate-800/75 lg:block z-0 absolute -inset-x-2 -inset-y-2 lg:-inset-x-4 group-hover:drop-shadow-lg rounded-full transition motion-reduce:transition-none cursor-pointer hidden"></div>
-              <div class="z-10 sm:col-span-6">
-                <div class="group-hover:text-gray-800 dark:group-hover:text-teal-100" aria-hidden="true">React</div>
-              </div>
-            </div>
-          </li>
-
-          <li class="mx-auto mb-12">
-            <div class="relative dark:group-hover:opacity-50 group-hover:opacity-75 hover:!opacity-100 transition-all">
-              <div class="group-hover:bg-slate-400/75 dark:group-hover:bg-slate-800/75 lg:block z-0 absolute -inset-x-2 -inset-y-2 lg:-inset-x-4 group-hover:drop-shadow-lg rounded-full transition motion-reduce:transition-none cursor-pointer hidden"></div>
-              <div class="z-10 sm:col-span-6">
-                <div class="group-hover:text-gray-800 dark:group-hover:text-teal-100" aria-hidden="true">Angular</div>
-              </div>
-            </div>
-          </li>
-
-        </ol>
       </ul>
 
-      <div class="mx-auto px-4 sm:px-6 md:px-12 lg:px-32 pb-10">
+      <div class="mx-auto mt-10 px-4 sm:px-6 md:px-12 lg:px-32 pb-10">
         <ul id="cards-container" role="list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-8">
           <li class="col-span-1 flex flex-col bg-slate-100 dark:bg-stone-950 shadow-md hover:shadow-lg border border-slate-300 dark:border-slate-600 rounded-md text-center cursor-pointer transition duration-300 hover:scale-105" onclick="toggleModal('modal_ruby')">
             <div class="aspect-video flex overflow-hidden px-3 pt-2 relative justify-center">
@@ -361,10 +331,8 @@
             </h1>
             <div class="mx-6 mt-2 mb-4 pb-4 border-b border-slate-300 dark:border-slate-600 text-wrap wx-auto">
               <ul class="flex flex-wrap pl-1 gap-1 border-teal-500 border-l-4 dark:border-slate-400">
-                <li class="bg-teal-800/20 px-3 p-1 rounded-full h-min text-sm text-teal-500 dark:text-teal-600 cursor-default">UI/UX</li>
                 <li class="bg-teal-800/20 px-3 p-1 rounded-full h-min text-sm text-teal-500 dark:text-teal-600 cursor-default">Tailwind</li>
                 <li class="bg-teal-800/20 px-3 p-1 rounded-full h-min text-sm text-teal-500 dark:text-teal-600 cursor-default">CSS</li>
-                <li class="bg-teal-800/20 px-3 p-1 rounded-full h-min text-sm text-teal-500 dark:text-teal-600 cursor-default">Bootstrap</li>
               </ul>
             </div>
             <p class="mx-auto px-4 pb-2 text-left text-slate-700 text-sm dark:text-slate-500">Un portafolio en linea donde publico diferentes diseños web.</p>
@@ -378,7 +346,6 @@
             </h1>
             <div class="mx-6 mt-2 mb-4 pb-4 border-b border-slate-300 dark:border-slate-600 text-wrap wx-auto">
               <ul class="flex flex-wrap pl-1 gap-1 border-teal-500 border-l-4 dark:border-slate-400">
-                <li class="bg-teal-800/20 px-3 p-1 rounded-full h-min text-sm text-teal-500 dark:text-teal-600 cursor-default">Vite</li>
                 <li class="bg-teal-800/20 px-3 p-1 rounded-full h-min text-sm text-teal-500 dark:text-teal-600 cursor-default">React</li>
                 <li class="bg-teal-800/20 px-3 p-1 rounded-full h-min text-sm text-teal-500 dark:text-teal-600 cursor-default">Tailwind</li>
               </ul>
