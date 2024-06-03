@@ -188,8 +188,8 @@ document.addEventListener("DOMContentLoaded", function() {
   gsap.from("#projects", {
     scrollTrigger: {
       trigger: "#projects",
-      start: "top 40%",
-      end: "top 10%",
+      start: "top 60%",
+      end: "top 40%",
       scrub: 2,
     },
     x: -100,
