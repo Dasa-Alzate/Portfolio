@@ -145,8 +145,8 @@ document.addEventListener("DOMContentLoaded", function() {
   gsap.from("#work", {
     scrollTrigger: {
       trigger: "#work",
-      start: "top 60%",
-      end: "top 30%",
+      start: "top 80%",
+      end: "top 50%",
       scrub: 2,
     },
     x: 200,
@@ -158,8 +158,8 @@ document.addEventListener("DOMContentLoaded", function() {
   gsap.from("#education", {
     scrollTrigger: {
       trigger: "#education",
-      start: "top 40%",
-      end: "top 10%",
+      start: "top 60%",
+      end: "top 30%",
       scrub: 2,
     },
     x: 200,
@@ -175,13 +175,12 @@ document.addEventListener("DOMContentLoaded", function() {
       scrollTrigger: {
         trigger: "#stack",
         start: `top ${offset}%`,
-        end: `top ${offset-20}%`,
-        scrub: true,
+        toggleActions: "play none reverse none",
       },
       x: -100,
       rotation: 210,
       opacity: 0,
-      duration: 2,
+      duration: 1,
       ease: "power2.out"
     });
   });

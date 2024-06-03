@@ -26,9 +26,11 @@
         "title": "Educación &amp; Experiencia",
         "work": {
             "title": "Experiencia",
-            "role": "Desarrollador Full-Stack  /  Lider de Desarrollo",
             "company": "Proyectos Triple A",
-            "time": "Abr. 2021 - Jul. 2023  ·  2A 4M"
+            "role-1": "Lider de Desarrollo",
+            "time-1": "Nov. 2022 - Jul. 2023  ·  9M",
+            "role-2": "Desarrollador Full-Stack",
+            "time-2": "Abr. 2021 - Jul. 2023  ·  2A 4M"
         },
         "education": {
             "title": "Educación",

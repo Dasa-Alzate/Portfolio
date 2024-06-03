@@ -26,9 +26,11 @@
         "title": "Education &amp; Experience",
         "work": {
             "title": "Experience",
-            "role": "Full-Stack Developer / Dev Lead",
             "company": "Triple A Projects",
-            "time": "Apr. 2021 - Jul. 2023  ·  2Y 4M"
+            "role-1": "Dev Lead",
+            "time-1": "Nov. 2022 - Jul. 2023  ·  9M",
+            "role-2": "Full-Stack Developer",
+            "time-2": "Apr. 2021 - Jul. 2023  ·  2A 4M"
         },
         "education": {
             "title": "Education",
