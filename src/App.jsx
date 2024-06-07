@@ -1,33 +1,23 @@
-import { useState } from 'react'
-import './App.css'
+import React from 'react';
+import "bootstrap-icons/font/bootstrap-icons.css";
+import Header from './components/Hero/Header/Header';
+import MainTitle from './components/Hero/MainTitle/MainTitle';
+import './utils/i18n';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src="" className="logo react" alt="React logo" />
-        </a>
+    <div id="Inicio">
+      <div className="mx-auto">
+        <div className="bg-gradient-to-b from-[#006B58] to-[#001E1E] relative z-10 bg-cover bg-bottom w-full h-screen min-h-[40rem]">
+          <div className="absolute bottom-0 right-0 z-10 transition-opacity bg-gradient-to-b from-[#82B8C4] to-[#98CAD3] opacity-100 dark:opacity-0 duration-500 bg-cover bg-bottom w-full h-screen min-h-[40rem]"></div>
+          <img src="/src/assets/bg-avatar.png" className="absolute bottom-0 z-20 right-0 h-5/6 lg:h-4/5" alt="Avatar" />
+
+          <Header />
+          <MainTitle />
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button className="rounded-md bg-slate-600 m-6 p-2 px-6" onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;

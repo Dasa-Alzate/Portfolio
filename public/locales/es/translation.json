@@ -8,7 +8,7 @@
     },
     "profile": {
         "title-1": "¡Hola! Soy",
-        "title-2": "Y este es mi portafolio." 
+        "title-2": "Y este es mi portafolio."
     },
     "contact-links": {
         "github": "Visita mi GitHub",
@@ -23,7 +23,7 @@
         "role": "Desarrollador Full-Stack."
     },
     "work-education": {
-        "title": "Educación &amp; Experiencia",
+        "title": "Educación & Experiencia",
         "work": {
             "title": "Experiencia",
             "company": "Proyectos Triple A",
@@ -66,4 +66,4 @@
         }
     },
     "footer": "Este sitio ha sido estilizado con Tailwind CSS. Es un honor tenerte aquí. \n Quédate tanto como quieras."
-}
+} 
