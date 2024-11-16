@@ -222,7 +222,7 @@ i18next.use(i18nextHttpBackend).init({
   lng: 'es',
   fallbackLng: 'es',
   backend: {
-      loadPath: '/locales/{{lng}}/translation.json'
+      loadPath: 'locales/{{lng}}/translation.json'
   }
 }, function(err, t) {
   if (err) return console.error('Error initializing i18next:', err);
