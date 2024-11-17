@@ -181,9 +181,8 @@ document.addEventListener("DOMContentLoaded", function() {
         end: `top ${offset-10}%`,
         toggleActions: "play none none none",
       },
-      x: -100,
       rotation: -210,
-      opacity: 0.2,
+      opacity: 0,
       duration: .8
     });
   });
