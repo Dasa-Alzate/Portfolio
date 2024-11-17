@@ -30,7 +30,7 @@
             "role-1": "Dev Lead",
             "time-1": "Nov. 2022 - Jul. 2023  ·  9M",
             "role-2": "Full-Stack Developer",
-            "time-2": "Apr. 2021 - Jul. 2023  ·  2A 4M"
+            "time-2": "Apr. 2021 - Jul. 2023  ·  2Y 4M"
         },
         "education": {
             "title": "Education",
@@ -50,8 +50,8 @@
         "projects-list": {
             "project-1": {
                 "title": "Ruby ERP",
-                "resume": "Enterprise software for a pork production company, with functionalities such as inventory management (IMS), automatic ordering of scarce supplies, tracking and management of livestock batches, receipt and tracking of electronic invoicing, payroll payment, etc.",
-                "modal-content": "<p class=\"font-bold text-center text-gray-500 text-xl\">Ruby ERP</p><hr/><br/><p>Enterprise software for a pork production company. The program includes the following functionalities:</p><ul class=\"list-disc\"><li>Tracking of livestock batches at different stages of growth (weight, feed consumption, mortality, cost, profit, etc.).</li><li>Control of inventory entries and exits (feed, medicines, supplies).</li><li>Receipt of electronic invoices from customers and suppliers.</li><li>Estimated calculation of feed needed for the following week, and automatic ordering from the supplier.</li><li>Payroll calculation and automatic notification to workers.</li></ul><p class=\"text-slate-800 dark:text-slate-300 font-bold mt-2 text-lg\">Technical parameters:</p><ul class=\"list-disc\"><li>Integration of <strong>Google Workspace</strong> to receive and process email information</li><li>Integration of <strong>API</strong> for SMS sending</li><li><strong>Service worker</strong> for offline application access</li></ul><br/>"
+                "resume": "Enterprise software for a swine production company, with functionalities such as inventory management (IMS), automatic ordering of scarce supplies, tracking and management of livestock batches, receipt and tracking of electronic invoicing, payroll payment, etc.",
+                "modal-content": "<p class=\"font-bold text-center text-gray-500 text-xl\">Ruby ERP</p><hr/><br/><p>Enterprise software for a swine production company. The program includes the following functionalities:</p><ul class=\"list-disc\"><li>Tracking of livestock batches at different stages of growth (weight, feed consumption, mortality, cost, profit, etc.).</li><li>Control of inventory entries and exits (feed, medicines, supplies).</li><li>Receipt of electronic invoices from customers and suppliers.</li><li>Estimated calculation of feed needed for the following week, and automatic ordering from the supplier.</li><li>Payroll calculation and automatic SMS notification to workers.</li></ul><p class=\"text-slate-800 dark:text-slate-300 font-bold mt-2 text-lg\">Technical parameters:</p><ul class=\"list-disc\"><li>Integration of <strong>Google Workspace</strong> to receive and process email information</li><li>Integration of <strong>API</strong> for SMS sending</li><li><strong>Service worker</strong> for offline application access</li></ul><br/>"
             },
             "project-2": {
                 "title": "Codepen Portfolio",
