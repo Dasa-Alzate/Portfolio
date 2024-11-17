@@ -135,6 +135,7 @@ document.addEventListener("DOMContentLoaded", function() {
       start: "top 50%",
       end: "top 5%",
       scrub: 2,
+      toggleActions: "restart none none none",
     },
     x: -100,
     opacity: 0,
@@ -148,6 +149,7 @@ document.addEventListener("DOMContentLoaded", function() {
       start: "top 80%",
       end: "top 50%",
       scrub: 2,
+      toggleActions: "restart none none none",
     },
     x: 200,
     opacity: 0,
@@ -161,6 +163,7 @@ document.addEventListener("DOMContentLoaded", function() {
       start: "top 60%",
       end: "top 30%",
       scrub: 2,
+      toggleActions: "restart none none none",
     },
     x: 200,
     opacity: 0,
@@ -175,13 +178,13 @@ document.addEventListener("DOMContentLoaded", function() {
       scrollTrigger: {
         trigger: "#stack",
         start: `top ${offset}%`,
-        toggleActions: "play none reverse none",
+        end: `top ${offset-10}%`,
+        toggleActions: "play none none none",
       },
       x: -100,
-      rotation: 210,
-      opacity: 0,
-      duration: 1,
-      ease: "power2.out"
+      rotation: -210,
+      opacity: 0.2,
+      duration: .8
     });
   });
 
@@ -191,6 +194,7 @@ document.addEventListener("DOMContentLoaded", function() {
       start: "top 60%",
       end: "top 40%",
       scrub: 2,
+      toggleActions: "restart none none none",
     },
     x: -100,
     opacity: 0,
