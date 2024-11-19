@@ -40,7 +40,7 @@
           <div class="absolute top-0 right-0 z-10 transition-opacity bg-slate-50 opacity-100 dark:opacity-0 duration-500 bg-cover bg-bottom w-full h-screen min-h-[40rem]"></div>
           <img src="assets/blob-dark.svg" class="absolute bottom-0 right-0 hue-rotate-animation z-20"/>
           <img src="assets/blob-dark.svg" class="absolute bottom-0 right-0 noise-filter mix-blend-color-burn z-30"/>
-          <svg class="w-100 h-100 z-40 absolute top-0 left-0">
+          <svg class="absolute top-0 left-0">
             <filter id="grainy" name="grainy">
               <feTurbulence type="fractalNoise" baseFrequency="0.6" result="turbulence" />
             </filter>
@@ -74,7 +74,7 @@
                   class="sm:block mx-auto lg:mx-12 sm:px-4 md:px-8 lg:px-0 h-fit text-nowrap hover:text-gray-200"
                   data-i18n="navbar.title-4">Proyectos</a>
 
-                <a href="#" class="mx-auto w-24 h-10 hover:scale-110 transition-all duration-200">
+                <a href="#" class="mx-auto w-24 h-10 hover:brightness-125 transition-all duration-200">
                   <div class="m-0 h-full chooseLang">
                     <div>
                       <span id="es-lang" class="chosen es-lang lang" onclick="changeLang(this, 'es')"></span>
@@ -84,14 +84,14 @@
                 </a>
               
                 <div class="flex w-full">
-                  <div class="ml-auto">
+                  <div class="ml-auto group">
                       <label for="dark-toggle" class="flex items-center cursor-pointer">
-                        <div class="relative hover:scale-110 transition-all duration-200">
+                        <div class="relative group-hover:scale-110 transition-all duration-200">
                           <input type="checkbox" name="dark-mode" id="dark-toggle" class="checkbox hidden">
                           <div class="block dark:bg-sky-800/50 bg-slate-500/75 rounded-full w-14 h-8"></div>
                           <div class="top-1 left-1 absolute dark:bg-sky-600/30 bg-slate-700/75 rounded-full w-6 h-6 transition dot"></div>
                         </div>
-                        <p class="ml-3 text-gray-500 hover:text-gray-200" data-i18n="navbar.dark-mode">Modo Oscuro</p>
+                        <p class="ml-3 text-gray-500 group-hover:text-gray-200" data-i18n="navbar.dark-mode">Modo Oscuro</p>
                       </label>
                     </div>
                 </div>
