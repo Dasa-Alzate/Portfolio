@@ -34,12 +34,12 @@
 <body class="bg-neutral-100 dark:bg-neutral-900 text-slate-800 dark:text-slate-200 selection:bg-slate-400/50 selection:text-sky-800/75 dark:selection:bg-sky-400/50 dark:selection:text-sky-100/75">
     
     <!-- Hero section -->
-    <section id="Inicio" class="overflow-hidden">
+    <section id="Inicio" class="overflow-hidden min-h-[40rem]">
       <div class="mx-auto">
-        <div class="bg-zinc-950 relative z-10 bg-cover bg-bottom w-full h-screen min-h-[40rem]">
-          <div class="absolute top-0 right-0 z-10 transition-opacity bg-slate-50 opacity-100 dark:opacity-0 duration-500 bg-cover bg-bottom w-full h-screen min-h-[40rem]"></div>
-          <img src="assets/blob-dark.svg" class="absolute bottom-0 right-0 hue-rotate-animation z-20"/>
-          <img src="assets/blob-dark.svg" class="absolute bottom-0 right-0 noise-filter mix-blend-color-burn z-30"/>
+        <div class="bg-zinc-950 relative z-10 bg-cover bg-bottom w-full min-h-[40rem]">
+          <div class="absolute top-0 right-0 z-10 transition-opacity bg-slate-50 opacity-100 dark:opacity-0 duration-500 bg-cover bg-bottom w-full min-h-[40rem]"></div>
+          <img src="assets/blob-dark.svg" class="absolute top-0 right-0 min-h-[40rem] hue-rotate-animation z-20"/>
+          <img src="assets/blob-dark.svg" class="absolute top-0 right-0 min-h-[40rem] noise-filter mix-blend-color-burn z-30"/>
           <svg class="absolute top-0 left-0">
             <filter id="grainy" name="grainy">
               <feTurbulence type="fractalNoise" baseFrequency="0.6" result="turbulence" />
@@ -59,39 +59,39 @@
               </div>
               <div id="navbar" class="flex w-full items-center text-base text-gray-500 uppercase typo-advent">
                 <a href="#Inicio"
-                  class="sm:block mx-auto lg:mx-12 sm:px-4 md:px-8 lg:px-0 h-fit text-nowrap hover:text-gray-200"
+                  class="hidden md:block w-fit mx-auto lg:mx-12 sm:px-4 md:px-8 lg:px-0 h-fit w-20 md:text-nowrap hover:text-gray-200"
                   data-i18n="navbar.title-1">Inicio</a>
 
                 <a href="#about"
-                  class="sm:block mx-auto lg:mx-12 sm:px-4 md:px-8 lg:px-0 h-fit text-nowrap hover:text-gray-200"
+                  class="hidden md:block w-fit mx-auto lg:mx-12 sm:px-4 md:px-8 lg:px-0 h-fit w-20 md:text-nowrap hover:text-gray-200"
                   data-i18n="navbar.title-2">Acerca de mi</a>
 
                 <a href="#work-education"
-                  class="sm:block mx-auto lg:mx-12 sm:px-4 md:px-8 lg:px-0 h-fit text-nowrap hover:text-gray-200"
+                  class="hidden md:block w-fit mx-auto lg:mx-12 sm:px-4 md:px-8 lg:px-0 h-fit w-20 md:text-nowrap hover:text-gray-200"
                   data-i18n="navbar.title-3">Experiencia</a>
 
                 <a href="#projects"
-                  class="sm:block mx-auto lg:mx-12 sm:px-4 md:px-8 lg:px-0 h-fit text-nowrap hover:text-gray-200"
+                  class="hidden md:block w-fit mx-auto lg:mx-12 sm:px-4 md:px-8 lg:px-0 h-fit w-20 md:text-nowrap hover:text-gray-200"
                   data-i18n="navbar.title-4">Proyectos</a>
 
-                <a href="#" class="mx-auto w-24 h-10 hover:brightness-125 transition-all duration-200">
+                <a href="#" class="ml-auto mr-2 h-10 hover:brightness-125 transition-all duration-200">
                   <div class="m-0 h-full chooseLang">
-                    <div>
+                    <div class="w-20">
                       <span id="es-lang" class="chosen es-lang lang" onclick="changeLang(this, 'es')"></span>
                       <span id="en-lang" class="en-lang lang" onclick="changeLang(this, 'en')"></span>
                     </div>
                   </div>
                 </a>
               
-                <div class="flex w-full">
-                  <div class="ml-auto group">
+                <div class="flex w-fit">
+                  <div class="ml-auto me-3 group">
                       <label for="dark-toggle" class="flex items-center cursor-pointer">
                         <div class="relative group-hover:scale-110 transition-all duration-200">
                           <input type="checkbox" name="dark-mode" id="dark-toggle" class="checkbox hidden">
                           <div class="block dark:bg-sky-800/50 bg-slate-500/75 rounded-full w-14 h-8"></div>
                           <div class="top-1 left-1 absolute dark:bg-sky-600/30 bg-slate-700/75 rounded-full w-6 h-6 transition dot"></div>
                         </div>
-                        <p class="ml-3 text-gray-500 group-hover:text-gray-200" data-i18n="navbar.dark-mode">Modo Oscuro</p>
+                        <p class="block md:hidden lg:block ml-3 text-gray-500 group-hover:text-gray-200" data-i18n="navbar.dark-mode">Modo Oscuro</p>
                       </label>
                     </div>
                 </div>
@@ -101,10 +101,10 @@
 
           <!-- Main title -->
           <main class="w-full z-30 lg:w-3/5 h-full relative">
-            <div id="profile" class="absolute backdrop-blur-sm bg-black/75 bottom-0 md:bottom-3 lg:top-24 lg:bottom-auto h-72 lg:h-96 lg:text-left min-h-72 mx-auto pt-10 px-4 sm:px-6 text-center w-full xl:px-8">
+            <div id="profile" class="absolute backdrop-blur-sm bg-black/75 top-12 lg:top-24 lg:bottom-auto h-72 lg:h-96 lg:text-left min-h-72 mx-auto pt-10 px-4 sm:px-6 text-center w-full xl:px-8">
               <h1 class="font-bold text-4xl text-slate-800 sm:text-5xl md:text-6xl tracking-tight">
-                <span class="block text-white xl:inline transition-all duration-300" data-i18n="profile.title-1">¡Hola! Soy </span>
-                <span class="block text-sky-800 xl:inline typo-advent">David</span>
+                <span class="text-white" data-i18n="profile.title-1">¡Hola! Soy </span>
+                <span class="text-sky-800 typo-advent">David</span>
               </h1>
               <p class="sm:mx-auto lg:mx-0 mt-3 sm:mt-5 md:mt-5 sm:max-w-xl text-base text-gray-300 sm:text-lg md:text-xl transition-all duration-300" data-i18n="profile.title-2">
                 Y este es mi portafolio.
@@ -176,9 +176,14 @@
           height="384"
         />
         <div class="pt-6 grid grid-cols-1 justify-items-center justify-center text-center space-y-4">
-          <blockquote class="text-lg max-w-3xl md:max-w-3xl lg:max-w-5xl" data-i18n="about.resume">
-              “Soy un geek del software y la tecnología con aproximadamente 2 años y medio de experiencia como Desarrollador web. He liderado las areas de arquitectura de bases de datos y UI/UX en diferentes proyectos que han resultado en productos comerciales completamente funcionales. Mi paso por la Escuela de Ingenieria Electrica junto con mi experiencia profesional de diferentes escalas me dan un amplio rango de herramientas para resolver cualquier desafio con facilidad, sin importar qué tan particular pueda llegar a ser.”
-          </blockquote>
+          <div class="text-lg max-w-3xl md:max-w-3xl lg:max-w-5xl" data-i18n="about.resume">
+            <p class="block">
+              “Soy un geek del software y la tecnología con aproximadamente 2 años y medio de experiencia como Desarrollador web. He liderado las areas de arquitectura de bases de datos y UI/UX en diferentes proyectos que han resultado en productos comerciales completamente funcionales. 
+            </p><br>
+            <p class="block">
+              Mi paso por la Escuela de Ingenieria Electrica junto con mi experiencia profesional de diferentes escalas me dan un amplio rango de herramientas para resolver cualquier desafio con facilidad, sin importar qué tan particular pueda llegar a ser.”
+            </p>
+          </div>
           <figcaption class="font-semibold">
             <div class="text-sky-500">David Sánchez</div>
             <div class="text-slate-500" data-i18n="about.role">
@@ -193,8 +198,8 @@
       <h2 class="mx-auto pt-14 w-fit text-3xl text-center section-title typo-quicksand" data-i18n="work-education.title">
         Educación &amp; Experiencia
       </h2>
-      <br>
-      <div class="work-education-wrapper">
+      
+      <div class="work-education-wrapper mt-5">
         <div class="mx-auto w-full h-full container">
           <div class="flex flex-col lg:flex-row px-4 sm:p-6 pt-5 pb-4 sm:pb-4">
             <div id="work" class="relative w-3/4 lg:w-1/2 self-auto">
@@ -208,7 +213,6 @@
                   <div data-i18n="work-education.work.title">Experiencia</div>
                 </div>
               </div>
-              <br>
 
               <div class="flex-auto ml-4" >
                 <div data-i18n="work-education.work.role-1">Dev Lead</div>
@@ -243,7 +247,7 @@
               </div>
 
             </div>
-            <div id="education" class="relative w-3/4 lg:w-1/2 self-auto">
+            <div id="education" class="relative mt-10 mb-10 lg:mt-0 lg:mb-0 w-3/4 lg:w-1/2 self-auto">
               <div class="flex items-center p-4">
                 <img
                   src="assets/studies.svg"
@@ -254,16 +258,15 @@
                   <div data-i18n="work-education.education.title">Educación</div>
                 </div>
               </div>
-              <br>
-              <div class="flex-auto ml-4">
+              <div class="flex-auto ml-4 mt-5">
                 <div data-i18n="work-education.education.title-1">Ingenieria Eléctrica (Incompleta)</div>
                 <div class="mt-1 pl-3 text-slate-500">
                   <p class="pl-3 border-sky-500 border-l-4 dark:border-slate-400" data-i18n="work-education.education.college-1">Universidad Tecnológica de Pereira</p>
                   <p class="pl-3 border-sky-500 border-l-4 dark:border-slate-400" data-i18n="work-education.education.time-1">2015 - 2020</p>
                 </div>
               </div>
-              <br><br>
-              <div class="flex-auto ml-4">
+
+              <div class="flex-auto ml-4 mt-4">
                 <div data-i18n="work-education.education.title-2">FP Superior en Desarrollo de Aplicaciones Web</div>
                 <div class="mt-1 pl-3 text-slate-500">
                   <p class="pl-3 border-sky-500 border-l-4 dark:border-slate-400" data-i18n="work-education.education.college-2">CESUR</p>
@@ -280,7 +283,6 @@
           <h2 class="mx-auto pt-4 w-fit text-2xl text-center section-title typo-quicksand" data-i18n="stack.title">
             Mi Stack
           </h2>
-          <br/>
           <div class="flex flex-wrap justify-center mx-auto px-4 w-full h-full container">
             <img class="duration-800 z-30 flex-initial hover:!opacity-40 hover:!scale-110 lg:w-24 m-6 md:m-4 md:w-1/6 mix-blend-overlay transition w-1/5 xl:w-28" src="assets/stack/aws.svg" alt="aws" title="aws" width="512" height="384"/>
             <img class="duration-800 z-30 flex-initial hover:!opacity-40 hover:!scale-110 lg:w-24 m-6 md:m-4 md:w-1/6 mix-blend-overlay transition w-1/5 xl:w-28" src="assets/stack/laravel.svg" alt="laravel" title="laravel" width="512" height="384"/>
@@ -384,8 +386,7 @@
     </section>
 
     <footer class="grid grid-cols-1 xl:grid-cols-2 bg-neutral-200 dark:bg-neutral-950">
-      <p class="p-8 md:p-20 text-center lg:text-left" data-i18n="footer">This site was styled with Tailwind CSS. It's my honest pleasure to have you here ^^. <br>Stay as long as you please, 
-      <br>by yours truly.
+      <p class="p-8 md:p-20 text-center lg:text-left" data-i18n="footer">Este sitio ha sido estilizado con Tailwind CSS. Es un honor tenerte aquí.<br>Quédate tanto como quieras.
       </p>
     </footer>
     
@@ -430,7 +431,7 @@
                 <div class="swiper-pagination"></div>
               </div>
             </div>
-            <div class="dark:text-gray-200 lg:w-1/2 overflow-y-auto pl-16 text-ellipsis text-gray-800 text-justify" data-i18n="projects.projects-list.project-1.modal-content">
+            <div class="dark:text-gray-200 lg:w-1/2 overflow-y-auto lg:pl-16 px-4 lg:px-0 text-ellipsis text-gray-800 text-justify" data-i18n="projects.projects-list.project-1.modal-content">
               <p class="font-bold text-center text-gray-500 text-xl">
                 Ruby ERP
               </p>
@@ -499,7 +500,7 @@
                 <div class="swiper-pagination"></div>
               </div>
             </div>
-            <div class="dark:text-gray-200 lg:w-1/2 overflow-y-auto pl-16 text-ellipsis text-gray-800 text-justify" data-i18n="projects.projects-list.project-2.modal-content">
+            <div class="dark:text-gray-200 lg:w-1/2 overflow-y-auto lg:pl-16 px-4 lg:px-0 text-ellipsis text-gray-800 text-justify" data-i18n="projects.projects-list.project-2.modal-content">
               <p class="font-bold text-center text-gray-500 text-xl">
                 Portafolio de codepen
               </p>
@@ -567,7 +568,7 @@
                 <div class="swiper-pagination"></div>
               </div>
             </div>
-            <div class="dark:text-gray-200 lg:w-1/2 overflow-y-auto pl-16 text-ellipsis text-gray-800 text-justify" data-i18n="projects.projects-list.project-3.modal-content">
+            <div class="dark:text-gray-200 lg:w-1/2 overflow-y-auto lg:pl-16 px-4 lg:px-0 text-ellipsis text-gray-800 text-justify" data-i18n="projects.projects-list.project-3.modal-content">
               <p class="font-bold text-center text-gray-500 text-xl">
                 React chessClock
               </p>
