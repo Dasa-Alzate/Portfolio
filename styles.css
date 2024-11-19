@@ -169,22 +169,24 @@ max-height: 100%;
     z-index: 1;
 }
 
-/* hero blob animations */
 .hue-rotate-animation {
     animation: hueLoop 10s ease-in-out infinite;
-    filter: hue-rotate(0deg) blur(40px);
-  }
-  
-  /* Definición de la animación */
-  @keyframes hueLoop {
+    filter: hue-rotate(0deg) blur(40px) url(#grainy);
+}
+
+.noise-filter {
+    filter: url(#grainy);
+}
+
+@keyframes hueLoop {
     0% {
-      filter: hue-rotate(0deg) blur(40px);
+        filter: hue-rotate(0deg) blur(40px);
     }
     50% {
-      filter: hue-rotate(60deg) blur(80px);
+        filter: hue-rotate(60deg) blur(80px);
     }
     100% {
-      filter: hue-rotate(0deg) blur(40px);
+        filter: hue-rotate(0deg) blur(40px);
     }
-  }
+}
   
