@@ -19,7 +19,7 @@
     },
     "about": {
         "title": "About Me",
-        "resume": "“I am a software and technology geek with approximately 2 and a half years of experience as a web developer. I have led the areas of database architecture and UI/UX in different projects that have resulted in fully functional commercial products. My time at the School of Electrical Engineering along with my professional experience of different scales give me a wide range of tools to solve any challenge with ease, no matter how unique it may be.”",
+        "resume": "“I am a software and technology geek with approximately 2 and a half years of experience as a web developer. I have led the areas of database architecture and UI/UX in different projects that have resulted in fully functional commercial products. <br><br>My time at the Electrical Engineering Degree along with my professional experience of different scales give me a wide range of tools to solve any challenge with ease, no matter how unique it may be.”",
         "role": "Full-Stack Developer."
     },
     "work-education": {
@@ -34,10 +34,10 @@
         },
         "education": {
             "title": "Education",
-            "title-1": "Electrical Engineering (Incomplete)",
+            "title-1": "Degree in Electrical Engineering (Incomplete)",
             "college-1": "Technological University of Pereira",
             "time-1": "2015 - 2020",
-            "title-2": "Higher Vocational Training in Web Application Development",
+            "title-2": "Higher Vocational Training in Web Applications Development",
             "college-2": "CESUR Audiovisual - Spain",
             "time-2": "2023 - 2025"
         }
