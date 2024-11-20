@@ -19,7 +19,7 @@
     },
     "about": {
         "title": "About Me",
-        "resume": "“I am a software and technology geek with approximately 2 and a half years of experience as a web developer. I have led the areas of database architecture and UI/UX in different projects that have resulted in fully functional commercial products. <br><br>My time at the Electrical Engineering Degree along with my professional experience of different scales give me a wide range of tools to solve any challenge with ease, no matter how unique it may be.”",
+        "resume": "<p>I am a software and technology geek with approximately 2 and a half years of experience as a web developer. I have led the areas of database architecture and UI/UX in different projects that have resulted in fully functional commercial products. </p><p class='mt-4'>My time at the Electrical Engineering Degree along with my professional experience of different scales give me a wide range of tools to solve any challenge with ease, no matter how unique it may be.</p><div class='absolute top-0 w-full h-full flex justify-center items-center'><img class='size-48 opacity-50 mix-blend-overlay' src='assets/quote.svg' alt=''/></div>",
         "role": "Full-Stack Developer."
     },
     "work-education": {
