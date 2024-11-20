@@ -233,6 +233,15 @@ i18next.use(i18nextHttpBackend).init({
   updateContent();
 });
 
+i18next.on('failedLoading', function(lng, ns, msg) {
+  console.error(`Failed to load translation file for language "${lng}":`, msg);
+  
+  const chooseLang = document.querySelector('.chooseLang');
+  if (chooseLang) {
+    chooseLang.parentNode.classList.add('hidden');
+  }
+});
+
 function updateContent() {
   document.querySelectorAll('[data-i18n]').forEach(function(element) {
     const key = element.getAttribute('data-i18n');
