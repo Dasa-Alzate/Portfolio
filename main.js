@@ -159,14 +159,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
   gsap.from("#education", {
     scrollTrigger: {
-      trigger: "#education",
-      start: "top 60%",
+      trigger: "#work",
+      start: "top 80%",
       toggleActions: "restart none none none",
     },
     x: 200,
     opacity: 0,
     duration: 1.5,
-    ease: "power2.out"
+    ease: "power2.out",
+    delay: .6,
   });
 
   stackLogos.forEach((logo, index) => {
