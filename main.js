@@ -133,22 +133,22 @@ document.addEventListener("DOMContentLoaded", function() {
     scrollTrigger: {
       trigger: "#about",
       start: "top 50%",
-      end: "top 5%",
-      scrub: 2,
+      onEnter: () => {
+        gsap.to('#about', {
+          x: 0,
+          opacity: 1,
+          duration: 3,
+          ease: "power2.out"
+        });
+      },
       toggleActions: "restart none none none",
     },
-    x: -100,
-    opacity: 0,
-    duration: 1.5,
-    ease: "power2.out"
   });
 
   gsap.from("#work", {
     scrollTrigger: {
       trigger: "#work",
       start: "top 80%",
-      end: "top 50%",
-      scrub: 2,
       toggleActions: "restart none none none",
     },
     x: 200,
@@ -161,8 +161,6 @@ document.addEventListener("DOMContentLoaded", function() {
     scrollTrigger: {
       trigger: "#education",
       start: "top 60%",
-      end: "top 30%",
-      scrub: 2,
       toggleActions: "restart none none none",
     },
     x: 200,
@@ -173,17 +171,22 @@ document.addEventListener("DOMContentLoaded", function() {
 
   stackLogos.forEach((logo, index) => {
     const xOffset = 100 * index;
-    const offset = Math.ceil(70 - (diffLogoAnimation / (stackLogos.length * 1.5)) * index);
+    // const offset = Math.ceil(70 - (diffLogoAnimation / (stackLogos.length * 1.5)) * index);
+    const delay = index*0.05;
     gsap.from(logo, {
       scrollTrigger: {
         trigger: "#stack",
-        start: `top ${offset}%`,
-        end: `top ${offset-10}%`,
+        start: `top 60%`,
+        onEnter: () => {
+          gsap.to(logo, {
+            rotate: 0,
+            opacity: 1,
+            duration: .8,
+            delay: delay,
+          });
+        },
         toggleActions: "play none none none",
       },
-      rotation: -210,
-      opacity: 0,
-      duration: .8
     });
   });
 
@@ -191,14 +194,15 @@ document.addEventListener("DOMContentLoaded", function() {
     scrollTrigger: {
       trigger: "#projects",
       start: "top 60%",
-      end: "top 40%",
-      scrub: 2,
+      onEnter: () => {
+        gsap.to('#projects', {
+          x: 0,
+          opacity: 1,
+          duration: .6,
+        });
+      },
       toggleActions: "restart none none none",
     },
-    x: -100,
-    opacity: 0,
-    duration: 1.5,
-    ease: "power2.out"
   });
 
   // text-overflow
