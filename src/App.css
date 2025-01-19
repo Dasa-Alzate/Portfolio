@@ -192,3 +192,73 @@ max-height: 100%;
       filter: hue-rotate(0deg) blur(40px);
   }
 }
+
+
+/* Link icon con texto en revelado circular */
+.link-container {
+	position: relative;
+	width: 70px;
+	height: 70px;
+}
+
+.link-icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 70px;
+	height: 70px;
+	background-color: #F9B17A;
+	border-radius: 15%;
+	transform: rotate(45deg);
+	transition: all 0.5s ease;
+}
+
+.icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 40px;
+	color: #00000082;
+	transition: all 0.5s ease;
+}
+
+.circle-text {
+	position: absolute;
+	top: -14px;
+	left: -5px;
+	width: 80px;
+	height: 100px;
+	overflow: visible;
+	z-index: 0;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.5s ease;
+}
+.circle-text text {
+	fill: transparent;
+	font-size: 8px;
+	transform-origin: center;
+	transform: rotate(-90deg);
+	transition: all 0.5s ease;
+}
+
+.link-container:hover .link-icon {
+	border-radius: 50%;
+	transform: rotate(90deg);
+	background-color: #424769;
+}
+
+.link-container:hover .icon {
+	font-size: 44px;
+}
+
+.link-container:hover .circle-text {
+	opacity: 1;
+}
+
+.link-container:hover .circle-text text {
+	fill: white;
+	font-size: 18px;
+	transform: rotate(-30deg);
+}

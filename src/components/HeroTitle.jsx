@@ -13,49 +13,109 @@ const HeroTitle = () => {
         </h1>
         <p className="sm:mx-auto lg:mx-0 mt-3 sm:mt-5 md:mt-5 sm:max-w-xl text-base text-gray-300 sm:text-lg md:text-xl transition-all duration-300">{ t('profile.title-2') }</p>
         <div id="contact-links" className="bottom-0 absolute inset-x-0 flex sm:justify-center xl:justify-end mt-5 sm:mt-8 mb-3">
-          <div className="mx-auto h-10 mt-3 sm:mt-0">
+                
+          <div className="relative mx-auto mt-3 sm:mt-0 scale-75">
             <a href="https://github.com/Dasa-Alzate"
+              className="link-container relative block group"
               target="_blank"
-              title="Visita mi GitHub"
-              data-i18n-title="Visita mi GitHub"
-              data-i18n="contact-links.github">
-              <i className="bg-clip-text bg-gradient-to-br from-stone-500 to-slate-300/25 dark:from-sky-700 dark:to-indigo-300/25 to-70% mx-auto mt-auto mb-4 text-2xl text-white hover:text-4xl hover:text-transparent duration-300 bi bi-github"></i>
+              title={ t('contact-links.github') }>
+                <div className="link-icon bg-stone-500 dark:bg-stone-300 group-hover:bg-zinc-800"></div>
+                <div className="icon">
+                  <i className="bi bi-github"></i>
+                </div>
+
+              <svg viewBox="0 0 100 100" class="circle-text">
+                <defs>
+                  <path id="circlePathText" d="M 50, 50 m -50, 0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0" />
+                </defs>
+                <text>
+                  <textPath href="#circlePathText" startOffset="50%" text-anchor="middle">Github</textPath>
+                </text>
+              </svg>
             </a>
           </div>
-          <div className="mx-auto h-10 mt-3 sm:mt-0">
+          
+          <div className="relative mx-auto mt-3 sm:mt-0 scale-75">
             <a href="https://www.linkedin.com/in/Dasa-Alzate"
+              className="link-container relative block group"
               target="_blank"
-              title="Echa un vistazo a mi LinkedIn"
-              data-i18n-title="Echa un vistazo a mi LinkedIn"
-              data-i18n="contact-links.linkedin">
-              <i className="bg-clip-text bg-gradient-to-br from-stone-500 to-slate-300/25 dark:from-sky-700 dark:to-indigo-300/25 to-70% mx-auto mt-auto mb-4 text-2xl text-white hover:text-4xl hover:text-transparent duration-300 bi bi-linkedin"></i>
+              title={ t('contact-links.linkedin') }>
+                <div className="link-icon bg-stone-500 dark:bg-stone-300 group-hover:bg-sky-900"></div>
+                <div className="icon">
+                  <i className="bi bi-linkedin"></i>
+                </div>
+
+              <svg viewBox="0 0 100 100" class="circle-text">
+                <defs>
+                  <path id="circlePathText" d="M 50, 50 m -50, 0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0" />
+                </defs>
+                <text>
+                  <textPath href="#circlePathText" startOffset="50%" text-anchor="middle">Linkedin</textPath>
+                </text>
+              </svg>
             </a>
           </div>
-          <div className="mx-auto h-10 mt-3 sm:mt-0">
+          
+          <div className="relative mx-auto mt-3 sm:mt-0 scale-75">
             <a href="mailto:dasa.alzate@gmail.com"
+              className="link-container relative block group"
               target="_blank"
-              title="Escríbeme por correo"
-              data-i18n-title="Escríbeme por correo"
-              data-i18n="contact-links.email">
-              <i className="bg-clip-text bg-gradient-to-br from-stone-500 to-slate-300/25 dark:from-sky-700 dark:to-indigo-300/25 to-70% mx-auto mt-auto mb-4 text-2xl text-white hover:text-4xl hover:text-transparent duration-300 bi bi-envelope"></i>
+              title={ t('contact-links.email') }>
+                <div className="link-icon bg-stone-500 dark:bg-stone-300 group-hover:bg-amber-500"></div>
+                <div className="icon">
+                  <i className="bi bi-envelope"></i>
+                </div>
+
+              <svg viewBox="0 0 100 100" class="circle-text">
+                <defs>
+                  <path id="circlePathText" d="M 50, 50 m -50, 0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0" />
+                </defs>
+                <text>
+                  <textPath href="#circlePathText" startOffset="50%" text-anchor="middle">E-mail</textPath>
+                </text>
+              </svg>
             </a>
           </div>
-          <div className="mx-auto h-10 mt-3 sm:mt-0">
+          
+          <div className="relative mx-auto mt-3 sm:mt-0 scale-75">
             <a href="https://wa.me/34604461105"
+              className="link-container relative block group"
               target="_blank"
-              title="Hablemos por Whatsapp"
-              data-i18n-title="Hablemos por Whatsapp"
-              data-i18n="contact-links.whatsapp">
-              <i className="bg-clip-text bg-gradient-to-br from-stone-500 to-slate-300/25 dark:from-sky-700 dark:to-indigo-300/25 to-70% mx-auto mt-auto mb-4 text-2xl text-white hover:text-4xl hover:text-transparent duration-300 bi bi-whatsapp"></i>
+              title={ t('contact-links.whatsapp') }>
+                <div className="link-icon bg-stone-500 dark:bg-stone-300 group-hover:bg-lime-600"></div>
+                <div className="icon">
+                  <i className="bi bi-whatsapp"></i>
+                </div>
+
+              <svg viewBox="0 0 100 100" class="circle-text">
+                <defs>
+                  <path id="circlePathText" d="M 50, 50 m -50, 0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0" />
+                </defs>
+                <text>
+                  <textPath href="#circlePathText" startOffset="50%" text-anchor="middle">Whatsapp</textPath>
+                </text>
+              </svg>
             </a>
           </div>
-          <div className="mx-auto h-10 mt-3 sm:mt-0">
+          
+          <div className="relative mx-auto mt-3 sm:mt-0 scale-75">
             <a href="CV - David Sánchez.pdf"
+              className="link-container relative block group"
               target="_blank"
-              title="Descarga mi CV"
-              data-i18n-title="Descarga mi CV"
-              data-i18n="contact-links.file">
-              <i className="bg-clip-text bg-gradient-to-br from-stone-500 to-slate-300/25 dark:from-sky-700 dark:to-indigo-300/25 to-70% mx-auto mt-auto mb-4 text-2xl text-white hover:text-4xl hover:text-transparent duration-300 bi bi-file-earmark-text"></i>
+              title={ t('contact-links.file') }>
+                <div className="link-icon bg-stone-500 dark:bg-stone-300 group-hover:bg-zinc-500"></div>
+                <div className="icon">
+                  <i className="bi bi-file-earmark-text"></i>
+                </div>
+
+              <svg viewBox="0 0 100 100" class="circle-text">
+                <defs>
+                  <path id="circlePathText" d="M 50, 50 m -50, 0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0" />
+                </defs>
+                <text>
+                  <textPath href="#circlePathText" startOffset="50%" text-anchor="middle">Mi CV</textPath>
+                </text>
+              </svg>
             </a>
           </div>
         </div>
