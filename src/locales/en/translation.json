@@ -19,7 +19,7 @@
     },
     "about": {
         "title": "About Me",
-        "resume": "<p>I am a software and technology geek with approximately 2 and a half years of experience as a web developer. I have led the areas of database architecture and UI/UX in different projects that have resulted in fully functional commercial products. </p><p class='mt-4'>My time at the Electrical Engineering Degree along with my professional experience of different scales give me a wide range of tools to solve any challenge with ease, no matter how unique it may be.</p><div class='absolute top-0 w-full h-full flex justify-center items-center'><img class='size-48 opacity-25 dark:opacity-50 mix-blend-overlay' src='assets/quote.svg' alt=''/></div>",
+        "resume": "<p>I am a software and technology geek with approximately 2 and a half years of experience as a web developer. I have led the areas of database architecture and UI/UX in different projects that have resulted in fully functional commercial products. </p><p class='mt-4'>My time at the Electrical Engineering Degree along with my professional experience of different scales give me a wide range of tools to solve any challenge with ease, no matter how unique it may be.</p><div class='absolute top-0 w-full h-full flex justify-center items-center'><img class='size-48 opacity-25 dark:opacity-50 mix-blend-overlay' src='/assets/quote.svg' alt=''/></div>",
         "role": "Full-Stack Developer."
     },
     "work-education": {
@@ -46,67 +46,67 @@
         "title": "My Stack",
         "stack": [
             {
-                "src": "assets/stack/aws.svg",
+                "src": "/assets/stack/aws.svg",
                 "alt": "aws", 
                 "title": "aws"
             },{
-                "src": "assets/stack/laravel.svg",
+                "src": "/assets/stack/laravel.svg",
                 "alt": "laravel", 
                 "title": "laravel"
             },{
-                "src": "assets/stack/angular.svg",
+                "src": "/assets/stack/angular.svg",
                 "alt": "angular", 
                 "title": "angular"
             },{
-                "src": "assets/stack/react.svg",
+                "src": "/assets/stack/react.svg",
                 "alt": "react", 
                 "title": "react"
             },{
-                "src": "assets/stack/python.svg",
+                "src": "/assets/stack/python.svg",
                 "alt": "python", 
                 "title": "python"
             },{
-                "src": "assets/stack/php.svg",
+                "src": "/assets/stack/php.svg",
                 "alt": "php", 
                 "title": "php"
             },{
-                "src": "assets/stack/java.svg",
+                "src": "/assets/stack/java.svg",
                 "alt": "java", 
                 "title": "java"
             },{
-                "src": "assets/stack/spring.svg",
+                "src": "/assets/stack/spring.svg",
                 "alt": "spring", 
                 "title": "spring"
             },{
-                "src": "assets/stack/jquery.svg",
+                "src": "/assets/stack/jquery.svg",
                 "alt": "jquery", 
                 "title": "jquery"
             },{
-                "src": "assets/stack/bootstrap.svg",
+                "src": "/assets/stack/bootstrap.svg",
                 "alt": "bootstrap", 
                 "title": "bootstrap"
             },{
-                "src": "assets/stack/tailwind.svg",
+                "src": "/assets/stack/tailwind.svg",
                 "alt": "tailwind", 
                 "title": "tailwind"
             },{
-                "src": "assets/stack/oracle.svg",
+                "src": "/assets/stack/oracle.svg",
                 "alt": "oracle", 
                 "title": "oracle"
             },{
-                "src": "assets/stack/mysql.svg",
+                "src": "/assets/stack/mysql.svg",
                 "alt": "mysql", 
                 "title": "mysql"
             },{
-                "src": "assets/stack/mongodb.svg",
+                "src": "/assets/stack/mongodb.svg",
                 "alt": "mongodb", 
                 "title": "mongoDB"
             },{
-                "src": "assets/stack/tensorflow.svg",
+                "src": "/assets/stack/tensorflow.svg",
                 "alt": "tensorflow", 
                 "title": "tensorflow"
             },{
-                "src": "assets/stack/docker.svg",
+                "src": "/assets/stack/docker.svg",
                 "alt": "docker", 
                 "title": "docker"
             }

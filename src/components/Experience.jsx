@@ -17,7 +17,7 @@ function Experience() {
             <div id="work" className="relative w-3/4 lg:w-1/2 self-auto">
               <div className="flex items-center p-4">
                 <img
-                  src="assets/work.svg"
+                  src="/assets/work.svg"
                   alt=""
                   className="flex-none w-10 h-10"
                 />
@@ -62,7 +62,7 @@ function Experience() {
             <div id="education" className="relative mt-10 mb-10 lg:mt-0 lg:mb-0 w-3/4 lg:w-1/2 self-auto">
               <div className="flex items-center p-4">
                 <img
-                  src="assets/studies.svg"
+                  src="/assets/studies.svg"
                   alt=""
                   className="flex-none w-10 h-10"
                 />

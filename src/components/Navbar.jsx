@@ -13,7 +13,7 @@ const Navbar = () => {
           <div className="flex items-center justify-between w-auto">
             <a href="#">
               <span className="sr-only">David</span>
-              <img alt="David" className="w-auto h-14 grayscale" src="assets/logo4.png" />
+              <img alt="David" className="w-auto h-14 grayscale" src="/assets/logo4.png" />
             </a>
           </div>
         </div>

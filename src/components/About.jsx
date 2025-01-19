@@ -11,7 +11,7 @@ const About = () => {
       <figure className="bg-neutral-100 dark:bg-neutral-900 p-8">
         <img
           className="mx-auto rounded-full w-32 h-32"
-          src="assets/avatar.png"
+          src="/assets/avatar.png"
           alt=""
           width="512"
           height="384"
