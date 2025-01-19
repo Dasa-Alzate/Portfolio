@@ -32,6 +32,9 @@ body {
   transition:.5s;
 
   background: linear-gradient(to right, rgba(200, 200, 200, 0), rgb(130, 130, 130), rgba(60, 60, 60, 0));
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-duration: 300ms;
 }
 
 html body section:hover .section-title:after {

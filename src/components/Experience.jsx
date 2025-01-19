@@ -22,12 +22,12 @@ function Experience() {
                   className="flex-none w-10 h-10"
                 />
                 <div className="flex-auto ml-4">
-                  <div data-i18n="work-education.work.title">Experiencia</div>
+                  <div>{t('work-education.work.title')}</div>
                 </div>
               </div>
 
               <div className="flex-auto ml-4" >
-                <div data-i18n="work-education.work.role-1">Dev Lead</div>
+                <div>{t('work-education.work.role-1')}</div>
                 <div className="mt-1 pl-3 text-slate-500" >
                   <div className="pl-1 border-stone-800/75 border-l-4 dark:border-slate-400">
                     <ul className="flex flex-wrap lg:flex-nowrap gap-2 mt-2 pb-2 pl-1">
@@ -37,13 +37,13 @@ function Experience() {
                       <li className="bg-stone-800/20 dark:bg-sky-800/20 mx-1 px-3 p-1 rounded-full h-min text-sm text-stone-500 dark:text-sky-500">SQL</li>
                     </ul>
                   </div>
-                  <p className="pl-3 border-stone-800/75 border-l-4 dark:border-slate-400" data-i18n="work-education.work.company">Projects Triple A  </p>
-                  <p className="pl-3 border-stone-800/75 border-l-4 dark:border-slate-400" data-i18n="work-education.work.time-1">Apr. 2021 - Jul. 2023  ·  2Y 4M  </p>
+                  <p className="pl-3 border-stone-800/75 border-l-4 dark:border-slate-400">{t('work-education.work.company')}</p>
+                  <p className="pl-3 border-stone-800/75 border-l-4 dark:border-slate-400">{t('work-education.work.time-1')}</p>
                 </div>
               </div>
 
               <div className="flex-auto mt-4 ml-4" >
-                <div data-i18n="work-education.work.role-2">Desarrollador Full-Stack</div>
+                <div>{t('work-education.work.role-2')}</div>
                 <div className="mt-1 pl-3 text-slate-500" >
                   <div className="pl-1 border-stone-800/75 border-l-4 dark:border-slate-400">
                     <ul className="flex flex-wrap lg:flex-nowrap gap-2 mt-2 pb-2 pl-1">
@@ -53,8 +53,8 @@ function Experience() {
                       <li className="bg-stone-800/20 dark:bg-sky-800/20 mx-1 px-3 p-1 rounded-full h-min text-sm text-stone-500 dark:text-sky-500">JavaScript</li>
                     </ul>
                   </div>
-                  <p className="pl-3 border-stone-800/75 border-l-4 dark:border-slate-400" data-i18n="work-education.work.company">Projects Triple A  </p>
-                  <p className="pl-3 border-stone-800/75 border-l-4 dark:border-slate-400" data-i18n="work-education.work.time-2">Apr. 2021 - Jul. 2023  ·  2Y 4M  </p>
+                  <p className="pl-3 border-stone-800/75 border-l-4 dark:border-slate-400">{t('work-education.work.company')}</p>
+                  <p className="pl-3 border-stone-800/75 border-l-4 dark:border-slate-400">{t('work-education.work.time-2')}</p>
                 </div>
               </div>
 
@@ -67,22 +67,22 @@ function Experience() {
                   className="flex-none w-10 h-10"
                 />
                 <div className="flex-auto ml-4">
-                  <div data-i18n="work-education.education.title">Educación</div>
+                  <div>{t('work-education.education.title')}</div>
                 </div>
               </div>
               <div className="flex-auto ml-4 mt-5">
-                <div data-i18n="work-education.education.title-1">Ingenieria Eléctrica (Incompleta)</div>
+                <div>{t('work-education.education.title-1')}</div>
                 <div className="mt-1 pl-3 text-slate-500">
-                  <p className="pl-3 border-stone-800/75 border-l-4 dark:border-slate-400" data-i18n="work-education.education.college-1">Universidad Tecnológica de Pereira</p>
-                  <p className="pl-3 border-stone-800/75 border-l-4 dark:border-slate-400" data-i18n="work-education.education.time-1">2015 - 2020</p>
+                  <p className="pl-3 border-stone-800/75 border-l-4 dark:border-slate-400">{t('work-education.education.college-1')}</p>
+                  <p className="pl-3 border-stone-800/75 border-l-4 dark:border-slate-400">{t('work-education.education.time-1')}</p>
                 </div>
               </div>
 
               <div className="flex-auto ml-4 mt-4">
-                <div data-i18n="work-education.education.title-2">FP Superior en Desarrollo de Aplicaciones Web</div>
+                <div>{t('work-education.education.title-2')}</div>
                 <div className="mt-1 pl-3 text-slate-500">
-                  <p className="pl-3 border-stone-800/75 border-l-4 dark:border-slate-400" data-i18n="work-education.education.college-2">CESUR</p>
-                  <p className="pl-3 border-stone-800/75 border-l-4 dark:border-slate-400" data-i18n="work-education.education.time-2">2023 - 2025</p>
+                  <p className="pl-3 border-stone-800/75 border-l-4 dark:border-slate-400">{t('work-education.education.college-2')}</p>
+                  <p className="pl-3 border-stone-800/75 border-l-4 dark:border-slate-400">{t('work-education.education.time-2')}</p>
                 </div>
               </div>
             </div>
