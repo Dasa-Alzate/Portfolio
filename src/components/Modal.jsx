@@ -17,22 +17,28 @@ function Modal() {
               <div className="carousel h-full overflow-hidden self-auto swiper-container">
                 <div className="swiper-wrapper">
                   <div className="swiper-slide flex">
-                    <img className="cursor-pointer" src="/assets/projects/ruby erp/ruby1.png" alt="" onclick="openLightbox('/assets/projects/ruby erp/ruby1.png')" loading="lazy" />
+                    <img className="cursor-pointer" src="/assets/projects/ruby erp/ruby1.png" alt="" loading="lazy" />
+                    {/* onclick="openLightbox('/assets/projects/ruby erp/ruby1.png')" */}
                   </div>
                   <div className="swiper-slide flex">
-                    <img className="cursor-pointer" src="/assets/projects/ruby erp/ruby3.png" alt="" onclick="openLightbox('/assets/projects/ruby erp/ruby3.png')" loading="lazy" />
+                    <img className="cursor-pointer" src="/assets/projects/ruby erp/ruby3.png" alt="" loading="lazy" />
+                    {/* onclick="openLightbox('/assets/projects/ruby erp/ruby3.png')" */}
                   </div>
                   <div className="swiper-slide flex">
-                    <img className="cursor-pointer" src="/assets/projects/ruby erp/ruby4.png" alt="" onclick="openLightbox('/assets/projects/ruby erp/ruby4.png')" loading="lazy" />
+                    <img className="cursor-pointer" src="/assets/projects/ruby erp/ruby4.png" alt="" loading="lazy" />
+                    {/* onclick="openLightbox('/assets/projects/ruby erp/ruby4.png')" */}
                   </div>
                   <div className="swiper-slide flex">
-                    <img className="cursor-pointer" src="/assets/projects/ruby erp/ruby5.png" alt="" onclick="openLightbox('/assets/projects/ruby erp/ruby5.png')" loading="lazy" />
+                    <img className="cursor-pointer" src="/assets/projects/ruby erp/ruby5.png" alt="" loading="lazy" />
+                    {/* onclick="openLightbox('/assets/projects/ruby erp/ruby5.png')" */}
                   </div>
                   <div className="swiper-slide flex">
-                    <img className="cursor-pointer" src="/assets/projects/ruby erp/ruby6.png" alt="" onclick="openLightbox('/assets/projects/ruby erp/ruby6.png')" loading="lazy" />
+                    <img className="cursor-pointer" src="/assets/projects/ruby erp/ruby6.png" alt="" loading="lazy" />
+                    {/* onclick="openLightbox('/assets/projects/ruby erp/ruby6.png')" */}
                   </div>
                   <div className="swiper-slide flex">
-                    <img className="cursor-pointer" src="/assets/projects/ruby erp/ruby7.png" alt="" onclick="openLightbox('/assets/projects/ruby erp/ruby7.png')" loading="lazy" />
+                    <img className="cursor-pointer" src="/assets/projects/ruby erp/ruby7.png" alt="" loading="lazy" />
+                    {/* onclick="openLightbox('/assets/projects/ruby erp/ruby7.png')" */}
                   </div>
                 </div>
                 <div className="swiper-pagination"></div>
@@ -69,8 +75,8 @@ function Modal() {
             <button
               type="button"
               className="bg-gray-500/50 dark:hover:bg-gray-300/50 hover:bg-gray-700/50 backdrop-blur-sm mr-2 px-4 py-2 text-white dark:text-gray-900 rounded"
-              onclick="toggleModal('modal_ruby')"
             >
+              {/* onclick="toggleModal('modal_ruby')" */}
               <i className="fa-times fas"></i> Close
             </button>
           </div>
@@ -92,22 +98,28 @@ function Modal() {
               <div className="carousel h-full overflow-hidden self-auto swiper-container">
                 <div className="swiper-wrapper">
                   <div className="swiper-slide flex">
-                    <img className="cursor-pointer" src="/assets/projects/scope/index.png" alt="" onclick="openLightbox('/assets/projects/scope/index.png')" loading="lazy" />
+                    <img className="cursor-pointer" src="/assets/projects/scope/index.png" alt="" loading="lazy" />
+                    {/* onclick="openLightbox('/assets/projects/scope/index.png')" */}
                   </div>
                   <div className="swiper-slide flex">
-                    <img className="cursor-pointer" src="/assets/projects/scope/presupuesto menu.png" alt="" onclick="openLightbox('/assets/projects/scope/presupuesto menu.png')" loading="lazy" />
+                    <img className="cursor-pointer" src="/assets/projects/scope/presupuesto menu.png" alt="" loading="lazy" />
+                    {/* onclick="openLightbox('/assets/projects/scope/presupuesto menu.png')" */}
                   </div>
                   <div className="swiper-slide flex">
-                    <img className="cursor-pointer" src="/assets/projects/scope/inventario menu.png" alt="" onclick="openLightbox('/assets/projects/scope/inventario menu.png')" loading="lazy" />
+                    <img className="cursor-pointer" src="/assets/projects/scope/inventario menu.png" alt="" loading="lazy" />
+                    {/* onclick="openLightbox('/assets/projects/scope/inventario menu.png')" */}
                   </div>
                   <div className="swiper-slide flex">
-                    <img className="cursor-pointer" src="/assets/projects/scope/contratos.png" alt="" onclick="openLightbox('/assets/projects/scope/contratos.png')" loading="lazy" />
+                    <img className="cursor-pointer" src="/assets/projects/scope/contratos.png" alt="" loading="lazy" />
+                    {/* onclick="openLightbox('/assets/projects/scope/contratos.png')" */}
                   </div>
                   <div className="swiper-slide flex">
-                    <img className="cursor-pointer" src="/assets/projects/scope/acta editar.png" alt="" onclick="openLightbox('/assets/projects/scope/acta editar.png')" loading="lazy" />
+                    <img className="cursor-pointer" src="/assets/projects/scope/acta editar.png" alt="" loading="lazy" />
+                    {/* onclick="openLightbox('/assets/projects/scope/acta editar.png')" */}
                   </div>
                   <div className="swiper-slide flex">
-                    <img className="cursor-pointer" src="/assets/projects/scope/acta ver.png" alt="" onclick="openLightbox('/assets/projects/scope/acta ver.png')" loading="lazy" />
+                    <img className="cursor-pointer" src="/assets/projects/scope/acta ver.png" alt="" loading="lazy" />
+                    {/* onclick="openLightbox('/assets/projects/scope/acta ver.png')" */}
                   </div>
                 </div>
                 <div className="swiper-pagination"></div>
@@ -137,8 +149,8 @@ function Modal() {
             <button
               type="button"
               className="bg-gray-500/50 dark:hover:bg-gray-300/50 hover:bg-gray-700/50 backdrop-blur-sm mr-2 px-4 py-2 text-white dark:text-gray-900 rounded"
-              onclick="toggleModal('modal_scope_presupuesto')"
             >
+              {/* onclick="toggleModal('modal_scope_presupuesto')" */}
               <i className="fa-times fas"></i> Close
             </button>
           </div>
@@ -160,19 +172,24 @@ function Modal() {
               <div className="carousel h-full overflow-hidden self-auto swiper-container">
                 <div className="swiper-wrapper">
                   <div className="swiper-slide flex">
-                    <img className="cursor-pointer" src="/assets/projects/scope/facturas1.png" alt="" onclick="openLightbox('/assets/projects/scope/facturas1.png')" loading="lazy" />
+                    <img className="cursor-pointer" src="/assets/projects/scope/facturas1.png" alt="" loading="lazy" />
+                    {/* onclick="openLightbox('/assets/projects/scope/facturas1.png')" */}
                   </div>
                   <div className="swiper-slide flex">
-                    <img className="cursor-pointer" src="/assets/projects/scope/facturas2.png" alt="" onclick="openLightbox('/assets/projects/scope/facturas2.png')" loading="lazy" />
+                    <img className="cursor-pointer" src="/assets/projects/scope/facturas2.png" alt="" loading="lazy" />
+                    {/* onclick="openLightbox('/assets/projects/scope/facturas2.png')" */}
                   </div>
                   <div className="swiper-slide flex">
-                    <img className="cursor-pointer" src="/assets/projects/scope/facturas3.png" alt="" onclick="openLightbox('/assets/projects/scope/facturas3.png')" loading="lazy" />
+                    <img className="cursor-pointer" src="/assets/projects/scope/facturas3.png" alt="" loading="lazy" />
+                    {/* onclick="openLightbox('/assets/projects/scope/facturas3.png')" */}
                   </div>
                   <div className="swiper-slide flex">
-                    <img className="cursor-pointer" src="/assets/projects/scope/facturas4.png" alt="" onclick="openLightbox('/assets/projects/scope/facturas4.png')" loading="lazy" />
+                    <img className="cursor-pointer" src="/assets/projects/scope/facturas4.png" alt="" loading="lazy" />
+                    {/* onclick="openLightbox('/assets/projects/scope/facturas4.png')" */}
                   </div>
                   <div className="swiper-slide flex">
-                    <img className="cursor-pointer" src="/assets/projects/scope/factura xml.png" alt="" onclick="openLightbox('/assets/projects/scope/factura xml.png')" loading="lazy" />
+                    <img className="cursor-pointer" src="/assets/projects/scope/factura xml.png" alt="" loading="lazy" />
+                    {/* onclick="openLightbox('/assets/projects/scope/factura xml.png')" */}
                   </div>
                 </div>
                 <div className="swiper-pagination"></div>
@@ -208,8 +225,8 @@ function Modal() {
             <button
               type="button"
               className="bg-gray-500/50 dark:hover:bg-gray-300/50 hover:bg-gray-700/50 backdrop-blur-sm mr-2 px-4 py-2 text-white dark:text-gray-900 rounded"
-              onclick="toggleModal('modal_scope_facturas')"
             >
+              {/* onclick="toggleModal('modal_scope_facturas')" */}
               <i className="fa-times fas"></i> Close
             </button>
           </div>
@@ -231,10 +248,12 @@ function Modal() {
               <div className="carousel h-full overflow-hidden self-auto swiper-container">
                 <div className="swiper-wrapper">
                   <div className="swiper-slide flex">
-                    <img className="cursor-pointer" src="/assets/projects/scope/scanner.png" alt="" onclick="openLightbox('/assets/projects/scope/scanner.png')" loading="lazy" />
+                    <img className="cursor-pointer" src="/assets/projects/scope/scanner.png" alt="" loading="lazy" />
+                    {/* onclick="openLightbox('/assets/projects/scope/scanner.png')" */}
                   </div>
                   <div className="swiper-slide flex">
-                    <img className="cursor-pointer" src="/assets/projects/scope/mano de obra.png" alt="" onclick="openLightbox('/assets/projects/scope/mano de obra.png')" loading="lazy" />
+                    <img className="cursor-pointer" src="/assets/projects/scope/mano de obra.png" alt="" loading="lazy" />
+                    {/* onclick="openLightbox('/assets/projects/scope/mano de obra.png')" */}
                   </div>
                 </div>
                 <div className="swiper-pagination"></div>
@@ -268,8 +287,8 @@ function Modal() {
             <button
               type="button"
               className="bg-gray-500/50 dark:hover:bg-gray-300/50 hover:bg-gray-700/50 backdrop-blur-sm mr-2 px-4 py-2 text-white dark:text-gray-900 rounded"
-              onclick="toggleModal('modal_scope_scanner')"
             >
+              {/* onclick="toggleModal('modal_scope_scanner')" */}
               <i className="fa-times fas"></i> Close
             </button>
           </div>
@@ -291,16 +310,20 @@ function Modal() {
               <div className="carousel relative h-full overflow-hidden self-auto swiper-container">
                 <div className="swiper-wrapper">
                   <div className="swiper-slide flex">
-                    <img className="cursor-pointer" src="/assets/projects/codepen/codepen1.png" alt="" onclick="openLightbox('/assets/projects/codepen/codepen1.png')" loading="lazy" />
+                    <img className="cursor-pointer" src="/assets/projects/codepen/codepen1.png" alt="" loading="lazy" />
+                    {/* onclick="openLightbox('/assets/projects/codepen/codepen1.png')" */}
                   </div>
                   <div className="swiper-slide flex">
-                    <img className="cursor-pointer" src="/assets/projects/codepen/codepen2.png" alt="" onclick="openLightbox('/assets/projects/codepen/codepen2.png')" loading="lazy" />
+                    <img className="cursor-pointer" src="/assets/projects/codepen/codepen2.png" alt="" loading="lazy" />
+                    {/* onclick="openLightbox('/assets/projects/codepen/codepen2.png')" */}
                   </div>
                   <div className="swiper-slide flex">
-                    <img className="cursor-pointer" src="/assets/projects/codepen/codepen3.png" alt="" onclick="openLightbox('/assets/projects/codepen/codepen3.png')" loading="lazy" />
+                    <img className="cursor-pointer" src="/assets/projects/codepen/codepen3.png" alt="" loading="lazy" />
+                    {/* onclick="openLightbox('/assets/projects/codepen/codepen3.png')" */}
                   </div>
                   <div className="swiper-slide flex">
-                    <img className="cursor-pointer" src="/assets/projects/codepen/codepen4.png" alt="" onclick="openLightbox('/assets/projects/codepen/codepen4.png')" loading="lazy" />
+                    <img className="cursor-pointer" src="/assets/projects/codepen/codepen4.png" alt="" loading="lazy" />
+                    {/* onclick="openLightbox('/assets/projects/codepen/codepen4.png')" */}
                   </div>
                 </div>
                 <div className="swiper-pagination"></div>
@@ -333,8 +356,8 @@ function Modal() {
             <button
               type="button"
               className="bg-gray-500/50 dark:hover:bg-gray-300/50 hover:bg-gray-700/50 backdrop-blur-sm mr-2 px-4 py-2 text-white dark:text-gray-900 rounded"
-              onclick="toggleModal('modal_codepen')"
             >
+              {/* onclick="toggleModal('modal_codepen')" */}
               <i className="fa-times fas"></i> Close
             </button>
           </div>
@@ -356,19 +379,24 @@ function Modal() {
               <div className="carousel relative h-full overflow-hidden self-auto swiper-container">
                 <div className="swiper-wrapper">
                   <div className="swiper-slide flex">
-                    <img className="cursor-pointer place-self-center h-full object-cover object-center" src="/assets/projects/react chess clock/chessClock0.png" alt="" onclick="openLightbox('/assets/projects/react chess clock/chessClock0.png')" loading="lazy" />
+                    <img className="cursor-pointer place-self-center h-full object-cover object-center" src="/assets/projects/react chess clock/chessClock0.png" alt="" loading="lazy" />
+                    {/* onclick="openLightbox('/assets/projects/react chess clock/chessClock0.png')" */}
                   </div>
                   <div className="swiper-slide flex">
-                    <img className="cursor-pointer place-self-center h-full object-cover object-center" src="/assets/projects/react chess clock/chessClock1.png" alt="" onclick="openLightbox('/assets/projects/react chess clock/chessClock1.png')" loading="lazy" />
+                    <img className="cursor-pointer place-self-center h-full object-cover object-center" src="/assets/projects/react chess clock/chessClock1.png" alt="" loading="lazy" />
+                    {/* onclick="openLightbox('/assets/projects/react chess clock/chessClock1.png')" */}
                   </div>
                   <div className="swiper-slide flex">
-                    <img className="cursor-pointer place-self-center h-full object-cover object-center" src="/assets/projects/react chess clock/chessClock2.png" alt="" onclick="openLightbox('/assets/projects/react chess clock/chessClock2.png')" loading="lazy" />
+                    <img className="cursor-pointer place-self-center h-full object-cover object-center" src="/assets/projects/react chess clock/chessClock2.png" alt="" loading="lazy" />
+                    {/* onclick="openLightbox('/assets/projects/react chess clock/chessClock2.png')" */}
                   </div>
                   <div className="swiper-slide flex">
-                    <img className="cursor-pointer place-self-center h-full object-cover object-center" src="/assets/projects/react chess clock/chessClock3.png" alt="" onclick="openLightbox('/assets/projects/react chess clock/chessClock3.png')" loading="lazy" />
+                    <img className="cursor-pointer place-self-center h-full object-cover object-center" src="/assets/projects/react chess clock/chessClock3.png" alt="" loading="lazy" />
+                    {/* onclick="openLightbox('/assets/projects/react chess clock/chessClock3.png')" */}
                   </div>
                   <div className="swiper-slide flex">
-                    <img className="cursor-pointer place-self-center h-full object-cover object-center" src="/assets/projects/react chess clock/chessClock4.png" alt="" onclick="openLightbox('/assets/projects/react chess clock/chessClock4.png')" loading="lazy" />
+                    <img className="cursor-pointer place-self-center h-full object-cover object-center" src="/assets/projects/react chess clock/chessClock4.png" alt="" loading="lazy" />
+                    {/* onclick="openLightbox('/assets/projects/react chess clock/chessClock4.png')" */}
                   </div>
                 </div>
                 <div className="swiper-pagination"></div>
@@ -400,8 +428,8 @@ function Modal() {
             <button
               type="button"
               className="bg-gray-500/50 dark:hover:bg-gray-300/50 hover:bg-gray-700/50 backdrop-blur-sm mr-2 px-4 py-2 text-white dark:text-gray-900 rounded"
-              onclick="toggleModal('modal_react_chess_clock')"
             >
+              {/* onclick="toggleModal('modal_react_chess_clock')" */}
               <i className="fa-times fas"></i> Close
             </button>
           </div>

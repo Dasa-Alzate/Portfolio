@@ -1,36 +1,46 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
 function Projects() {
+  const { t } = useTranslation();
+
   return (
     <section id="projects" className="bg-neutral-100 dark:bg-neutral-900 transition duration-200 opacity-0 -translate-x-60">
-      <h2 className="mx-auto pt-14 w-fit text-3xl text-center section-title typo-quicksand" data-i18n="projects.title">
-        Mis proyectos recientes
-      </h2>
+      <h2 className="mx-auto pt-14 w-fit text-3xl text-center section-title typo-quicksand">{t('projects.title')}</h2>
       
       {/* <!-- en la transpilaciona react, aplicar la configuracion de shortcuts for common data attribute selectors en para el data-active tailwind.config.js --> */}
       <ul id="project-category-list" className="flex flex-wrap gap-x-4 gap-y-2 justify-center mx-auto px-4 md:px-32 lg:px-48 mt-10 w-full h-full group">
         
-        <li className="px-4 py-1 transition duration-300 group-hover:opacity-100 hover:!opacity-75 data-[active=true]:!bg-sky-800/50 dark:data-[active=true]:!bg-sky-800/75 group-hover:bg-slate-800/50 dark:group-hover:bg-slate-300/50 group-hover:drop-shadow-lg rounded-full cursor-pointer dark:text-white" data-active="false" onclick="switchActive(this)">AWS</li>
+        <li className="px-4 py-1 transition duration-300 group-hover:opacity-100 hover:!opacity-75 data-[active=true]:!bg-sky-800/50 dark:data-[active=true]:!bg-sky-800/75 group-hover:bg-slate-800/50 dark:group-hover:bg-slate-300/50 group-hover:drop-shadow-lg rounded-full cursor-pointer dark:text-white" data-active="false">AWS</li>
+        {/* onclick="switchActive(this)" */}
         
-        <li className="px-4 py-1 transition duration-300 group-hover:opacity-100 hover:!opacity-75 data-[active=true]:!bg-sky-800/50 dark:data-[active=true]:!bg-sky-800/75 group-hover:bg-slate-800/50 dark:group-hover:bg-slate-300/50 group-hover:drop-shadow-lg rounded-full cursor-pointer dark:text-white" data-active="false" onclick="switchActive(this)">Laravel</li>
+        <li className="px-4 py-1 transition duration-300 group-hover:opacity-100 hover:!opacity-75 data-[active=true]:!bg-sky-800/50 dark:data-[active=true]:!bg-sky-800/75 group-hover:bg-slate-800/50 dark:group-hover:bg-slate-300/50 group-hover:drop-shadow-lg rounded-full cursor-pointer dark:text-white" data-active="false">Laravel</li>
+        {/* onclick="switchActive(this)" */}
         
-        <li className="px-4 py-1 transition duration-300 group-hover:opacity-100 hover:!opacity-75 data-[active=true]:!bg-sky-800/50 dark:data-[active=true]:!bg-sky-800/75 group-hover:bg-slate-800/50 dark:group-hover:bg-slate-300/50 group-hover:drop-shadow-lg rounded-full cursor-pointer dark:text-white" data-active="false" onclick="switchActive(this)">Node</li>
+        <li className="px-4 py-1 transition duration-300 group-hover:opacity-100 hover:!opacity-75 data-[active=true]:!bg-sky-800/50 dark:data-[active=true]:!bg-sky-800/75 group-hover:bg-slate-800/50 dark:group-hover:bg-slate-300/50 group-hover:drop-shadow-lg rounded-full cursor-pointer dark:text-white" data-active="false">Node</li>
+        {/* onclick="switchActive(this)" */}
         
-        <li className="px-4 py-1 transition duration-300 group-hover:opacity-100 hover:!opacity-75 data-[active=true]:!bg-sky-800/50 dark:data-[active=true]:!bg-sky-800/75 group-hover:bg-slate-800/50 dark:group-hover:bg-slate-300/50 group-hover:drop-shadow-lg rounded-full cursor-pointer dark:text-white" data-active="false" onclick="switchActive(this)">React</li>
+        <li className="px-4 py-1 transition duration-300 group-hover:opacity-100 hover:!opacity-75 data-[active=true]:!bg-sky-800/50 dark:data-[active=true]:!bg-sky-800/75 group-hover:bg-slate-800/50 dark:group-hover:bg-slate-300/50 group-hover:drop-shadow-lg rounded-full cursor-pointer dark:text-white" data-active="false">React</li>
+        {/* onclick="switchActive(this)" */}
         
-        <li className="px-4 py-1 transition duration-300 group-hover:opacity-100 hover:!opacity-75 data-[active=true]:!bg-sky-800/50 dark:data-[active=true]:!bg-sky-800/75 group-hover:bg-slate-800/50 dark:group-hover:bg-slate-300/50 group-hover:drop-shadow-lg rounded-full cursor-pointer dark:text-white" data-active="false" onclick="switchActive(this)">Angular</li>
+        <li className="px-4 py-1 transition duration-300 group-hover:opacity-100 hover:!opacity-75 data-[active=true]:!bg-sky-800/50 dark:data-[active=true]:!bg-sky-800/75 group-hover:bg-slate-800/50 dark:group-hover:bg-slate-300/50 group-hover:drop-shadow-lg rounded-full cursor-pointer dark:text-white" data-active="false">Angular</li>
+        {/* onclick="switchActive(this)" */}
         
-        <li className="px-4 py-1 transition duration-300 group-hover:opacity-100 hover:!opacity-75 data-[active=true]:!bg-sky-800/50 dark:data-[active=true]:!bg-sky-800/75 group-hover:bg-slate-800/50 dark:group-hover:bg-slate-300/50 group-hover:drop-shadow-lg rounded-full cursor-pointer dark:text-white" data-active="false" onclick="switchActive(this)">Tailwind</li>
+        <li className="px-4 py-1 transition duration-300 group-hover:opacity-100 hover:!opacity-75 data-[active=true]:!bg-sky-800/50 dark:data-[active=true]:!bg-sky-800/75 group-hover:bg-slate-800/50 dark:group-hover:bg-slate-300/50 group-hover:drop-shadow-lg rounded-full cursor-pointer dark:text-white" data-active="false">Tailwind</li>
+        {/* onclick="switchActive(this)" */}
         
-        <li className="px-4 py-1 transition duration-300 group-hover:opacity-100 hover:!opacity-75 data-[active=true]:!bg-sky-800/50 dark:data-[active=true]:!bg-sky-800/75 group-hover:bg-slate-800/50 dark:group-hover:bg-slate-300/50 group-hover:drop-shadow-lg rounded-full cursor-pointer dark:text-white" data-active="false" onclick="switchActive(this)">CSS</li>
+        <li className="px-4 py-1 transition duration-300 group-hover:opacity-100 hover:!opacity-75 data-[active=true]:!bg-sky-800/50 dark:data-[active=true]:!bg-sky-800/75 group-hover:bg-slate-800/50 dark:group-hover:bg-slate-300/50 group-hover:drop-shadow-lg rounded-full cursor-pointer dark:text-white" data-active="false">CSS</li>
+        {/* onclick="switchActive(this)" */}
         
-        <li className="px-4 py-1 transition duration-300 group-hover:opacity-100 hover:!opacity-75 data-[active=true]:!bg-sky-800/50 dark:data-[active=true]:!bg-sky-800/75 group-hover:bg-slate-800/50 dark:group-hover:bg-slate-300/50 group-hover:drop-shadow-lg rounded-full cursor-pointer dark:text-white" data-active="false" onclick="switchActive(this)">Python</li>
+        <li className="px-4 py-1 transition duration-300 group-hover:opacity-100 hover:!opacity-75 data-[active=true]:!bg-sky-800/50 dark:data-[active=true]:!bg-sky-800/75 group-hover:bg-slate-800/50 dark:group-hover:bg-slate-300/50 group-hover:drop-shadow-lg rounded-full cursor-pointer dark:text-white" data-active="false">Python</li>
+        {/* onclick="switchActive(this)" */}
 
       </ul>
 
       <div className="mx-auto mt-10 px-4 sm:px-6 md:px-12 lg:px-32 pb-10">
         <ul id="cards-container" role="list" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-8">
-          <li id="project-1" className="col-span-1 flex flex-col bg-neutral-100 dark:bg-stone-950 p-2 hover:shadow-lg border border-slate-300 dark:border-slate-600 rounded-md text-center cursor-pointer transition duration-300 hover:scale-105" onclick="toggleModal('modal_ruby')">
+          <li id="project-1" className="col-span-1 flex flex-col bg-neutral-100 dark:bg-stone-950 p-2 hover:shadow-lg border border-slate-300 dark:border-slate-600 rounded-md text-center cursor-pointer transition duration-300 hover:scale-105">
+            {/* onclick="toggleModal('modal_ruby')" */}
             <div className="aspect-video flex overflow-hidden px-3 pt-2 relative justify-center">
               <img className="object-cover place-self-center rounded-lg max-h-full" src="/assets/projects/ruby erp/logo-ruby.png" alt="" loading="lazy" />
             </div>
@@ -47,7 +57,8 @@ function Projects() {
             </div>
             <p className="mx-auto px-4 pb-2 text-left text-slate-700 text-sm dark:text-slate-500" data-i18n="projects.projects-list.project-1.resume">Software empresarial para una compañia productora de carne de cerdo, con funcionalidades como gestion de inventario (IMS), pedidos automáticos de insumos escasos, seguimiento y gestion de lotes de ganado, recepcion y seguimiento de facturación electrónica, pago de nominas, etc.</p>
           </li>
-          <li id="project-4" className="col-span-1 flex flex-col bg-neutral-100 dark:bg-stone-950 p-2 hover:shadow-lg border border-slate-300 dark:border-slate-600 rounded-md text-center cursor-pointer transition duration-300 hover:scale-105" onclick="toggleModal('modal_scope_presupuesto')">
+          <li id="project-4" className="col-span-1 flex flex-col bg-neutral-100 dark:bg-stone-950 p-2 hover:shadow-lg border border-slate-300 dark:border-slate-600 rounded-md text-center cursor-pointer transition duration-300 hover:scale-105">
+            {/* onclick="toggleModal('modal_scope_presupuesto')" */}
             <div className="aspect-video flex overflow-hidden px-3 pt-2 relative justify-center">
               <img className="object-cover place-self-center rounded-lg max-h-full" src="/assets/projects/scope/index.png" alt="" loading="lazy" />
             </div>
@@ -64,7 +75,8 @@ function Projects() {
             </div>
             <p className="mx-auto px-4 pb-2 text-left text-slate-700 text-sm dark:text-slate-500" data-i18n="projects.projects-list.project-4.resume">Software B2B para la gestion de proyectos de construcción. El Modulo de Presupuesto comprende la creación y administración de Presupuestos con sus componentes, además de la gestión de inventarios, entre otras funciones</p>
           </li>
-          <li id="project-5" className="col-span-1 flex flex-col bg-neutral-100 dark:bg-stone-950 p-2 hover:shadow-lg border border-slate-300 dark:border-slate-600 rounded-md text-center cursor-pointer transition duration-300 hover:scale-105" onclick="toggleModal('modal_scope_facturas')">
+          <li id="project-5" className="col-span-1 flex flex-col bg-neutral-100 dark:bg-stone-950 p-2 hover:shadow-lg border border-slate-300 dark:border-slate-600 rounded-md text-center cursor-pointer transition duration-300 hover:scale-105">
+            {/* onclick="toggleModal('modal_scope_facturas')" */}
             <div className="aspect-video flex overflow-hidden px-3 pt-2 relative justify-center">
               <img className="object-cover place-self-center rounded-lg max-h-full" src="/assets/projects/scope/facturas4.png" alt="" loading="lazy" />
             </div>
@@ -81,7 +93,8 @@ function Projects() {
             </div>
             <p className="mx-auto px-4 pb-2 text-left text-slate-700 text-sm dark:text-slate-500" data-i18n="projects.projects-list.project-5.resume">El modulo de facturación perteneciente al software B2B Scope se encarga de gestionar todo el ciclo de vida de la <b>facturación electrónica</b> de los proyectos de construcción, desde la captura y digestión automática de facturas electrónicas hasta el pago de las mismas.</p>
           </li>
-          <li id="project-6" className="col-span-1 flex flex-col bg-neutral-100 dark:bg-stone-950 p-2 hover:shadow-lg border border-slate-300 dark:border-slate-600 rounded-md text-center cursor-pointer transition duration-300 hover:scale-105" onclick="toggleModal('modal_scope_scanner')">
+          <li id="project-6" className="col-span-1 flex flex-col bg-neutral-100 dark:bg-stone-950 p-2 hover:shadow-lg border border-slate-300 dark:border-slate-600 rounded-md text-center cursor-pointer transition duration-300 hover:scale-105">
+            {/* onclick="toggleModal('modal_scope_scanner')" */}
             <div className="aspect-video flex overflow-hidden px-3 pt-2 relative justify-center">
               <img className="object-cover place-self-center rounded-lg max-h-full" src="/assets/projects/scope/scanner.png" alt="" loading="lazy" />
             </div>
@@ -98,7 +111,8 @@ function Projects() {
             </div>
             <p className="mx-auto px-4 pb-2 text-left text-slate-700 text-sm dark:text-slate-500" data-i18n="projects.projects-list.project-6.resume">El modulo de Ingreso de personal en obra del software B2B Scope integra una aplicación con un scanner de códigos qr para gestionar el ingreso y salida de personal en obra, asi como brindar información en tiempo real del número de personas, y guardar un registro de fecha y hora de ingreso y salida de los contratistas y trabajadores</p>
           </li>
-          <li id="project-2" className="col-span-1 flex flex-col bg-neutral-100 dark:bg-stone-950 p-2 hover:shadow-lg border border-slate-300 dark:border-slate-600 rounded-md text-center cursor-pointer transition duration-300 hover:scale-105" onclick="toggleModal('modal_codepen')">
+          <li id="project-2" className="col-span-1 flex flex-col bg-neutral-100 dark:bg-stone-950 p-2 hover:shadow-lg border border-slate-300 dark:border-slate-600 rounded-md text-center cursor-pointer transition duration-300 hover:scale-105">
+            {/* onclick="toggleModal('modal_codepen')" */}
             <div className="aspect-video flex overflow-hidden px-3 pt-2 relative justify-center">
               <img className="object-cover place-self-center rounded-lg max-h-full" src="/assets/projects/codepen/codepen1.png" alt="" loading="lazy" />
             </div>
@@ -113,7 +127,8 @@ function Projects() {
             </div>
             <p className="mx-auto px-4 pb-2 text-left text-slate-700 text-sm dark:text-slate-500" data-i18n="projects.projects-list.project-2.resume">Un portafolio en linea donde publico diferentes diseños web.</p>
           </li>
-          <li id="project-3" className="col-span-1 flex flex-col bg-neutral-100 dark:bg-stone-950 p-2 hover:shadow-lg border border-slate-300 dark:border-slate-600 rounded-md text-center cursor-pointer transition duration-300 hover:scale-105" onclick="toggleModal('modal_react_chess_clock')">
+          <li id="project-3" className="col-span-1 flex flex-col bg-neutral-100 dark:bg-stone-950 p-2 hover:shadow-lg border border-slate-300 dark:border-slate-600 rounded-md text-center cursor-pointer transition duration-300 hover:scale-105">
+            {/* onclick="toggleModal('modal_react_chess_clock')" */}
             <div className="aspect-video flex overflow-hidden px-3 pt-2 relative justify-center">
               <img className="object-cover place-self-center rounded-lg max-h-full" src="/assets/projects/react chess clock/chessClock.png" alt="" loading="lazy" />
             </div>
