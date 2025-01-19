@@ -5,4 +5,11 @@ Este proyecto es una ventana a mi trabajo de los últimos años. Aquí encontrar
 
 ## Tecnologías Utilizadas 🛠️
 
-En este momento, el portafolio está construido principalmente utilizando **Tailwind CSS** para el diseño y los estilos. Sin embargo, estoy trabajando en migrar el proyecto a **React** utilizando **Vite** como herramienta de construcción en un futuro próximo. La nueva version estará basada en componentes, priorizando la usabilidad y escalabilidad.
+<div align="center">
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=C4B514)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=3CAEa6)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=2D8F89)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=2D8F89)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=949CFF)
+
+</div>
