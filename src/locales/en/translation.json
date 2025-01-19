@@ -23,7 +23,7 @@
         "role": "Full-Stack Developer."
     },
     "work-education": {
-        "title": "Education &amp; Experience",
+        "title": "Education & Experience",
         "work": {
             "title": "Experience",
             "company": "Triple A Projects",
@@ -43,7 +43,74 @@
         }
     },
     "stack": {
-        "title": "My Stack"
+        "title": "My Stack",
+        "stack": [
+            {
+                "src": "assets/stack/aws.svg",
+                "alt": "aws", 
+                "title": "aws"
+            },{
+                "src": "assets/stack/laravel.svg",
+                "alt": "laravel", 
+                "title": "laravel"
+            },{
+                "src": "assets/stack/angular.svg",
+                "alt": "angular", 
+                "title": "angular"
+            },{
+                "src": "assets/stack/react.svg",
+                "alt": "react", 
+                "title": "react"
+            },{
+                "src": "assets/stack/python.svg",
+                "alt": "python", 
+                "title": "python"
+            },{
+                "src": "assets/stack/php.svg",
+                "alt": "php", 
+                "title": "php"
+            },{
+                "src": "assets/stack/java.svg",
+                "alt": "java", 
+                "title": "java"
+            },{
+                "src": "assets/stack/spring.svg",
+                "alt": "spring", 
+                "title": "spring"
+            },{
+                "src": "assets/stack/jquery.svg",
+                "alt": "jquery", 
+                "title": "jquery"
+            },{
+                "src": "assets/stack/bootstrap.svg",
+                "alt": "bootstrap", 
+                "title": "bootstrap"
+            },{
+                "src": "assets/stack/tailwind.svg",
+                "alt": "tailwind", 
+                "title": "tailwind"
+            },{
+                "src": "assets/stack/oracle.svg",
+                "alt": "oracle", 
+                "title": "oracle"
+            },{
+                "src": "assets/stack/mysql.svg",
+                "alt": "mysql", 
+                "title": "mysql"
+            },{
+                "src": "assets/stack/mongodb.svg",
+                "alt": "mongodb", 
+                "title": "mongoDB"
+            },{
+                "src": "assets/stack/tensorflow.svg",
+                "alt": "tensorflow", 
+                "title": "tensorflow"
+            },{
+                "src": "assets/stack/docker.svg",
+                "alt": "docker", 
+                "title": "docker"
+            }
+        ]
     },
     "projects": {
         "title": "My Recent Projects",
