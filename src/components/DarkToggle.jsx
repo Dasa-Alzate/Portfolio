@@ -7,15 +7,9 @@ const DarkToggle = () => {
 
   useEffect(() => {
     if (darkMode) {
-      console.log("#");
       document.querySelector("html").classList.add("dark");
-      console.log("Darkmode: ", darkMode);
-      console.log("&");
     } else {
-      console.log("%");
       document.querySelector("html").classList.remove("dark");
-      console.log("Darkmode: ", darkMode);
-      console.log("$");
     }
   }, [darkMode]);
 
