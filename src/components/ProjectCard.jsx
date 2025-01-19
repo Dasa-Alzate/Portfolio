@@ -1,12 +1,11 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
 
-function ProjectCard( {project, index} ) {
+function ProjectCard( { index, project, onClick } ) {
   const { t } = useTranslation();
 
   return (
-    <li id="project-1" className="col-span-1 flex flex-col bg-neutral-100 dark:bg-stone-950 p-2 hover:shadow-lg border border-slate-300 dark:border-slate-600 rounded-md text-center cursor-pointer transition duration-300 hover:scale-105">
-      {/* onclick="toggleModal('modal_ruby')" */}
+    <li id="project-1" className="col-span-1 flex flex-col bg-neutral-100 dark:bg-stone-950 p-2 hover:shadow-lg border border-slate-300 dark:border-slate-600 rounded-md text-center cursor-pointer transition duration-300 hover:scale-105" onClick={onClick}>
       <div className="aspect-video flex overflow-hidden px-3 pt-2 relative justify-center">
         <img className="object-cover place-self-center rounded-lg max-h-full" src={project.thumbnail} alt="" loading="lazy" />
       </div>

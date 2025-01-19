@@ -21,7 +21,7 @@ const DarkToggle = () => {
           <div className="block dark:bg-sky-800/50 bg-slate-500/75 rounded-full w-14 h-8"></div>
           <div className="top-1 left-1 absolute dark:bg-sky-600/30 bg-slate-700/75 rounded-full w-6 h-6 transition dot"></div>
         </div>
-        <p className="block md:hidden lg:block ml-3 text-gray-500 group-hover:text-gray-200">{t('navbar.dark-mode')}</p>
+        <p className="block md:hidden lg:block ml-3 text-gray-500 dark:text-sky-600/50 group-hover:text-gray-200 transition-all duration-300">{t('navbar.dark-mode')}</p>
       </label>
     </div>
   );
