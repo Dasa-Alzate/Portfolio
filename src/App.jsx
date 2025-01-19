@@ -11,6 +11,8 @@ import Modal from './components/Modal';
 import ScrollToTop from './components/ScrollToTop';
 import { I18nProvider } from './context/I18nContext';
 
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 const App = () => {
   return (
     <I18nProvider>
