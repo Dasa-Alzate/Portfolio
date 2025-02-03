@@ -116,6 +116,7 @@
         "title": "My Recent Projects",
         "projects-list": {
             "project-1": {
+                "index": 1,
                 "title": "Ruby ERP",
                 "resume": "Enterprise software for a swine production company, with functionalities such as inventory management (IMS), automatic ordering of scarce supplies, tracking and management of livestock batches, receipt and tracking of electronic invoicing, payroll payment, etc.",
                 "modal-content": "<p class=\"font-bold text-center text-teal-800 text-2xl\">Ruby ERP</p><hr/><br/><p>Enterprise software for a swine production company. The program includes the following functionalities:</p><ul class=\"list-disc\"><li>Tracking of livestock batches at different stages of growth (weight, feed consumption, mortality, cost, profit, etc.).</li><li>Control of inventory entries and exits (feed, medicines, supplies).</li><li>Receipt of electronic invoices from customers and suppliers.</li><li>Estimated calculation of feed needed for the following week, and automatic ordering from the supplier.</li><li>Payroll calculation and automatic SMS notification to workers.</li></ul><p class=\"text-slate-800 dark:text-slate-300 font-bold mt-2 text-lg\">Technical parameters:</p><ul class=\"list-disc\"><li>Integration of <strong>Google Workspace</strong> to receive and process email information</li><li>Integration of <strong>API</strong> for SMS sending</li><li><strong>Service worker</strong> for offline application access</li></ul><br/>",
@@ -136,6 +137,7 @@
                 ]
             },
             "project-2": {
+                "index": 2,
                 "title": "Codepen Portfolio",
                 "resume": "An online portfolio where I publish different web designs.",
                 "modal-content": "<p class=\"font-bold text-center text-teal-800 text-2xl\">Codepen Portfolio</p><hr/><br/><p>An online portfolio where I publish different web designs. You can see it by <a class=\"text-teal-700 hover:text-teal-500 font-bold cursor-pointer\" href=\"https://dasa-alzate.github.io/codigos-codepen/\" target=\"_blank\">clicking here.</a> You can also visit the <a class=\"text-teal-700 hover:text-teal-500 font-bold cursor-pointer\" href=\"https://codepen.io/wvoiqkus-the-scripter\" target=\"_blank\">Codepen profile.</a></p><p class=\"text-slate-800 dark:text-slate-300 font-bold mt-2 text-lg\">Technologies:</p><ul class=\"list-disc\"><li>Tailwind</li><li>Bootstrap</li><li>Pure CSS</li><li>Javascript</li><li>Typescript</li><li>etc...</li></ul><br/>",
@@ -152,6 +154,7 @@
                 ]
             },
             "project-3": {
+                "index": 3,
                 "title": "Chess Clock",
                 "resume": "A project made in React that works as a chess competition clock, with customizable features.",
                 "modal-content": "<p class=\"font-bold text-center text-teal-800 text-2xl\">React Chess Clock</p><hr/><br/><p>This is a project built in React using Vite and styled with Tailwind, functioning as a professional chess clock. Its design is responsive and adapts to all devices. <br>It is highly customizable. The total time, increment time, and time from which the increment is applied can be adjusted. The number of players can also be customized if it is to be used in a game other than chess with more players. <br>You can see it by <a class=\"text-teal-700 hover:text-teal-500 font-bold cursor-pointer\" href=\"https://whitefox-sa.github.io/react-chessclock/\" target=\"_blank\">clicking here.</a> Or you can <a class=\"text-teal-700 hover:text-teal-500 font-bold cursor-pointer\" href=\"https://github.com/Whitefox-SA/react-chessclock\" target=\"_blank\">visit the repository.</a></p><p class=\"text-slate-800 dark:text-slate-300 font-bold mt-2 text-lg\">Technologies:</p><ul class=\"list-disc\"><li>React</li><li>Vite</li><li>Tailwind</li></ul><br/>",
@@ -170,7 +173,8 @@
                 ]
             },
             "project-4": {
-                "title": "Scope - Budget Module",
+                "index": 4,
+                "title": "Scope - Budget",
                 "resume": "B2B software for construction project management. The Budget Module includes the creation and management of budgets and their components, as well as an inventory management system, among other features.",
                 "modal-content": "<p class='font-bold text-center text-teal-800 text-2xl'>Scope - Budget Module</p><hr/><br/><p>  Main module of a B2B software for managing construction project budgets. Its features include:</p><ul class='list-disc'>  <li>Creation of budgets, chapters, UPAs, sections, elements, and supplies, linking elements and calculating unit and total costs.</li>  <li>Daily agenda automatically generated, including contractors and their scheduled activities.</li>  <li>Management of contracts and required documentation, such as policies and guarantees, contracts, renewals, and calculation of withholdings and taxes.</li>  <li>Inventory management, including purchase orders for supplies, entries, and exits.</li>  <li>Creation of work records, associating labor activities with contractors and tracking project progress in real-time.</li>  <li>Special contractor portal to register their workers and receive their unique code for site access.</li></ul><br/>",
                 "thumbnail": "/assets/projects/scope/index.png",
@@ -190,7 +194,8 @@
                 ]
             },
             "project-5": {
-                "title": "Scope - Billing Module",
+                "index": 5,
+                "title": "Scope - Billing",
                 "resume": "The billing module of the Scope B2B software manages the entire lifecycle of <b>electronic invoicing</b> for construction projects, from automatic capture and processing of electronic invoices to their payment.",
                 "modal-content": "<p class='font-bold text-center text-teal-800 text-2xl'>Scope - Billing Module</p><hr/><br/><p>  Module for managing the lifecycle of electronic invoices, with features such as:</p><ul class='list-disc'>  <li>Automatic capture and processing of electronic invoices sent via email.</li>  <li>Linking invoices with purchase orders and delivery notes.</li>  <li>Alerts before invoices expire.</li>  <li>Invoice approval from storage (confirming delivery on-site) to treasury (payment authorization).</li>  <li>Calculation of taxes and withholdings for invoices, and report generation.</li></ul><p class='text-slate-800 dark:text-slate-300 font-bold mt-2 text-lg'>Technical parameters:</p><ul class='list-disc'>  <li>Integration with <strong>Google Workspace</strong> to receive and process email information.</li>  <li>Custom library written in Google AppScript to interpret XML invoices based on vendor parameters.</li></ul><br/>",
                 "thumbnail": "/assets/projects/scope/facturas4.png",
@@ -209,7 +214,8 @@
                 ]
             },
             "project-6": {
-                "title": "Scope - Personnel Entry Module",
+                "index": 6,
+                "title": "Scope - Personnel Entry",
                 "resume": "The on-site personnel entry module of the Scope B2B software integrates an application with a QR code scanner to manage the entry and exit of personnel, provide real-time information on the number of people on-site, and keep a record of contractors' and workers' entry and exit times.",
                 "modal-content": "<p class='font-bold text-center text-teal-800 text-2xl'>Scope - On-site Personnel Entry Module</p><hr/><br/><p>  Module for on-site personnel entry in the Scope B2B software, including features such as:</p><ul class='list-disc'>  <li>Recording personnel entry and exit times.</li>  <li>Real-time information on workers on-site, inactive, etc.</li>  <li>Filters by contractor and personnel occupation.</li></ul><p class='text-slate-800 dark:text-slate-300 font-bold mt-2 text-lg'>Technical parameters:</p><ul class='list-disc'>  <li>QR reader for personnel access to the construction site.</li>  <li><strong>Service worker</strong> for scanner access without internet, from mobile devices.</li></ul><br/>",
                 "thumbnail": "/assets/projects/scope/scanner.png",
@@ -223,7 +229,31 @@
                     "AWS",
                     "Tailwind"
                 ]
+            },
+            "project-7": {
+                "index": 7,
+                "title": "Car Rental",
+                "resume": "Serverless web application for renting cars developed in React and Firebase. It features a favorites section, details, authentication, reviews, etc.",
+                "modal-content": "<p class='font-bold text-center text-teal-800 text-2xl'>Car Rental</p><hr/><br/><p>  Serverless web application for renting cars developed in React and Firebase. It includes sections such as:</p><ul class='list-disc'>  <li>Catalog.</li>  <li>Details.</li>  <li>Reviews.</li>  <li>Contact.</li>  <li>Payments.</li>  <li>Favorites.</li>  <li>History.</li>  <li>Settings.</li>  </ul><br/> You can visit the repo by <a class=\"text-teal-700 hover:text-teal-500 font-bold cursor-pointer\" href=\"https://github.com/Dasa-Alzate/alquiler_coches/\" target=\"_blank\">clicking here.</a>",
+                "thumbnail": "/assets/projects/alquiler_coches/preview.png",
+                "images": [
+                    "/assets/projects/alquiler_coches/preview.png",
+                    "/assets/projects/alquiler_coches/catalogo.png",
+                    "/assets/projects/alquiler_coches/detalles.png",
+                    "/assets/projects/alquiler_coches/resenas.png",
+                    "/assets/projects/alquiler_coches/contacto.png",
+                    "/assets/projects/alquiler_coches/pago.png",
+                    "/assets/projects/alquiler_coches/favoritos.png",
+                    "/assets/projects/alquiler_coches/historial.png",
+                    "/assets/projects/alquiler_coches/configuracion.png"
+                ],
+                "stack": [
+                    "Firebase",
+                    "React",
+                    "Tailwind"
+                ]
             }
+
         }
     },
     "footer": "<p className='w-full lg:w-2/3 text-center lg:text-left' data-i18n='footer'>This site has been built with Vite, renderized with React, and stilyzed with Tailwind.</p><p className='w-full lg:w-2/3 text-center lg:text-left'>It's my pleasure to have you here. Stay as long as you please.</p>"
