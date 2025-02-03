@@ -1,7 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
 
-function ProjectCard( { index, project, onClick } ) {
+function ProjectCard( { project, onClick } ) {
   const { t } = useTranslation();
 
   return (
@@ -9,7 +9,7 @@ function ProjectCard( { index, project, onClick } ) {
       <div className="aspect-video flex overflow-hidden px-3 pt-2 relative justify-center">
         <img className="object-cover place-self-center rounded-lg max-h-full" src={project.thumbnail} alt="" loading="lazy" />
       </div>
-      <h1 className="pt-1 font-semibold text-lg text-slate-900 dark:text-slate-100">{t(`projects.projects-list.project-${index}.title`)}</h1>
+      <h1 className="pt-1 font-semibold text-lg text-slate-900 dark:text-slate-100">{t(`projects.projects-list.project-${project.index}.title`)}</h1>
       <div className="mx-6 mt-2 mb-4 pb-4 border-b border-slate-300 dark:border-slate-600 text-wrap wx-auto">
         <ul className="flex flex-wrap pl-1 gap-1 border-stone-800/75 dark:border-sky-500 border-l-4 dark:border-slate-400">
           {project.stack.map((icon, i) => (
@@ -17,7 +17,7 @@ function ProjectCard( { index, project, onClick } ) {
           ))}
         </ul>
       </div>
-      <p className="mx-auto px-4 pb-2 text-left text-slate-700 text-sm dark:text-slate-500">{t(`projects.projects-list.project-${index}.resume`)}</p>
+      <p className="mx-auto px-4 pb-2 text-left text-slate-700 text-sm dark:text-slate-500">{t(`projects.projects-list.project-${project.index}.resume`)}</p>
     </li>
   )
 }

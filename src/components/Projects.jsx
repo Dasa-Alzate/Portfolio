@@ -18,7 +18,7 @@ function Projects( { setModal } ) {
   });
 
   const filterToggle = (filterName) => {
-    console.log(activeFilters)
+    console.log(filteredProjects)
     setFilters({
       ...filters,
       [filterName]: !filters[filterName],
@@ -52,7 +52,7 @@ function Projects( { setModal } ) {
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-8"
         >
           {filteredProjects.map((project, i) => (
-            <ProjectCard key={i} index={i + 1} project={project} onClick={() => {setModal(i + 1)}} />
+            <ProjectCard key={project.index} project={project} onClick={() => {setModal(project.index)}} />
           ))}
         </ul>
       </div>
