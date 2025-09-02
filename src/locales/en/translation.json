@@ -140,43 +140,26 @@
                 "index": 2,
                 "title": "Codepen Portfolio",
                 "resume": "An online portfolio where I publish different web designs.",
-                "modal-content": "<p class=\"font-bold text-center text-teal-800 text-2xl\">Codepen Portfolio</p><hr/><br/><p>An online portfolio where I publish different web designs. You can see it by <a class=\"text-teal-700 hover:text-teal-500 font-bold cursor-pointer\" href=\"https://dasa-alzate.github.io/codigos-codepen/\" target=\"_blank\">clicking here.</a> You can also visit the <a class=\"text-teal-700 hover:text-teal-500 font-bold cursor-pointer\" href=\"https://codepen.io/wvoiqkus-the-scripter\" target=\"_blank\">Codepen profile.</a></p><p class=\"text-slate-800 dark:text-slate-300 font-bold mt-2 text-lg\">Technologies:</p><ul class=\"list-disc\"><li>Tailwind</li><li>Bootstrap</li><li>Pure CSS</li><li>Javascript</li><li>Typescript</li><li>etc...</li></ul><br/>",
+                "modal-content": "<p class=\"font-bold text-center text-teal-800 text-2xl\">Codepen Portfolio</p><hr/><br/><p>An online portfolio where I publish different web designs. One of my designs have been selected and displayed on their 'challenges' section, on the website. You can visit the <a class=\"text-teal-700 hover:text-teal-500 font-bold cursor-pointer\" href=\"https://codepen.io/wvoiqkus-the-scripter\" target=\"_blank\">Codepen profile page.</a> You can also check my awarded design by <a class=\"text-teal-700 hover:text-teal-500 font-bold cursor-pointer\" href=\"https://codepen.io/challenges/2025/june\" target=\"_blank\">clicking here.</a></p><p class=\"text-slate-800 dark:text-slate-300 font-bold mt-2 text-lg\">Technologies:</p><ul class=\"list-disc\"><li>Tailwind</li><li>Bootstrap</li><li>Pure CSS</li><li>Javascript</li><li>Typescript</li><li>etc...</li></ul><br/>",
                 "thumbnail": "/assets/projects/codepen/codepen1.png",
                 "images": [
                     "/assets/projects/codepen/codepen1.png",
                     "/assets/projects/codepen/codepen2.png",
                     "/assets/projects/codepen/codepen3.png",
-                    "/assets/projects/codepen/codepen4.png"
+                    "/assets/projects/codepen/codepen4.png",
+                    "/assets/projects/codepen/codepen5.png",
+                    "/assets/projects/codepen/codepen6.png"
                 ],
                 "stack": [
                     "Tailwind",
                     "CSS"
                 ]
             },
-            "project-3": {
-                "index": 3,
-                "title": "Chess Clock",
-                "resume": "A project made in React that works as a chess competition clock, with customizable features.",
-                "modal-content": "<p class=\"font-bold text-center text-teal-800 text-2xl\">React Chess Clock</p><hr/><br/><p>This is a project built in React using Vite and styled with Tailwind, functioning as a professional chess clock. Its design is responsive and adapts to all devices. <br>It is highly customizable. The total time, increment time, and time from which the increment is applied can be adjusted. The number of players can also be customized if it is to be used in a game other than chess with more players. <br>You can see it by <a class=\"text-teal-700 hover:text-teal-500 font-bold cursor-pointer\" href=\"https://whitefox-sa.github.io/react-chessclock/\" target=\"_blank\">clicking here.</a> Or you can <a class=\"text-teal-700 hover:text-teal-500 font-bold cursor-pointer\" href=\"https://github.com/Whitefox-SA/react-chessclock\" target=\"_blank\">visit the repository.</a></p><p class=\"text-slate-800 dark:text-slate-300 font-bold mt-2 text-lg\">Technologies:</p><ul class=\"list-disc\"><li>React</li><li>Vite</li><li>Tailwind</li></ul><br/>",
-                "thumbnail": "/assets/projects/react chess clock/chessClock.png",
-                "images": [
-                    "/assets/projects/react chess clock/chessClock0.png",
-                    "/assets/projects/react chess clock/chessClock1.png",
-                    "/assets/projects/react chess clock/chessClock2.png",
-                    "/assets/projects/react chess clock/chessClock3.png",
-                    "/assets/projects/react chess clock/chessClock4.png"
-                ],
-                "stack": [
-                    "React",
-                    "Vite",
-                    "Tailwind"
-                ]
-            },
             "project-4": {
                 "index": 4,
                 "title": "Scope - Budget",
                 "resume": "B2B software for construction project management. The Budget Module includes the creation and management of budgets and their components, as well as an inventory management system, among other features.",
-                "modal-content": "<p class='font-bold text-center text-teal-800 text-2xl'>Scope - Budget Module</p><hr/><br/><p>  Main module of a B2B software for managing construction project budgets. Its features include:</p><ul class='list-disc'>  <li>Creation of budgets, chapters, UPAs, sections, elements, and supplies, linking elements and calculating unit and total costs.</li>  <li>Daily agenda automatically generated, including contractors and their scheduled activities.</li>  <li>Management of contracts and required documentation, such as policies and guarantees, contracts, renewals, and calculation of withholdings and taxes.</li>  <li>Inventory management, including purchase orders for supplies, entries, and exits.</li>  <li>Creation of work records, associating labor activities with contractors and tracking project progress in real-time.</li>  <li>Special contractor portal to register their workers and receive their unique code for site access.</li></ul><br/>",
+                "modal-content": "<p class='font-bold text-center text-teal-800 text-2xl'>Scope - Budget Module</p><hr/><br/><p> Main module of a B2B software for managing construction project budgets. Its features include:</p><ul class='list-disc'>  <li>Creation of budgets, chapters, UPAs, sections, elements, and supplies, linking elements and calculating unit and total costs.</li>  <li>Daily agenda automatically generated, including contractors and their scheduled activities.</li>  <li>Management of contracts and required documentation, such as policies and guarantees, contracts, renewals, and calculation of withholdings and taxes.</li>  <li>Inventory management, including purchase orders for supplies, entries, and exits.</li>  <li>Creation of work records, associating labor activities with contractors and tracking project progress in real-time.</li>  <li>Special contractor portal to register their workers and receive their unique code for site access.</li></ul><br/>",
                 "thumbnail": "/assets/projects/scope/index.png",
                 "images": [
                     "/assets/projects/scope/index.png",

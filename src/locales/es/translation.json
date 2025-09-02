@@ -140,36 +140,19 @@
                 "index": 2,
                 "title": "Portafolio de Codepen",
                 "resume": "Un portafolio en línea donde publico diferentes diseños web.",
-                "modal-content": "<p class=\"font-bold text-center text-teal-800 text-2xl\">Portafolio de codepen</p><hr/><br/><p>Un portafolio en línea donde publico diferentes diseños web. Puedes verlo dando <a class=\"text-teal-700 hover:text-teal-500 font-bold cursor-pointer\" href=\"https://dasa-alzate.github.io/codigos-codepen/\" target=\"_blank\">click aquí.</a> También puedes visitar el <a class=\"text-teal-700 hover:text-teal-500 font-bold cursor-pointer\" href=\"https://codepen.io/wvoiqkus-the-scripter\" target=\"_blank\">perfil de codepen.</a></p><p class=\"text-slate-800 dark:text-slate-300 font-bold mt-2 text-lg\">Tecnologías:</p><ul class=\"list-disc\"><li>Tailwind</li><li>Bootstrap</li><li>CSS</li><li>preprocesador SASS</li><li>Motor de plantillas PUG</li><li>Javascript</li><li>Typescript</li><li>etc...</li></ul><br/>",
+                "modal-content": "<p class=\"font-bold text-center text-teal-800 text-2xl\">Portafolio de codepen</p><hr/><br/><p>Un portafolio en línea donde publico diferentes diseños web. Uno de mis diseños ha sido seleccionado y mostrado en su 'página de retos' del sitio web. Puedes <a class=\"text-teal-700 hover:text-teal-500 font-bold cursor-pointer\" href=\"https://codepen.io/wvoiqkus-the-scripter\" target=\"_blank\">visitar mi perfil.</a> También puedes ver mi diseño seleccionado <a class=\"text-teal-700 hover:text-teal-500 font-bold cursor-pointer\" href=\"https://codepen.io/challenges/2025/june\" target=\"_blank\">haciendo clic aquí.</a></p><p class=\"text-slate-800 dark:text-slate-300 font-bold mt-2 text-lg\">Tecnologías:</p><ul class=\"list-disc\"><li>Tailwind</li><li>Bootstrap</li><li>CSS</li><li>preprocesador SASS</li><li>Motor de plantillas PUG</li><li>Javascript</li><li>Typescript</li><li>etc...</li></ul><br/>",
                 "thumbnail": "/assets/projects/codepen/codepen1.png",
                 "images": [
                     "/assets/projects/codepen/codepen1.png",
                     "/assets/projects/codepen/codepen2.png",
                     "/assets/projects/codepen/codepen3.png",
-                    "/assets/projects/codepen/codepen4.png"
+                    "/assets/projects/codepen/codepen4.png",
+                    "/assets/projects/codepen/codepen5.png",
+                    "/assets/projects/codepen/codepen6.png"
                 ],
                 "stack": [
                     "Tailwind",
                     "CSS"
-                ]
-            },
-            "project-3": {
-                "index": 3,
-                "title": "Reloj de Ajedrez",
-                "resume": "Un proyecto hecho en React, que funciona como un reloj de competencias de ajedrez, con funcionalidades personalizables.",
-                "modal-content": "<p class=\"font-bold text-center text-teal-800 text-2xl\">React chessClock</p><hr/><br/><p>Este es un proyecto construido en React usando Vite y estilizado con Tailwind, que funciona como un reloj de ajedrez profesional. Su diseño es responsivo y se adapta a todos los dispositivos. <br>Es altamente personalizable. Se puede adaptar el tiempo total, el tiempo de reposición y el tiempo desde el cual la reposición es aplicada. También se puede personalizar el número de jugadores en caso que se quiera usar en un juego diferente al ajedrez y cuente con más jugadores. <br>Puedes verlo dando <a class=\"text-teal-700 hover:text-teal-500 font-bold cursor-pointer\" href=\"https://whitefox-sa.github.io/react-chessclock/\" target=\"_blank\">click aquí.</a> O puedes <a class=\"text-teal-700 hover:text-teal-500 font-bold cursor-pointer\" href=\"https://github.com/Whitefox-SA/react-chessclock\" target=\"_blank\">visitar el repositorio.</a></p><p class=\"text-slate-800 dark:text-slate-300 font-bold mt-2 text-lg\">Tecnologías:</p><ul class=\"list-disc\"><li>React</li><li>Vite</li><li>Tailwind</li></ul><br/>",
-                "thumbnail": "/assets/projects/react chess clock/chessClock.png",
-                "images": [
-                    "/assets/projects/react chess clock/chessClock0.png",
-                    "/assets/projects/react chess clock/chessClock1.png",
-                    "/assets/projects/react chess clock/chessClock2.png",
-                    "/assets/projects/react chess clock/chessClock3.png",
-                    "/assets/projects/react chess clock/chessClock4.png"
-                ],
-                "stack": [
-                    "React",
-                    "Vite",
-                    "Tailwind"
                 ]
             },
             "project-4": {
