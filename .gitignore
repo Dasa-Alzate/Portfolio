@@ -11,6 +11,9 @@ node_modules
 dist-ssr
 *.local
 
+# Documentation / notas internas (no se despliega ni se versiona)
+/documentation
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

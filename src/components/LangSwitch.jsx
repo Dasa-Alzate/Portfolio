@@ -11,11 +11,7 @@ const LangSwitch = () => {
     if (chosenLang === lang) return;
 
     setChosenLang(lang);
-    i18next.changeLanguage(lang, (err, t) => {
-      if (!err) {
-        console.log(`${lang} chosen`);
-      }
-    });
+    i18next.changeLanguage(lang);
   };
 
   const toggleContainer = () => {

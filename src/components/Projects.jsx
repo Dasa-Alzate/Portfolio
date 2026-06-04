@@ -6,19 +6,15 @@ import ProjectCard from './ProjectCard';
 function Projects( { setModal } ) {
   const { t } = useTranslation();
   const projectsList = Object.values(t('projects.projects-list', { returnObjects: true }));
-  const [filters, setFilters] = useState({
-    AWS: false, 
-    Laravel: false, 
-    Node: false, 
-    React: false, 
-    Angular: false, 
-    Tailwind: false, 
-    CSS: false, 
-    Python: false
+
+  // Los filtros se derivan de los stacks reales de los proyectos, así nunca
+  // hay filtros que no coincidan con nada ni tecnologías sin filtro.
+  const [filters, setFilters] = useState(() => {
+    const tech = [...new Set(projectsList.flatMap((project) => project.stack))].sort();
+    return Object.fromEntries(tech.map((name) => [name, false]));
   });
 
   const filterToggle = (filterName) => {
-    console.log(filteredProjects)
     setFilters({
       ...filters,
       [filterName]: !filters[filterName],
@@ -32,10 +28,6 @@ function Projects( { setModal } ) {
     : projectsList.filter((project) =>
         project.stack.some((tech) => activeFilters.includes(tech))
       );
-
-  const toggleModal = (index) => {
-    document.querySelector("html").classList.add("dark");
-  }
 
   return (
     <section id="projects" className="bg-neutral-100 dark:bg-neutral-900 transition duration-200">
@@ -51,7 +43,7 @@ function Projects( { setModal } ) {
           role="list"
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-8"
         >
-          {filteredProjects.map((project, i) => (
+          {filteredProjects.map((project) => (
             <ProjectCard key={project.index} project={project} onClick={() => {setModal(project.index)}} />
           ))}
         </ul>

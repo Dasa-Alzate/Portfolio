@@ -12,7 +12,7 @@ function Stack() {
       <div className="bg-transparent py-10 hover:text-white transition duration-800 group">
         <h2 className="mx-auto pt-4 w-fit text-2xl text-center section-title typo-quicksand">{t('stack.title')}</h2>
         <div className="flex flex-wrap justify-center mx-auto px-4 w-full h-full container">
-          { stack.map((icon, i) => (<StackIcon key={i} icon={icon} setBgIcon={setBgIcon} />)) }
+          { stack.map((icon) => (<StackIcon key={icon.alt} icon={icon} setBgIcon={setBgIcon} />)) }
         </div>
         <img id="bg-logo-layer" className={"absolute z-20 bottom-2 md:-bottom-32 lg:top-4 -right-2 md:-right-32 invert flex-initial m-6 mix-blend-soft-light transition h-1/2 md:h-auto md:w-1/2 " + (bgIcon == "" ? "opacity-0" : "opacity-50")} src={bgIcon} width="512" height="384"/>
       </div>
