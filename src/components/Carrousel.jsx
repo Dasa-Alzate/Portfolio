@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, A11y } from "swiper/modules";
+import { Pagination, A11y, Autoplay } from "swiper/modules";
 import Lightbox from "./Lightbox";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -18,14 +18,14 @@ function Carrousel({ images }) {
   return (
     <div className="carousel h-full overflow-hidden self-auto">
       <Swiper
-        modules={[Pagination, A11y]}
+        modules={[Pagination, A11y, Autoplay]}
         spaceBetween={50}
         pagination={{ clickable: true }}
         loop={true}
         autoplay={{ delay: 3000, disableOnInteraction: true }}
       >
         {images.map((image, i) => (
-          <SwiperSlide key={i}>
+          <SwiperSlide key={image}>
             <img
               className="cursor-pointer w-full"
               src={image}
