@@ -8,8 +8,8 @@ function Modal( { modal, setModal } ) {
 
   return (
     <>
-      {projectsList.map((project, i) => (
-        <div key={i} className={"bg-slate-950/50 top-0 left-0 z-10 fixed w-full h-full lg:h-auto overflow-y-auto modal " + ((i+1) == modal ? "" : "hidden")} id={'modal-'+(i+1)}>
+      {projectsList.map((project) => (
+        <div key={project.index} className={"bg-slate-950/50 top-0 left-0 z-10 fixed w-full h-full lg:h-auto overflow-y-auto modal " + (project.index == modal ? "" : "hidden")} id={'modal-'+project.index}>
           <div className="flex items-center justify-center px-4 sm:p-0 pt-4 pb-20 text-center" >
             <span className="sm:inline-block sm:h-screen hidden sm:align-middle">​</span>
             <div
@@ -22,7 +22,7 @@ function Modal( { modal, setModal } ) {
                 <div className="relative self-center lg:w-1/2 h-80 self-auto slide">
                   <Carrousel images={project.images}/>
                 </div>
-                <div className="dark:text-gray-200 lg:w-1/2 overflow-y-auto lg:pl-16 px-4 lg:px-0 text-ellipsis text-gray-800 text-justify"  dangerouslySetInnerHTML={{ __html: t(`projects.projects-list.project-${(i+1)}.modal-content`) }}></div>
+                <div className="dark:text-gray-200 lg:w-1/2 overflow-y-auto lg:pl-16 px-4 lg:px-0 text-ellipsis text-gray-800 text-justify"  dangerouslySetInnerHTML={{ __html: t(`projects.projects-list.project-${project.index}.modal-content`) }}></div>
               </div>
               <button type="button" className="absolute hidden sm:inline sm:top-1 right-1 bg-transparent text-stone-900 hover:text-stone-800/75 dark:text-stone-300 hover:dark:text-stone-400/75 px-4 py-4 text-2xl" onClick={() => {setModal(0)}} >
                 <i className="bi bi-x-lg"></i>
