@@ -1,9 +1,9 @@
-import React, { useState, useContext } from 'react';
+import { useState, useContext } from 'react';
 import { I18nContext } from '../context/I18nContext';
 import i18next from 'i18next';
 
 const LangSwitch = () => {
-  const { toggleLanguage, language } = useContext(I18nContext);
+  const { language } = useContext(I18nContext);
   const [isOpen, setIsOpen] = useState(false);
   const [chosenLang, setChosenLang] = useState(language);
 

@@ -1,4 +1,3 @@
-import React from 'react'
 import ProjectsFilterBtn from './ProjectsFilterBtn';
 
 function ProjectsFilterSection( {filters, filterToggle} ) {
