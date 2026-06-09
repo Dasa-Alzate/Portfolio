@@ -1,6 +1,8 @@
-import { createContext, useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
+
+import { I18nContext } from './i18n-context';
 
 import enTranslations from '../locales/en/translation.json';
 import esTranslations from '../locales/es/translation.json';
@@ -16,8 +18,6 @@ i18n.use(initReactI18next).init({
     escapeValue: false,
   },
 });
-
-export const I18nContext = createContext();
 
 export const I18nProvider = ({ children }) => {
   const [language, setLanguage] = useState(i18n.language || 'es');
