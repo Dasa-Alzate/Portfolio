@@ -12,8 +12,8 @@ function ProjectCard( { project, onClick } ) {
       <h1 className="pt-1 font-semibold text-lg text-slate-900 dark:text-slate-100">{t(`projects.projects-list.project-${project.index}.title`)}</h1>
       <div className="mx-6 mt-2 mb-4 pb-4 border-b border-slate-300 dark:border-slate-600 text-wrap wx-auto">
         <ul className="flex flex-wrap pl-1 gap-1 border-stone-800/75 dark:border-sky-500 border-l-4 dark:border-slate-400">
-          {project.stack.map((icon, i) => (
-            <li key={i} className="bg-stone-800/20 dark:bg-sky-800/20 mx-1 px-3 p-1 rounded-full h-min text-sm text-stone-500 dark:text-sky-500 cursor-default">{icon}</li>
+          {project.stack.map((icon) => (
+            <li key={icon} className="bg-stone-800/20 dark:bg-sky-800/20 mx-1 px-3 p-1 rounded-full h-min text-sm text-stone-500 dark:text-sky-500 cursor-default">{icon}</li>
           ))}
         </ul>
       </div>
