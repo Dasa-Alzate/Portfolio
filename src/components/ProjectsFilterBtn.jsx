@@ -1,4 +1,3 @@
-import React from 'react'
 
 function ProjectsFilterBtn( {title, active, onClick} ) {
   return (

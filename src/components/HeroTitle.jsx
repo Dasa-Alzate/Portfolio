@@ -1,4 +1,3 @@
-import React from 'react'
 import { useTranslation } from 'react-i18next'
 
 const HeroTitle = () => {
@@ -24,12 +23,12 @@ const HeroTitle = () => {
                   <i className="bi bi-github"></i>
                 </div>
 
-              <svg viewBox="0 0 100 100" class="circle-text">
+              <svg viewBox="0 0 100 100" className="circle-text">
                 <defs>
                   <path id="circlePathText" d="M 50, 50 m -50, 0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0" />
                 </defs>
                 <text>
-                  <textPath href="#circlePathText" startOffset="50%" text-anchor="middle">Github</textPath>
+                  <textPath href="#circlePathText" startOffset="50%" textAnchor="middle">Github</textPath>
                 </text>
               </svg>
             </a>
@@ -45,12 +44,12 @@ const HeroTitle = () => {
                   <i className="bi bi-linkedin"></i>
                 </div>
 
-              <svg viewBox="0 0 100 100" class="circle-text">
+              <svg viewBox="0 0 100 100" className="circle-text">
                 <defs>
                   <path id="circlePathText" d="M 50, 50 m -50, 0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0" />
                 </defs>
                 <text>
-                  <textPath href="#circlePathText" startOffset="50%" text-anchor="middle">Linkedin</textPath>
+                  <textPath href="#circlePathText" startOffset="50%" textAnchor="middle">Linkedin</textPath>
                 </text>
               </svg>
             </a>
@@ -66,12 +65,12 @@ const HeroTitle = () => {
                   <i className="bi bi-envelope"></i>
                 </div>
 
-              <svg viewBox="0 0 100 100" class="circle-text">
+              <svg viewBox="0 0 100 100" className="circle-text">
                 <defs>
                   <path id="circlePathText" d="M 50, 50 m -50, 0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0" />
                 </defs>
                 <text>
-                  <textPath href="#circlePathText" startOffset="50%" text-anchor="middle">E-mail</textPath>
+                  <textPath href="#circlePathText" startOffset="50%" textAnchor="middle">E-mail</textPath>
                 </text>
               </svg>
             </a>
@@ -87,12 +86,12 @@ const HeroTitle = () => {
                   <i className="bi bi-whatsapp"></i>
                 </div>
 
-              <svg viewBox="0 0 100 100" class="circle-text">
+              <svg viewBox="0 0 100 100" className="circle-text">
                 <defs>
                   <path id="circlePathText" d="M 50, 50 m -50, 0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0" />
                 </defs>
                 <text>
-                  <textPath href="#circlePathText" startOffset="50%" text-anchor="middle">Whatsapp</textPath>
+                  <textPath href="#circlePathText" startOffset="50%" textAnchor="middle">Whatsapp</textPath>
                 </text>
               </svg>
             </a>
@@ -108,12 +107,12 @@ const HeroTitle = () => {
                   <i className="bi bi-file-earmark-text"></i>
                 </div>
 
-              <svg viewBox="0 0 100 100" class="circle-text">
+              <svg viewBox="0 0 100 100" className="circle-text">
                 <defs>
                   <path id="circlePathText" d="M 50, 50 m -50, 0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0" />
                 </defs>
                 <text>
-                  <textPath href="#circlePathText" startOffset="50%" text-anchor="middle">Mi CV</textPath>
+                  <textPath href="#circlePathText" startOffset="50%" textAnchor="middle">Mi CV</textPath>
                 </text>
               </svg>
             </a>

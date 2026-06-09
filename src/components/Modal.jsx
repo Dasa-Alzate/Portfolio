@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Carrousel from './Carrousel';
 
@@ -11,7 +10,7 @@ function Modal( { modal, setModal } ) {
       {projectsList.map((project) => (
         <div key={project.index} className={"bg-slate-950/50 top-0 left-0 z-10 fixed w-full h-full lg:h-auto overflow-y-auto modal " + (project.index == modal ? "" : "hidden")} id={'modal-'+project.index}>
           <div className="flex items-center justify-center px-4 sm:p-0 pt-4 pb-20 text-center" >
-            <span className="sm:inline-block sm:h-screen hidden sm:align-middle">​</span>
+            <span className="sm:inline-block sm:h-screen hidden sm:align-middle">{'​'}</span>
             <div
               className="inline-block relative bg-white/75 dark:bg-gray-900/75 shadow-xl backdrop-blur-sm sm:my-8 rounded-lg sm:w-full max-w-6xl text-left transform transition-all overflow-hidden align-justify sm:align-middle"
               role="dialog"

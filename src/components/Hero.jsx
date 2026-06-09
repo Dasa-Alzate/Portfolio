@@ -1,10 +1,7 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
 import HeroTitle from './HeroTitle';
 import Navbar from './Navbar';
 
 const Hero = () => {
-  const { t } = useTranslation();
 
   return (
     <section id="Inicio" className="overflow-hidden min-h-[40rem]">

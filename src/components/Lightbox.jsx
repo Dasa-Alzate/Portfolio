@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 
 const Lightbox = ({ image, onClose }) => {
   const [scale, setScale] = useState(1);
